@@ -9,6 +9,7 @@ public class OverloadTest {
     public static class Cane extends Animale {}
     public static class Gatto extends Animale {}
 
+    // questi metodi potrebbero essere statici?
     public <T> T m(T x) { return x; }
 
     public EssereVivente m(EssereVivente x) { return x; }
@@ -17,8 +18,8 @@ public class OverloadTest {
 
     public EssereVivente m(Cane x) { return x; }
 
-
-    public static void prova() {
+    // definiamo un altro metodo main che facciamo partire tramite la Run Configuration di IntelliJ di nome OverloadTest
+    public static void main(String[] args) {
         OverloadTest t = new OverloadTest();
 
         Animale a = new Cane();
