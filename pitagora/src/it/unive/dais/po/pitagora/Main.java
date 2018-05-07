@@ -3,24 +3,6 @@ package it.unive.dais.po.pitagora;
 public class Main {
 
 
-    private static class Lato {
-        private double x = -1.;
-
-        public void set(double x) {
-            if (x <= 0.) throw new IllegalArgumentException(String.format("argument %g is negative", x));
-            this.x = x;
-        }
-
-        public double get() {
-            if (x <= -1) throw new RuntimeException("uninitialized value");
-            return x;
-        }
-
-        public boolean isInitialized() {
-            return x > -1;
-        }
-    }
-
     public static void main(String[] args) {
         Lato catetoMinore = new Lato(), catetoMaggiore = new Lato(), ipotenusa = new Lato();
 
@@ -31,6 +13,28 @@ public class Main {
                 checkArg(i, args, "-C", catetoMaggiore);
                 checkArg(i, args, "-i", ipotenusa);
             }
+
+            if (catetoMinore.isInitialized() && catetoMaggiore.isInitialized() && ipotenusa.isInitialized()) {
+                // TODO
+            }
+
+            else if (catetoMinore.isInitialized() && catetoMaggiore.isInitialized()) {
+                ipotenusa.set(Math.sqrt(Math.pow(catetoMaggiore.get(), 2.0) + Math.pow(catetoMinore.get(), 2.0)));
+            }
+
+            else if (ipotenusa.isInitialized() && catetoMaggiore.isInitialized()) {
+                catetoMinore.set(Math.sqrt(Math.pow(ipotenusa.get(), 2.0) - Math.pow(catetoMaggiore.get(), 2.0)));
+            }
+
+            else if (ipotenusa.isInitialized() && catetoMinore.isInitialized()) {
+                catetoMaggiore.set(Math.sqrt(Math.pow(ipotenusa.get(), 2.0) - Math.pow(catetoMinore.get(), 2.0)));
+            }
+
+            System.out.println("cateto minore = " + catetoMinore);
+            System.out.println("cateto maggiore = " + catetoMaggiore);
+            System.out.println("ipotenusa = " + ipotenusa);
+
+
         } catch (Exception e) {
             System.out.println("exception caught: " + e.getMessage());
         }
