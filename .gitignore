@@ -24,3 +24,7 @@ hs_err_pid*
 # IntelliJ
 .idea/*
 tinylib/.idea/*
+pitagora/.idea/*
+esami/.idea/*
+
+
