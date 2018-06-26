@@ -27,7 +27,7 @@ public class Sorting {
 
         @Override
         public int compareTo(Humanoid o) {
-            return -(strength - o.strength);
+            return -(strength - o.strength);     // il segno meno nega il risultato intero, quindi inverte la direzione dell'ordinamento
         }
     }
 
@@ -41,7 +41,7 @@ public class Sorting {
 
         @Override
         public int compareTo(Humanoid o) {
-            if (o instanceof Elf) {
+            if (o instanceof Elf) { // questa guardia non valuta mai true, perché nessun Elf viene mai confrontato con un altro Elf (vedi NOTA in basso)
                 Elf e = (Elf) o;
                 return -((mana + strength) - (e.mana + e.strength));
             }
@@ -62,7 +62,7 @@ public class Sorting {
     // test 4.c
     public static void main(String[] args) {
         List<Humanoid> l = new ArrayList<>();
-        Humanoid a = new Elf(10, 8), b = new Humanoid(8), c = new Humanoid(12);
+        Humanoid a = new Elf(10, 8), b = new Humanoid(8), c = new Humanoid(12); // NOTA: c'è solo un oggetto Elf, gli altri sono tutti Humanoid
         l.add(a); l.add(b); l.add(c);
         sort(l);    // usate il debugger per vedere gli elementi della lista ordinata
     }
