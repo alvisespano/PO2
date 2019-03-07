@@ -7,18 +7,11 @@ import java.util.List;
 public class Main {
 
     public static class Animale {
-        private int peso;
-
         public Cane m(Cane c) { return c; }
     }
 
     public static class Cane extends Animale {
-        private String nome;
         public void abbaia() {}
-
-        @Override
-        public Animale m(Cane c) { return new Gatto(); }
-
     }
 
     public static class Gatto extends Animale {
@@ -28,15 +21,12 @@ public class Main {
 
     public static void main3() {
         Cane fido = new Cane();
-        Cane paolo = new PastoreTedesco();
+        Cane turbo = new PastoreTedesco();
         Animale a = new PastoreTedesco();
 
-        Cane c = fido.m(paolo);
+        Cane c = fido.m(turbo);
         Cane c2 = a.m(fido);
-
-
-
-
+        
     }
 
 
@@ -85,7 +75,7 @@ let rec filter p l =
 
     // let ident x = x    // 'a -> 'a
 
-    public static Object ident(Object o) {
+    public static Object ident__ugly(Object o) {
         return o;
     }
 
@@ -97,10 +87,10 @@ let rec filter p l =
     public static void main6() {
         Cane fido = new Cane();
 
-        Cane c = (Cane) ident(fido);
+        Cane c = (Cane) ident__ugly(fido);
 
-        Cane c2 = ident2(fido);
-        Gatto g = ident2(new Gatto());
+        Cane c2 = ident(fido);
+        Gatto g = ident(new Gatto());
     }
 
 
@@ -147,7 +137,7 @@ let rec filter p l =
         strings.add("pippo");
         strings.add("unive");
 
-        List<Integer> r = map(strings, new Func<String, Integer>() {
+        List<Integer> r1 = map(strings, new Func<String, Integer>() {
             @Override
             public Integer execute(String a) {
                 return a.length();
@@ -156,9 +146,9 @@ let rec filter p l =
 
 
 
-        List<Integer> r = new ArrayList<>();
+        List<Integer> r2 = new ArrayList<>();
         for (String s : strings) {
-            r.add(s.length());
+            r2.add(s.length());
         }
 
 
@@ -168,22 +158,11 @@ let rec filter p l =
 
     public static void main2() {
 
-        List<Animale> l1 = new ArrayList<Cane>();
-        List<? extends Animale> l2 = new ArrayList<Cane>();
-        Animale a = l2.get(0);
+        List<? extends Animale> l = new ArrayList<Cane>();
+        Animale a = l.get(0);
 
 
-        MyCollection<Gatto> c = new MyArrayList<Gatto>();
-        c.add(8);
-        c.add("ciao");
-        c.add(new Cane());
-        c.add(new Gatto());
 
-
-        MyIterator<Gatto> it = c.getIterator();
-        while (it.hasNext()) {
-            Gatto o = it.next();
-        }
     }
 
 
@@ -228,8 +207,8 @@ let rec filter p l =
         }
     }
 
-    public static void main(String[] args) {
-        Collection<Cane> cani = new BackwardsArrayList<Cane>();
+    public static void main1() {
+        Collection<Cane> cani = new BackwardsArrayList<>();
         cani.add(new Cane());
         cani.add(new PastoreTedesco());
 
