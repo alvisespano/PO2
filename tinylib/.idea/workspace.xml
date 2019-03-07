@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af4a5b0a-7fd9-4f49-b904-63b1f09fd36f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../lezione2018-19/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lezione2018-19/src/MyArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lezione2018-19/src/MyCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lezione2018-19/src/MyIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lezione2018-19/src/Pair.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="476">
+              <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -40,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/OverloadTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="425">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -52,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/MyNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -85,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/NotFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -109,10 +114,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="100" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="820" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1216" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -120,8 +125,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,12 +149,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551956247514" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lezione2018-19" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -216,9 +221,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -235,7 +239,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -244,20 +248,15 @@
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
+      <window_info anchor="right" id="PlantUML" order="9" />
     </layout>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/MyIterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="476">
+          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -268,10 +267,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/MyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/MyNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -282,7 +288,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/MyNodeListIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/MySequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/NotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/MyIterable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
@@ -291,29 +318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/OverloadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/MyNodeListIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/MyList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/tinylib/NotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        <state relative-caret-position="425">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
         </state>
       </provider>
     </entry>
