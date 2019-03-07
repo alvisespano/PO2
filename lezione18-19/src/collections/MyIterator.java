@@ -1,4 +1,4 @@
-
+package collections;
 
 public interface MyIterator<X> {
 

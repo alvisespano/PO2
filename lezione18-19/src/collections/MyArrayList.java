@@ -1,3 +1,4 @@
+package collections;
 
 public class MyArrayList<E> implements MyCollection<E> {
 
