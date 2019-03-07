@@ -9,7 +9,7 @@ import java.util.List;
 // riproduzione di alcune funzioni "notevoli" di F#
 public class Main__Functional {
 
-
+    private int field;
 /*
 let rec map f l =
     match l with
@@ -107,7 +107,7 @@ let rec filter p l =
     }
 
 
-    public static <X, Y> List<Y> map(List<X> l, Func<X, Y> f) {
+    public static <X, Y> List<Y> map(List<X> l, Func<? super X, ? extends Y> f) {
         List<Y> r = new ArrayList<>();
         for (X x : l) {
             r.add(f.execute(x));
@@ -115,9 +115,21 @@ let rec filter p l =
         return r;
     }
 
+    public static class Vegetale {
+    }
 
 
     public static void main__map() {
+
+        List<Cane> l1 = new ArrayList<>();
+        List<Vegetale> l2 = map(l1, new Func<Animale, Vegetale>() {
+            @Override
+            public Vegetale execute(Animale a) {
+                return null;
+            }
+        });
+
+
         List<String> strings = new ArrayList<>();
         strings.add("ciao");
         strings.add("pippo");
