@@ -1,5 +1,6 @@
 import java.util.function.Function;
 
+@Deprecated
 public class MyListMap__old<K, V> implements MyMap<K, V> {
 
     private MyList<Pair<K, V>> l;
