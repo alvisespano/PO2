@@ -38,6 +38,14 @@ public class Main {
         }
     }
 
+
+    public static void main2() {
+        MyCollection<Pair<String, Integer>> rubrica = new MyListMap<>();
+        rubrica.add(new Pair<>("Alvise", 34712345));
+        rubrica.add(new Pair<>("Diego", 987654321));
+    }
+
+
     public static void main(String[] args) {
 
         List<Animal> a = new ArrayList<>();

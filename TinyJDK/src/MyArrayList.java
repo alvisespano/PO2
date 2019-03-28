@@ -1,4 +1,3 @@
-import java.util.Collection;
 import java.util.function.Function;
 
 public class MyArrayList<T> implements MyList<T> {
@@ -47,9 +46,6 @@ public class MyArrayList<T> implements MyList<T> {
 
     public MyArrayList() {
         clear();
-    }
-
-    public static class NotFoundException extends Exception {
     }
 
     @Override
