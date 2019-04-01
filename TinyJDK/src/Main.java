@@ -25,10 +25,13 @@ public class Main {
         @Override
         public int compareTo(Animal o) {
             return this.weight - o.weight;
-            /*if (this.weight == o.weight) return 0;
-            else if (this.weight > o.weight) return 1;
-            else return -1;*/
         }
+
+        @Override
+        public int hashCode() {
+            return weight * name.hashCode();
+        }
+
     }
 
     public static class Dog extends Animal {
@@ -36,7 +39,27 @@ public class Main {
         public Dog(String name, int w) {
             super(name, w);
         }
+
+        @Override
+        public int hashCode() {
+            return super.hashCode();
+        }
     }
+
+    public static void main3() {
+
+        Map<Dog, String> m = new HashMap<>();
+        Dog emma = new Dog("emma", 10);
+        Dog toby = new Dog("toby", 10);
+        Dog bob = new Dog("bob", 20);
+
+        m.put(emma, "cecilia");
+        m.put(toby, "mihail");
+        m.put(bob, "alex");
+    }
+
+
+
 
 
     public static void main2() {
