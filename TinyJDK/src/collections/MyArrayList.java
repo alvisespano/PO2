@@ -1,3 +1,5 @@
+package collections;
+
 import java.util.function.Function;
 
 public class MyArrayList<T> implements MyList<T> {

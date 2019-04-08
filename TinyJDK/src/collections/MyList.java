@@ -1,4 +1,4 @@
-
+package collections;
 
 public interface MyList<T> extends MyCollection<T> {
     void add(int i, T x);

@@ -1,3 +1,5 @@
+package collections;
+
 public class MyListMap<K, V> extends MyArrayList<Pair<K, V>>
         implements MyMap<K, V> {
 

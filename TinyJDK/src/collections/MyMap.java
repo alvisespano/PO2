@@ -1,3 +1,4 @@
+package collections;
 
 public interface MyMap<K, V> extends MyCollection<Pair<K, V>> {
 

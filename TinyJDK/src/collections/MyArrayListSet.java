@@ -1,5 +1,6 @@
+package collections;
+
 import java.util.*;
-import java.util.function.Function;
 
 public class MyArrayListSet<T> extends MyAbstractArrayListSet<T> {
 

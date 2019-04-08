@@ -1,4 +1,5 @@
-import java.util.Collection;
+package collections;
+
 import java.util.function.Function;
 
 public interface MyCollection<T> extends MyIterable<T> {

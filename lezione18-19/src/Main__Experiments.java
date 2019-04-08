@@ -25,7 +25,6 @@ public class Main__Experiments {
         List<Animale> l3 = new ArrayList<Gatto>();   // questo non è accettato dal compilatore
 
 
-
         List<? super Animale> l4 = new ArrayList<Animale>();
 
         // assegnamenti
