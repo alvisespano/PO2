@@ -23,9 +23,7 @@ hs_err_pid*
 
 # IntelliJ
 .idea/*
-tinylib/.idea/*
-pitagora/.idea/*
-esami/.idea/*
+**/.idea/*
 
 
 lezione18-19/.idea/encodings.xml
