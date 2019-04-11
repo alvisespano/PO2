@@ -6,7 +6,7 @@ public class SynchronizedMain {
     private static class Counter {
         public static final int MAX = 30;
 
-        private int value = 0;
+        private int value = 0;  // bisogna arbitrare l'accesso a questo campo
 
         public synchronized int get() {
             return value;
@@ -65,15 +65,20 @@ public class SynchronizedMain {
 
         @Override
         public void run() {
-            SynchronizedMain.loop(delay);
+            loop(delay);
         }
 
     }
 
     public static void main(String[] args) {
-        MyThread th = new MyThread(500);
-        th.start();
-        loop(300);
+        MyThread th1 = new MyThread(500);
+        th1.start();    // spawn thread 1
+
+        // non serve conservare l'oggetto thread in una variabile se non è necessario
+        new Thread(() -> loop(400)).start();    // spawn thread 2 con un runnable in costruzione
+
+        // esegue lo stesso codice anche col main thread
+        loop(300);  
     }
 
 }
