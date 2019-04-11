@@ -1,6 +1,6 @@
 package threads;
 
-public class ThreadPool {
+public class ThreadPool implements Queue<Thread> {
 
 
 
