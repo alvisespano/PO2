@@ -71,8 +71,12 @@ public class SynchronizedMain {
     }
 
     public static void main(String[] args) {
-        MyThread th = new MyThread(500);
-        th.start();
+//        MyThread th = new MyThread(500);
+//        th.start();
+        new MyThread(500).start();
+
+        new Thread(() -> loop(400)).start();
+
         loop(300);
     }
 
