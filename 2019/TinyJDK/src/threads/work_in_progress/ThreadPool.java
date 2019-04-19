@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class ThreadPool {
     private Queue<PooledThread> q = new ConcurrentLinkedQueue<>();
 
-    public static class PooledThread extends Thread {
+    public class PooledThread extends Thread {
         @Nullable
         private Runnable currentRunnable;
 
@@ -24,6 +24,8 @@ public class ThreadPool {
                         print("awaken");
                     }
                     Objects.requireNonNull(currentRunnable).run();
+                    print("requeueing");
+                    q.add(this);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -40,24 +42,19 @@ public class ThreadPool {
     public PooledThread acquire(Runnable cb) {
         @NotNull final PooledThread p;
         if (q.isEmpty()) {
-            System.out.println("spawning");
+            print("spawning");
             p = new PooledThread();
             p.start();
         } else {
             p = q.poll();
         }
+        print("notify");
         synchronized (p) {
-            print("notify");
             p.currentRunnable = cb;
             p.notify();
             return p;
         }
     }
-
-    public void release(PooledThread t) {
-        q.add(t);
-    }
-
 
     public static void main(String[] args) {
         ThreadPool pool = new ThreadPool();

@@ -51,7 +51,7 @@ public class ThreadPool {
 
     protected class PooledThread extends Thread {
         @Nullable
-        private Runnable customRunnable;
+        private Runnable currentRunnable;
 
         @Override
         public String toString() {
@@ -61,13 +61,17 @@ public class ThreadPool {
         @Override
         public void run() {
             incrementTotal();
+            synchronized (ThreadPool.this) {
+                total++;
+            }
+
             try {
                 while (true) {
 //                    print("entering wait state...");
                     @NotNull Runnable r;
                     synchronized (this) {
                         wait();
-                        r = Objects.requireNonNull(customRunnable);
+                        r = Objects.requireNonNull(currentRunnable);
 //                        print("awaken: executing custom runnable...");
                     }
                     try {
@@ -77,7 +81,7 @@ public class ThreadPool {
                         e.printStackTrace();
                     }
                     synchronized (this) {
-                        customRunnable = null;
+                        currentRunnable = null;
                     }
                     if (!q.offer(this)) {
                         print("cannot requeue due to space limit");
@@ -126,7 +130,7 @@ public class ThreadPool {
             p = q.poll();
         }
         synchronized (p) {
-            p.customRunnable = cb;
+            p.currentRunnable = cb;
             p.notify();
         }
         return p;
