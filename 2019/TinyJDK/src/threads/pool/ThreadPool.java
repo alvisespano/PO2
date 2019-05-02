@@ -1,4 +1,4 @@
-package threads;
+package threads.pool;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

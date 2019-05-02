@@ -1,4 +1,4 @@
-package patterns.consumerproducer;
+package patterns.consumer_producer;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
@@ -22,13 +22,11 @@ public class Main {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-
             }
         }
     }
 
     public static class Producer extends Thread {
-
         @Override
         public void run() {
             while (true) {
@@ -38,7 +36,7 @@ public class Main {
                     int len = rand.nextInt(10);
                     String s = "";
                     for (int i = 0; i < len; ++i) {
-                        s = s + String.format("%d", i);
+                        s = s + String.format("%d", i); // TODO: usare StringBuilder come suggerito da IntelliJ
                     }
                     System.out.println("producer: " + s);
                     q.add(s);
@@ -47,15 +45,12 @@ public class Main {
                     e.printStackTrace();
                 }
             }
-
         }
     }
 
     public static void main(String[] args) {
         new Producer().start();
         new Consumer().start();
-
-
     }
 
 }

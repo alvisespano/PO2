@@ -1,9 +1,9 @@
-package threads;
+package threads.pool;
 
 import java.util.Random;
 import java.util.concurrent.TimeoutException;
 
-public class PoolMain {
+public class Main {
 
     public static void main(String[] args) {
         ThreadPool pool = new ThreadPool(10, 3);
