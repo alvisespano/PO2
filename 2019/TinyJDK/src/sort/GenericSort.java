@@ -2,35 +2,12 @@ package sort;
 
 import java.util.*;
 import java.util.function.BiFunction;
+import java.util.function.Function;
 
 public class GenericSort {
 
-
-    static <T> void quicksort8(List<? extends Comparable<T>> l) {
-
-    }
-
-    static <T extends Comparable<T>> void quicksort8(List<T> l) {
-        T a = l.get(0), b = l.get(1);
-//        if (a.compareTo(b) < 0) ...
-
-    }
-
-    static void quicksort__wildcards(List<? extends Comparable<?>> l) {
-        Object a = l.get(0), b = l.get(1);
-        if (a.< 0)
-
-    }
-
-    static <T> void quicksort(List<T> l, Comparator<T> f) {
-        T a = l.get(0), b = l.get(1);
-        if (f.compare(a, b) < 0)
-        // algo
-    }
-
-    // non può essere overload perché ha la stessa erasure di BiFunction<T, T, Boolean>
-    static <T> void quicksort__compare(List<T> l, BiFunction<T, T, Integer> f) {
-        quicksort(l, new Comparator<T>() {
+    static <T> void sort(List<T> l, BiFunction<T, T, Integer> f) {
+        sort(l, new Comparator<T>() {
             @Override
             public int compare(T a, T b) {
                 return f.apply(a, b);
@@ -38,8 +15,8 @@ public class GenericSort {
         });
     }
 
-    static <T> void quicksort__predicate(List<T> l, BiFunction<T, T, Boolean> isLessThan) {
-        quicksort(l, new Comparator<>() {
+    static <T> void sort__predicate(List<T> l, BiFunction<T, T, Boolean> isLessThan) {
+        sort(l, new Comparator<>() {
             @Override
             public int compare(T a, T b) {
                 return a.equals(b) ? 0 : isLessThan.apply(a, b) ? -1 : 1;
@@ -47,21 +24,43 @@ public class GenericSort {
         });
     }
 
-    // TODO LEZIONE: migliorare e generalizzare sto algoritmo
-    int partition(int arr[], int left, int right) {
+    public static <T> void sort(List<T> l, Comparator<T> cmp) {
+        Object[] a = new Object[l.size()];
+        //noinspection unchecked
+        sort((T[]) l.toArray(a), cmp);
+        for (int i = 0; i < a.length; ++i) {    // TODO: migliorare performance
+            l.set(i, (T) a[i]);
+        }
+    }
+
+    public static <T extends Comparable<T>> void sort(List<T> l) {
+        sort(l, new Comparator<T>() {
+            @Override
+            public int compare(T o1, T o2) {
+                return o1.compareTo(o2);
+            }
+        });
+    }
+
+    public static <T> void sort(T[] arr, Comparator<T> cmp) {
+        quickSort(arr, 0, arr.length - 1, cmp);
+    }
+
+    ///////////////////////
+
+    private static <T> int partition(T[] arr, int left, int right, Comparator<T> cmp) {
         int i = left, j = right;
-        int tmp;
-        int pivot = arr[(left + right) / 2];
+        T pivot = arr[(left + right) / 2];
 
         while (i <= j) {
-            while (arr[i] < pivot)
+            while (cmp.compare(arr[i], pivot) < 0)    // while (arr[i] < pivot)
                 i++;
 
-            while (arr[j] > pivot)
+            while (cmp.compare(arr[j], pivot) > 0)
                 j--;
 
             if (i <= j) {
-                tmp = arr[i];
+                T tmp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = tmp;
                 i++;
@@ -71,11 +70,11 @@ public class GenericSort {
         return i;
     }
 
-    void quickSort(int arr[], int left, int right) {
-        int index = partition(arr, left, right);
+    private static <T> void quickSort(T[] arr, int left, int right, Comparator<T> cmp) {
+        int index = partition(arr, left, right, cmp);
         if (left < index - 1)
-            quickSort(arr, left, index - 1);
+            quickSort(arr, left, index - 1, cmp);
         if (index < right)
-            quickSort(arr, index, right);
+            quickSort(arr, index, right, cmp);
     }
 }
