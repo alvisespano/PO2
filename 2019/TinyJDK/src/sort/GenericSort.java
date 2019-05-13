@@ -16,7 +16,7 @@ public class GenericSort {
 
     }
 
-    static void quicksort3(List<? extends Comparable<?>> l) {
+    static void quicksort__wildcards(List<? extends Comparable<?>> l) {
         Object a = l.get(0), b = l.get(1);
         if (a.< 0)
 
@@ -28,7 +28,8 @@ public class GenericSort {
         // algo
     }
 
-    static <T> void quicksort__compare(List<T> l, BiFunction<T, T, Integer> f) { // TODO: stessa erasure di BiFunction<T, T, Boolean>
+    // non può essere overload perché ha la stessa erasure di BiFunction<T, T, Boolean>
+    static <T> void quicksort__compare(List<T> l, BiFunction<T, T, Integer> f) {
         quicksort(l, new Comparator<T>() {
             @Override
             public int compare(T a, T b) {
