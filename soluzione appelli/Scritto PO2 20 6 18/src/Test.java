@@ -1,19 +1,31 @@
 
+/*
+ RISPOSTE TEST TEMA A:
+ (1): 4
+ (2): 1
+ (3): 4
+ (4.a): 2
+ (4.b): 1
+ (4.c): 2
+
+ */
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Es3 {
+// questo sorgente contiene il codice relativo alla domanda 4 del test a risposta multipla (tema A)
 
-    // test 4
+public class Test {
 
     // funzione sort data dal testo
     static <T extends Comparable<T>> void sort(List<T> l) {
-        Collections.sort(l);    // semplice stub alla sort del JDK, così fa qualcosa se provate a lanciarlo
+        Collections.sort(l);    // stub alla sort del JDK
     }
 
     // test 4.a
-    static <T> void sort_(List<? extends Comparable<T>> l) { // se decommentate l'underscore nel nome diventa un overload non valido perché ha la stessa erasure della sort qui sopra
+    // se si rimuove l'underscore dal nome del seguente metodo sort_(), il compilatore segnalerà un overload non valido perché i due metodi sort() avranno la stessa type erasure
+    static <T> void sort_(List<? extends Comparable<T>> l) {
     }
 
     // classi date dal testo
@@ -43,8 +55,7 @@ public class Es3 {
             if (o instanceof Elf) { // questa guardia non valuta mai true, perché nessun Elf viene mai confrontato con un altro Elf (vedi NOTA in basso)
                 Elf e = (Elf) o;
                 return -((mana + strength) - (e.mana + e.strength));
-            }
-            else return super.compareTo(o);
+            } else return super.compareTo(o);
         }
 
     }
@@ -53,16 +64,19 @@ public class Es3 {
     public static void main_b(String[] args) {
         List<Elf> l = new ArrayList<>();
         l.add(new Elf(11, 23));
-        // decommentate questa chiamata se volete compilare questo sorgente e lanciarlo
-        //sort(l);    // non compila perché Elf non implementa Comparable<Elf>, ma solamente Comparable<Humanoid> (ereditato dalla superclasse)
+        sort(l);    // non compila perché Elf non implementa Comparable<Elf>, ma solamente Comparable<Humanoid> (ereditato dalla superclasse)
 
     }
 
     // test 4.c
     public static void main(String[] args) {
         List<Humanoid> l = new ArrayList<>();
-        Humanoid a = new Elf(10, 8), b = new Humanoid(8), c = new Humanoid(12); // NOTA: c'è solo un oggetto Elf, gli altri sono tutti Humanoid
-        l.add(a); l.add(b); l.add(c);
-        sort(l);    // usate il debugger per vedere gli elementi della lista ordinata
+        Humanoid a = new Elf(10, 8),  // si badi che solo un oggetto è di tipo Elf, gli altri sono di tipo Humanoid
+                 b = new Humanoid(8),
+                 c = new Humanoid(12);
+        l.add(a);
+        l.add(b);
+        l.add(c);
+        sort(l);
     }
 }

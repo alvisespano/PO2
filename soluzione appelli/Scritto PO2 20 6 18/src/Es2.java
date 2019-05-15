@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Es2 {
 
-    // es. 2.a
+    // 2.a
     public static class Pair<A, B> { // versione con campi pubblici immutabili, ma si potevano fare anche i getter volendo
         public final A a;
         public final B b;
@@ -14,7 +14,7 @@ public class Es2 {
         }
     }
 
-    // es. 2.b
+    // 2.b
     public static <E> Pair<E, E> findMinAndMax(List<? extends E> l, Comparator<E> c) {
         E min = l.get(0), max = min;
         for (E x : l) {
@@ -24,7 +24,7 @@ public class Es2 {
         return new Pair<>(min, max);
     }
 
-    // es 2.c
+    // 2.c
     public static <E extends Comparable<E>> Pair<E, E> findMinAndMax(List<? extends E> l) {
         return findMinAndMax(l, new Comparator<>() {
             @Override
