@@ -6,7 +6,7 @@ import java.util.function.Function;
 
 public class GenericSort {
 
-    static <T> void sort(List<T> l, BiFunction<T, T, Integer> f) {
+    public static <T> void sort(List<T> l, BiFunction<T, T, Integer> f) {
         sort(l, new Comparator<T>() {
             @Override
             public int compare(T a, T b) {
@@ -15,7 +15,7 @@ public class GenericSort {
         });
     }
 
-    static <T> void sort__predicate(List<T> l, BiFunction<T, T, Boolean> isLessThan) {
+    public static <T> void sort__predicate(List<T> l, BiFunction<T, T, Boolean> isLessThan) {
         sort(l, new Comparator<>() {
             @Override
             public int compare(T a, T b) {
@@ -28,7 +28,7 @@ public class GenericSort {
         Object[] a = new Object[l.size()];
         //noinspection unchecked
         sort((T[]) l.toArray(a), cmp);
-        for (int i = 0; i < a.length; ++i) {    // TODO: migliorare performance
+        for (int i = 0; i < a.length; ++i) {
             l.set(i, (T) a[i]);
         }
     }
@@ -46,7 +46,7 @@ public class GenericSort {
         quickSort(arr, 0, arr.length - 1, cmp);
     }
 
-    ///////////////////////
+    // l'implementazione dell'algoritmo è qui sotto
 
     private static <T> int partition(T[] arr, int left, int right, Comparator<T> cmp) {
         int i = left, j = right;
