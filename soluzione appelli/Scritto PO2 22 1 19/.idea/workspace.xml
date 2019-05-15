@@ -7,17 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7ca24f7-d71c-4fa0-857b-ba8f8f95e7aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 20 6 18/src/Es1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 20 6 18/src/Es1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 20 6 18/src/Es2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 20 6 18/src/Es2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 20 6 18/src/Es3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 20 6 18/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Es1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Es1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Es2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Es2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24 5 18/src/Es1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24 5 18/src/Es1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scritto PO2 4 9 18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 4 9 18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 4 9 18/src/it/unive/dais/po/Es1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 4 9 18/src/Es1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 4 9 18/src/it/unive/dais/po/Es2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 4 9 18/src/Es2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 4 9 18/src/it/unive/dais/po/Es3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 4 9 18/src/Es3.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Es2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="68">
+              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -75,8 +67,8 @@
         <option value="$PROJECT_DIR$/src/MainIterators.java" />
         <option value="$PROJECT_DIR$/src/MainPool.java" />
         <option value="$PROJECT_DIR$/src/Es21.java" />
-        <option value="$PROJECT_DIR$/src/Es2.java" />
         <option value="$PROJECT_DIR$/src/Es1.java" />
+        <option value="$PROJECT_DIR$/src/Es2.java" />
       </list>
     </option>
   </component>
@@ -234,8 +226,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Es2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="68">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
         </state>
       </provider>
     </entry>
