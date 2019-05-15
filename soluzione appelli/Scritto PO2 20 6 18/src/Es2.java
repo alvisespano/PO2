@@ -1,9 +1,8 @@
-package it.unive.dais.po.appello.secondo_20_6_2018;
 
 import java.util.Comparator;
 import java.util.List;
 
-public class MinAndMax {
+public class Es2 {
 
     // es. 2.a
     public static class Pair<A, B> { // versione con campi pubblici immutabili, ma si potevano fare anche i getter volendo

@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8ca65c7-558c-4c59-a499-4c009f935948" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po/Es1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po/Es2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po/Es3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2019/TinyJDK/src/sort/GenericSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2019/TinyJDK/src/sort/GenericSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 22 1 19/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 22 1 19/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/Scritto PO2 24_5_18 e 20_6_18.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/primo_24_5_18/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/Es2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/primo_24_5_18/HannaBarbera.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/Es1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/secondo_20_6_2018/FancyArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/secondo_20_6_2018/MinAndMax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/secondo_20_6_2018/Sorting.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scritto PO2 4 9 18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Scritto PO2 4 9 18.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po/Main.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/Es1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,8 +92,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="y" value="19" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
@@ -135,7 +135,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Scritto PO2 24 5 18" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -235,8 +235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/it/unive/dais/po/Es1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

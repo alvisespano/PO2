@@ -7,12 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7ca24f7-d71c-4fa0-857b-ba8f8f95e7aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../2019/TinyJDK/src/sort/GenericSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2019/TinyJDK/src/sort/GenericSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scritto PO2 24 5 18/src/Es1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 24 5 18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 4 9 18/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 4 9 18/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/Scritto PO2 24_5_18 e 20_6_18.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/esami.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/Es1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/Es2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/secondo_20_6_2018/FancyArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/secondo_20_6_2018/MinAndMax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 24_5_18 e 20_6_18/src/it/unive/dais/po/appello/secondo_20_6_2018/Sorting.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scritto PO2 4 9 18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 4 9 18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scritto PO2 4 9 18/src/it/unive/dais/po/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 4 9 18/src/it/unive/dais/po/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Es1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
+            <state relative-caret-position="1003">
               <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Es2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state>
+              <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -75,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-1" />
     <option name="y" value="19" />
     <option name="width" value="1936" />
@@ -87,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,6 +118,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,10 +189,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17590618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -219,7 +232,7 @@
     <entry file="file://$PROJECT_DIR$/src/Function.java" />
     <entry file="file://$PROJECT_DIR$/src/Es1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
+        <state relative-caret-position="1003">
           <caret line="68" column="55" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -229,8 +242,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Es2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state>
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
         </state>
       </provider>
     </entry>
