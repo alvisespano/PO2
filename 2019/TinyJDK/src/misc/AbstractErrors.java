@@ -28,6 +28,7 @@ public class AbstractErrors {
 
 
     public static void main(String[] args) {
+        constructorOrder(); // questo mostra come la costruzione degli oggetti avvenga prima dell'inizializzazione dei campi e della vtable
         callToAbstract();
     }
 
