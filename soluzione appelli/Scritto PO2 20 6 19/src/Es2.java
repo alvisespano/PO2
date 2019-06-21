@@ -40,6 +40,40 @@ public class Es2 {
         }
     }
 
+    static class Prova {
+
+        public class Node<T> implements Iterable<T> {
+            Node<T> left, right;
+            T val;
+            Collection<Node<T>> col = new ArrayList<>();
+
+            @Override
+            public Iterator<T> iterator() {
+
+                return new Iterator<>() {
+                    Iterator<Node<T>> i = col.iterator();
+
+                    public Node<T> func(Node<T> n) {
+                        while (n.left != null)
+                            col.add(func(n.left));
+                        col.add(func(n.right));
+                    }
+
+                    @Override
+                    public boolean hasNext() {
+                        return iterator().hasNext();
+                    }
+
+                    @Override
+                    public T next() {
+                        return func(i.next());
+                    }
+                }
+            }
+        }
+
+    }
+
     public static void main(String[] args) {
         Node<Integer> root =
                 new Node<>(1,

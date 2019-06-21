@@ -132,7 +132,7 @@ public class Es1 {
         Artist a = Collections.max(artists, new Comparator<Artist>() {
             @Override
             public int compare(Artist a, Artist b) {
-                return a.hair.length * a.hair.colors.size();
+                return a.hair.length * a.hair.colors.size() - b.hair.length * b.hair.colors.size();
             }
         });
         print("[1.h.i] %s", a);
