@@ -25,11 +25,11 @@ public class Es1 {
             // null check
             if (o == null)
                 return false;
-            // type check and cast
+            // type check
             if (getClass() != o.getClass())
                 return false;
             // field comparison
-            return equalsTo((P) o);
+            return equalsTo((P) o);    // deleghiamo al metodo equalsTo(P) il confronto tipato tra i campi
         }
 
         // 1.b
@@ -78,17 +78,13 @@ public class Es1 {
 
         // 1.c
         @Override
-        public boolean equals(Object o) {
-            // self check
+        public boolean equals(Object o) {   // uguale a Person.equals(Object)
             if (this == o)
                 return true;
-            // null check
             if (o == null)
                 return false;
-            // type check and cast
             if (getClass() != o.getClass())
                 return false;
-            // field comparison
             return equalsTo((Hair) o);
         }
 
@@ -115,7 +111,7 @@ public class Es1 {
         List<Boolean> bs = Arrays.asList(
                 alice.equals(null),         // false
                 alice.equals(alice),        // true
-                //null.equals(david),       // alcuni compilatori rifiutano null.metodo(), altri sì ma a runtime viene lanciato NullPointerException
+                //null.equals(david),       // alcuni compilatori rifiutano null.metodo(), altri lo accettano ma a runtime viene lanciato NullPointerException
                 alice.equals(david),        // false
                 alice.equalsTo(morgan),     // false
                 morgan.equals(morgan),      // true
