@@ -5,12 +5,13 @@ import java.util.Random;
 
 public class Es1 {
 
-    // a.i
+    // 1.a.i
+    @FunctionalInterface
     public interface Function<A, B> {
         B apply(A x);
     }
 
-    // b.i
+    // 1.b.i
     public static class Pair<A, B> {
         public final A fst;
         public final B snd;
@@ -21,7 +22,7 @@ public class Es1 {
         }
     }
 
-    // a.ii
+    // 1.a.ii
     public static <A, B> Iterator<B> mapIterator(Iterator<A> it, Function<A, B> f) {
         return new Iterator<>() {
             @Override
@@ -36,7 +37,7 @@ public class Es1 {
         };
     }
 
-    // b.ii
+    // 1.b.ii
     public static <A> Iterator<Pair<A, A>> pairIterator(Iterator<A> it) {
         return new Iterator<>() {
             A last;
@@ -54,7 +55,7 @@ public class Es1 {
         };
     }
 
-    // c
+    // 1.c
     public static void main(String[] args) {
         Random rnd = new Random();
         List<Integer> c = new ArrayList<>();
@@ -67,8 +68,7 @@ public class Es1 {
         Iterator<Double> ipotenuse = mapIterator(cateti, (Pair<Integer, Integer> p) -> Math.sqrt(Math.pow(p.fst, 2) + Math.pow(p.snd, 2)));
 
         for (int cnt = 1; ipotenuse.hasNext(); ++cnt) {
-            double i = ipotenuse.next();
-            System.out.println(String.format("ipotenusa #%d: %g", cnt, i));
+            System.out.println(String.format("ipotenusa #%d: %g", cnt, ipotenuse.next()));
         }
     }
 

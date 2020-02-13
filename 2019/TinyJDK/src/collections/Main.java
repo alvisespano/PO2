@@ -85,4 +85,16 @@ public class Main {
         });
 
     }
+
+    public static <T extends Comparable<T>>     void m(List<T> l) {}
+    public static <T, S extends Comparable<T>>  void p(List<S> l) {}
+
+    public static void main5() {
+        List<Dog> l1 = new ArrayList<>();
+        m(l1);
+        p(l1);
+
+    }
 }
+
+

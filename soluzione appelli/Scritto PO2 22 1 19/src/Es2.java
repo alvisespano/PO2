@@ -10,11 +10,11 @@ public class Es2 {
         void release(R x);
     }
 
-    // a
+    // 2.a
     public interface BasicPool<T> extends Pool<T, T> {
     }
 
-    // b
+    // 2.b
     public static class SimplePool<T> implements BasicPool<T> {
 
         private BlockingQueue<T> q = new LinkedBlockingDeque<>();
@@ -35,7 +35,8 @@ public class Es2 {
         }
     }
 
-    // c + d
+    // 2.c + 2.d
+
     public interface Resource<T> {
         T get();
         void release();
