@@ -6,6 +6,7 @@ import java.util.function.Function;
 
 public class GenericSort {
 
+
     static <T> void sort(List<T> l, BiFunction<T, T, Integer> f) {
         sort(l, new Comparator<T>() {
             @Override
