@@ -1,12 +1,10 @@
 package it.unive.dais.po2.aa2019_20.zoo;
 
 
-public class Cat extends Animal {
-    private String color;
+public class Cat extends ColoredAnimal<Cat> {
 
     public Cat(int w, String c, Cat p) {
-        super(w, p);
-        this.color = c;
+        super(w, c, p);
     }
 
     @Override
@@ -14,6 +12,7 @@ public class Cat extends Animal {
         weight += a.weight / 3;
         color = color + " fat";
     }
+
 
     public void meow() {
         System.out.println("miao!");

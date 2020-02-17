@@ -1,10 +1,10 @@
 package it.unive.dais.po2.aa2019_20.zoo;
 
-public class Animal implements Creature {
+public class Animal<A extends Animal> implements Creature {
     protected int weight;
-    protected Animal partner;
+    protected A partner;
 
-    public Animal(int weight, Animal p) {
+    public Animal(int weight, A p) {
         this.weight = weight;
         this.partner = p;
     }
@@ -13,8 +13,7 @@ public class Animal implements Creature {
         this.weight += a.weight;
     }
 
-    // TODO: rendere abstract questo metodo
-    public Animal getPartner() {
+    public A getPartner() {
         return partner;
     }
 }
