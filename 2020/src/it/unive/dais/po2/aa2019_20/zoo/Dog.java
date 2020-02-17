@@ -7,7 +7,8 @@ public class Dog extends Animal {
     public Dog(int w, String c, Dog p) {
         super(w, p);
         this.newpartner = p;
-        this.color = c;
+        this.color = c
+                
     }
 
 
