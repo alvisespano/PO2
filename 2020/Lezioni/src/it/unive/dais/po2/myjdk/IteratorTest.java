@@ -4,7 +4,6 @@ import java.util.*;
 
 public class IteratorTest {
 
-
     public static void populate(Collection<Integer> a) {
         a.add(7);
         a.add(2);
@@ -14,22 +13,11 @@ public class IteratorTest {
 
     public static void sum(Iterable<Integer> a) {
         int r = 0;
-        Iterator<Integer> it = a.iterator();
-        while(it.hasNext()) {
-            Integer n = it.next();
-            r += n;
-        }
-        System.out.println(r);
-    }
-
-    public static void sum2(Iterable<Integer> a) {
-        int r = 0;
         for(Integer n : a) {
             r += n;
         }
         System.out.println(r);
     }
-
 
     public static void main(String[] args) {
 
@@ -42,5 +30,36 @@ public class IteratorTest {
         sum(s);
 
 
+        MyIntegerArrayList u = new MyIntegerArrayList();
+        u.populate();
+        u.sum();
+
     }
+
+    public interface Summable extends Iterable<Integer> {
+
+        default void sum() {
+            int r = 0;
+            for(Integer n : this) {
+                r += n;
+            }
+            System.out.println(r);
+        }
+
+    }
+
+    public static class MyIntegerArrayList extends ArrayList<Integer> implements Summable {
+
+        public MyIntegerArrayList() {
+            super();
+        }
+
+        public void populate() {
+            add(7);
+            add(2);
+            add(2);
+            add(123);
+        }
+    }
+
 }
