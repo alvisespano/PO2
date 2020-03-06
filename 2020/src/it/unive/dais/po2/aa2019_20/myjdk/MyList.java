@@ -45,7 +45,7 @@ public class MyList<T> {
     }
 
     static void main() {
-        MyList<Integer> l = new MyList<>();
+/*        MyList<Integer> l = new MyList<>();
         l.add(7);
         l.add(67);
         l.add(23);
@@ -57,5 +57,6 @@ public class MyList<T> {
         l2.add(new Animal());
         l2.add(new Dog());
         Animal a = l2.get(1);
+    */
     }
 }

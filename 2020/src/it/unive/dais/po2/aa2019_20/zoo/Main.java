@@ -7,7 +7,7 @@ import java.util.Iterator;
 public class Main {
 
     public static void main(String[] args) {
-        Dog fido = new Dog(15, "bruno");
+/*        Dog fido = new Dog(15, "bruno");
         Dog baldo = new Dog(20, "bianco");
         Animal jackie = new Dog(2, "nero");
         Dog pluto = new Animal(50);
@@ -29,7 +29,7 @@ public class Main {
 
         a.eat(a);   // mangiare se stessi si può fare
 
-
+*/
     }
 
 }
