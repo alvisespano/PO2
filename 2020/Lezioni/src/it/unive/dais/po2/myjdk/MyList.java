@@ -1,6 +1,4 @@
-package it.unive.dais.po2.aa2019_20.myjdk;
-
-import it.unive.dais.po2.aa2019_20.zoo.*;
+package it.unive.dais.po2.myjdk;
 
 public class MyList<T> {
 

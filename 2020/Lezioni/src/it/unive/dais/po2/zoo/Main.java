@@ -1,4 +1,4 @@
-package it.unive.dais.po2.aa2019_20.zoo;
+package it.unive.dais.po2.zoo;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -7,6 +7,8 @@ import java.util.Iterator;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("hello world!");
+
 /*        Dog fido = new Dog(15, "bruno");
         Dog baldo = new Dog(20, "bianco");
         Animal jackie = new Dog(2, "nero");
@@ -28,8 +30,8 @@ public class Main {
         a.eat(fido);
 
         a.eat(a);   // mangiare se stessi si può fare
-
 */
+
     }
 
 }

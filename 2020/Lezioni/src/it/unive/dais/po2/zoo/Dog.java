@@ -1,4 +1,4 @@
-package it.unive.dais.po2.aa2019_20.zoo;
+package it.unive.dais.po2.zoo;
 
 public class Dog extends ColoredAnimal<Dog> {
 
