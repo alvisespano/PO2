@@ -1,0 +1,29 @@
+package it.unive.dais.po2.myjdk;
+
+public class MyHashMap<K, V> implements MyMap<K, V> {
+    private MyArrayList<Pair<K, V>> m;
+
+    @Override
+    public V get(K k) throws NotFoundException {
+        MyIterator<Pair<K, V>> it = m.iterator();
+        while (it.hasNext()) {
+            Pair<K, V> p = it.next();
+            if (p.first.equals(k)) return p.second;
+        }
+        throw new NotFoundException();
+    }
+
+    @Override
+    public void put(K k, V v) {
+        MyIterator<Pair<K, V>> it = m.iterator();
+        while (it.hasNext()) {
+            Pair<K, V> p = it.next();
+            if (p.first.equals(k)) {
+                p.second = v;
+                return;
+            }
+            // TODO: fare la stessa cosa con le coppie immutabili
+        }
+        m.add(new Pair<>(k, v));
+    }
+}
