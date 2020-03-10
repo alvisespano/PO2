@@ -1,5 +1,6 @@
 package it.unive.dais.po2.myjdk;
 
+import org.jetbrains.annotations.Nullable;
 
 public class MyLinkedList<T> implements MyList<T> {
 
@@ -8,7 +9,7 @@ public class MyLinkedList<T> implements MyList<T> {
         return null;
     }
 
-    private class Node {
+    protected class Node {
         public T data;
         public Node next;
         public Node(T data, Node next) {
@@ -17,7 +18,8 @@ public class MyLinkedList<T> implements MyList<T> {
         }
     }
 
-    private Node head;
+    @Nullable
+    protected Node head;
 
     public MyLinkedList() {
         head = null;
