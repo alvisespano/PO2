@@ -1,4 +1,4 @@
-package it.unive.dais.po2.myjdk;
+package it.unive.dais.po2.other;
 
 import java.util.*;
 
@@ -46,6 +46,7 @@ public class IteratorTest {
             System.out.println(r);
         }
 
+        void populate();
     }
 
     public static class MyIntegerArrayList extends ArrayList<Integer> implements Summable {
@@ -54,6 +55,7 @@ public class IteratorTest {
             super();
         }
 
+        @Override
         public void populate() {
             add(7);
             add(2);
