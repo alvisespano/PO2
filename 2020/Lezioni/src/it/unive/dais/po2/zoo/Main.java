@@ -7,8 +7,8 @@ import java.util.Iterator;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("hello world!");
 
+        // TODO: provare a mettere a posto in modo che compili
 /*        Dog fido = new Dog(15, "bruno");
         Dog baldo = new Dog(20, "bianco");
         Animal jackie = new Dog(2, "nero");
@@ -25,7 +25,7 @@ public class Main {
 
         selene.eat(fido);
 
-        Animal a = new Persian(6);
+        Animal a = new Persian(6, fido);
         a.meow(); // NON COMPILA
         a.eat(fido);
 

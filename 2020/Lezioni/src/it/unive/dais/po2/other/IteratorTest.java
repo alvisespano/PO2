@@ -1,8 +1,8 @@
-package it.unive.dais.po2.misc;
+package it.unive.dais.po2.other;
 
 import java.util.*;
 
-public class SummableTest {
+public class IteratorTest {
 
     public static void populate(Collection<Integer> a) {
         a.add(7);

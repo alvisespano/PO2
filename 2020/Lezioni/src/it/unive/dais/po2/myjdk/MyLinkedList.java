@@ -1,5 +1,6 @@
 package it.unive.dais.po2.myjdk;
 
+
 import org.jetbrains.annotations.Nullable;
 
 public class MyLinkedList<T> implements MyList<T> {
