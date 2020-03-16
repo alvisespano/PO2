@@ -11,6 +11,7 @@ public class MyLinkedList<T> implements MyList<T> {
         return null;
     }
 
+    // TODO: come esercizio provare a rendere questa classe statica in modo che abbia il suo generic; e poi modificare MyLinkedList opportunamente
     protected class Node {
         public T data;
         public Node next;
