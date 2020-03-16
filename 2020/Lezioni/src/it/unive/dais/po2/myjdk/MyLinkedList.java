@@ -2,6 +2,7 @@ package it.unive.dais.po2.myjdk;
 
 import org.jetbrains.annotations.Nullable;
 
+// TODO: sistemare le possibili eccezioni NullPointerException
 public class MyLinkedList<T> implements MyList<T> {
 
     @Override
@@ -63,7 +64,7 @@ public class MyLinkedList<T> implements MyList<T> {
         int r = 0;
         Node n = head;
         for (; n.next != null && r < i; ++r);
-        n.next = new Node(x, n.next);   // TODO: da testare
+        n.next = new Node(x, n.next);
     }
 
 
@@ -73,14 +74,14 @@ public class MyLinkedList<T> implements MyList<T> {
         Node n = head;
         for (; n.next != null && r < i - 1; ++r);
         if (n.next != null) {
-            n.next = n.next.next;   // TODO: da testare
+            n.next = n.next.next;
         }
         return true;
     }
 
     @Override
     public boolean remove(T x) {
-        // TODO: da implementare
+        // TODO: da fare per casa
         throw new RuntimeException("not implemented");
     }
 

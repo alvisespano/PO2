@@ -19,10 +19,10 @@ public class MyHashMap<K, V> implements MyMap<K, V> {
         while (it.hasNext()) {
             Pair<K, V> p = it.next();
             if (p.first.equals(k)) {
+                // TODO: fare la stessa cosa ma con le coppie immutabili
                 p.second = v;
                 return;
             }
-            // TODO: fare la stessa cosa con le coppie immutabili
         }
         m.add(new Pair<>(k, v));
     }

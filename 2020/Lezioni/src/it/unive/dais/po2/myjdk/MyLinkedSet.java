@@ -1,5 +1,6 @@
 package it.unive.dais.po2.myjdk;
 
+// TODO: LinkedSet non è un bel nome, non si capisce: meglio trovarne un'altro
 public class MyLinkedSet<T> implements MySet<T> {
     protected MyLinkedList<T> l;
 

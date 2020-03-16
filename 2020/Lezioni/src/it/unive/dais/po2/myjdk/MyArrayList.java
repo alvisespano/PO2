@@ -1,5 +1,6 @@
 package it.unive.dais.po2.myjdk;
 
+// TODO: togliere il prefisso My da tutti i nomi dei tipi e mostrare la differenza tra tipi omonimi in package diversi
 public class MyArrayList<T> implements MyList<T> {
 
     private Object[] a;
