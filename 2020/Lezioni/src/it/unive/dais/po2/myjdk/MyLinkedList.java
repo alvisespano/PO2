@@ -1,5 +1,6 @@
 package it.unive.dais.po2.myjdk;
 
+
 import org.jetbrains.annotations.Nullable;
 
 // TODO: sistemare le possibili eccezioni NullPointerException
