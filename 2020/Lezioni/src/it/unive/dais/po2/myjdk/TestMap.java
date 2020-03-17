@@ -5,7 +5,7 @@ public class TestMap {
     public static void main(String[] args) {
         try {
 
-            MyMap<String, Integer> m = new MyHashMap<>();
+            MyMap<String, Integer> m = new MyIdentityMap<>();
             m.put("alvise", 42);
             m.put("francesco", 12);
             m.put("gianni", 56);

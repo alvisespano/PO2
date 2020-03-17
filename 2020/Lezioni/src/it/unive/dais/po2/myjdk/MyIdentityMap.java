@@ -1,11 +1,14 @@
 package it.unive.dais.po2.myjdk;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class MyIdentityMap<K, V> implements MyMap<K, V> {
-    private MyArrayList<Pair<K, V>> m;
+    private ArrayList<Pair<K, V>> m;
 
     @Override
     public V get(K k) throws NotFoundException {
-        MyIterator<Pair<K, V>> it = m.iterator();
+        Iterator<Pair<K, V>> it = m.iterator();
         while (it.hasNext()) {
             Pair<K, V> p = it.next();
             if (p.first.equals(k)) return p.second;
@@ -15,7 +18,7 @@ public class MyIdentityMap<K, V> implements MyMap<K, V> {
 
     @Override
     public void put(K k, V v) {
-        MyIterator<Pair<K, V>> it = m.iterator();
+        Iterator<Pair<K, V>> it = m.iterator();
         while (it.hasNext()) {
             Pair<K, V> p = it.next();
             if (p.first.equals(k)) {
@@ -29,6 +32,6 @@ public class MyIdentityMap<K, V> implements MyMap<K, V> {
 
     @Override
     public void clear() {
-        m = new MyArrayList<>();
+        m = new ArrayList<>();
     }
 }
