@@ -1,9 +1,19 @@
 package it.unive.dais.po2.myjdk;
 
+/*
+* Refactoring: significa prendere del codice (gerarchia di classi nel caso di Java) e
+*   e riorganizzarle in modo da ripulirle e migliori.
+*/
+
+/**
+ * MyArrayList è una lista di MyList senza puntatore al prossimo nodo
+ * ma con un indice per identificare la cella
+ * @param <T>
+ */
 public class MyArrayList<T> implements MyList<T> {
 
     private Object[] a;
-    private int actualSize;
+    private int actualSize; // dimensione virtuale: vera dimensione dell'array
 
     public MyArrayList() {
         this.a = new Object[100];
@@ -13,23 +23,42 @@ public class MyArrayList<T> implements MyList<T> {
     @Override
     public T get(int i) throws OutOfBoundsException {
         if (i >= actualSize) throw new OutOfBoundsException();
-        //noinspection unchecked
-        return (T) a[i];
+        // noinspection unchecked <-- suppressed statement: IntelliJ spegne il warning
+        return (T) a[i]; // cast non controllato
     }
 
+    /**
+     * Metodo size
+     * @return actualsize: vera grandezza dell'array
+     */
     @Override
     public int size() {
         return actualSize;
     }
 
+    /**
+     * Metodo add
+     * @param x elemento da aggiungere all'array di Object
+     */
     @Override
     public void add(T x) {
+        /*
+        * Se arrivo alla fine dell'array lo rialloco
+        */
         if (actualSize >= a.length) {
             Object[] a2 = new Object[a.length + 100];
+            /*
+            *  Arraycopy è un metodo statico [IntelliJ scrive in italico i metodi statici]
+            */
             System.arraycopy(a, 0, a2, 0, a.length);
-            a = a2;
+            /* Manual copy of ARRAYCOPY
+            *  for(int i = 0; i < a.length; ++i)
+            *       a2[i] = a[i];
+            *  a = a2;
+            */
+            a = a2; // BLIT: assegnamento fa perdere il riferimento al vecchio array che il garbage collector eliminerà
         }
-        a[actualSize++] = x;
+        a[actualSize++] = x; // actualsize cresce di volta in volta
     }
 
     @Override
