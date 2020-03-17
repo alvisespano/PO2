@@ -1,7 +1,7 @@
 package it.unive.dais.po2.myjdk;
 
 // TODO: togliere il prefisso My da tutti i nomi dei tipi e mostrare la differenza tra tipi omonimi in package diversi
-public class MyArrayList<T> implements MyList<T> {
+public class MyArrayList<T> extends MyAbstractCollection<T> implements MyList<T> {
 
     private Object[] a;
     private int actualSize;
@@ -11,9 +11,12 @@ public class MyArrayList<T> implements MyList<T> {
         this.actualSize = 0;
     }
 
+
+
     @Override
     public T get(int i) throws OutOfBoundsException {
-        if (i >= actualSize) throw new OutOfBoundsException();
+        if (i >= actualSize)
+            throw new OutOfBoundsException("get: invalid position " + i);
         //noinspection unchecked
         return (T) a[i];
     }
@@ -64,6 +67,8 @@ public class MyArrayList<T> implements MyList<T> {
     public void clear() {
         this.actualSize = 0;
     }
+
+
 
     @Override
     public MyIterator<T> iterator() {

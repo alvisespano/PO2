@@ -8,7 +8,8 @@ public interface MyCollection<T> extends MyIterable<T> {
     boolean remove(T x);
     void clear();
 
-    default boolean isEmpty() {
+    /*default boolean isEmpty() {
         return size() == 0;
-    }
+    }*/
+    boolean isEmpty();
 }

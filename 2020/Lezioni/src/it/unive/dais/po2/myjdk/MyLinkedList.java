@@ -57,7 +57,7 @@ public class MyLinkedList<T> implements MyList<T> {
     public T get(int pos) throws OutOfBoundsException {
         Node n = head;
         for (; pos > 0; --pos)
-            if ((n = head.next) == null) throw new OutOfBoundsException();
+            if ((n = head.next) == null) throw new OutOfBoundsException("get: invalid position " + pos);
         return n.data;
     }
 
