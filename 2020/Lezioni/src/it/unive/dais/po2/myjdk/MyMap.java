@@ -1,6 +1,11 @@
 package it.unive.dais.po2.myjdk;
 
 /**
+ * L'interfaccia MyMap definisce mappe generali.
+ * Si possono fare le seguenti operazioni:
+ *      - get
+ *      - put
+ *      - clear
  * Il concetto di mappa è rappresentato da un interfaccia
  * @param <K> key [valore generale]
  * @param <V> value
@@ -29,4 +34,6 @@ public interface MyMap<K, V> {
     *   add(new Pair<>(k, v)); // add ereditata da collection
     * }
     */
+
+    void clear();
 }

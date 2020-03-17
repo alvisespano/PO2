@@ -22,7 +22,8 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public T get(int i) throws OutOfBoundsException {
-        if (i >= actualSize) throw new OutOfBoundsException();
+        if (i >= actualSize)
+            throw new OutOfBoundsException("get: invalid position " + i);
         // noinspection unchecked <-- suppressed statement: IntelliJ spegne il warning
         return (T) a[i]; // cast non controllato
     }
@@ -61,6 +62,11 @@ public class MyArrayList<T> implements MyList<T> {
         a[actualSize++] = x; // actualsize cresce di volta in volta
     }
 
+    /**
+     * add alla quale si può specificare la posizione dove aggiungere l'elemento.
+     * @param i indice dove aggiungere l'elemento
+     * @param x elemento da aggiungere
+     */
     @Override
     public void add(int i, T x) {
         // TODO: da fare per casa

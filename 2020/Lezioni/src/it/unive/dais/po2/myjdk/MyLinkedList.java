@@ -41,7 +41,8 @@ public class MyLinkedList<T> implements MyList<T> {
         }
     }
 
-    @Nullable // annotation che aiuta il compilatore di Java
+    // annotation che aiuta il compilatore di Java
+    @Nullable
     protected Node head;
 
     public MyLinkedList() {
@@ -92,7 +93,8 @@ public class MyLinkedList<T> implements MyList<T> {
     public T get(int pos) throws OutOfBoundsException {
         Node n = head;
         for (; pos > 0; --pos)
-            if ((n = head.next) == null) throw new OutOfBoundsException();
+            if ((n = head.next) == null)
+                throw new OutOfBoundsException("Get: invalid position " + pos);
         return n.data;
     }
 
