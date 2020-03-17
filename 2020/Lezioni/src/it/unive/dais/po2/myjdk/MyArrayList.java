@@ -1,7 +1,7 @@
 package it.unive.dais.po2.myjdk;
 
 // TODO: togliere il prefisso My da tutti i nomi dei tipi e mostrare la differenza tra tipi omonimi in package diversi
-public class MyArrayList<T> extends MyAbstractCollection<T> implements MyList<T> {
+public class MyArrayList<T> implements MyList<T> {
 
     private Object[] a;
     private int actualSize;
@@ -10,7 +10,6 @@ public class MyArrayList<T> extends MyAbstractCollection<T> implements MyList<T>
         this.a = new Object[100];
         this.actualSize = 0;
     }
-
 
 
     @Override
