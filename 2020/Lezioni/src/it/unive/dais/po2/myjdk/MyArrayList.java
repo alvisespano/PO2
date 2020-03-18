@@ -1,8 +1,6 @@
 package it.unive.dais.po2.myjdk;
 
-<<<<<<< HEAD
 // TODO: togliere il prefisso My da tutti i nomi dei tipi e mostrare la differenza tra tipi omonimi in package diversi
-=======
 /*
 * Refactoring: significa prendere del codice (gerarchia di classi nel caso di Java) e
 *   e riorganizzarle in modo da ripulirle e migliori.
@@ -13,7 +11,7 @@ package it.unive.dais.po2.myjdk;
  * ma con un indice per identificare la cella
  * @param <T>
  */
->>>>>>> PO2
+
 public class MyArrayList<T> implements MyList<T> {
 
     private Object[] a;
@@ -29,13 +27,9 @@ public class MyArrayList<T> implements MyList<T> {
     public T get(int i) throws OutOfBoundsException {
         if (i >= actualSize)
             throw new OutOfBoundsException("get: invalid position " + i);
-<<<<<<< HEAD
-        //noinspection unchecked
-        return (T) a[i];
-=======
+
         // noinspection unchecked <-- suppressed statement: IntelliJ spegne il warning
         return (T) a[i]; // cast non controllato
->>>>>>> PO2
     }
 
     /**
