@@ -101,14 +101,18 @@ public class IteratorTest {
             l.add(i);
         }
 
-
+        System.out.println("\nIterator");
         Iterator<Integer> it = l.iterator();
         while (it.hasNext()) {
             int n = it.next();
             System.out.println(n);
         }
 
-
+        /* ZUCCHERO SINTATTICO DEL CICLO SOPRA
+        *  Per ogni intero n, contenuto nella collection l
+        *  fai il blocco (stampa(n))
+        */
+        System.out.println("\nFor each");
         for (int n : l) {
             System.out.println(n);
         }
@@ -136,6 +140,13 @@ public class IteratorTest {
     * Quando si EREDITA, si eredita codice.
     * Quando si IMPLEMENTANO interfacce, sono sempre supertipo, non si eredita codice ma solo firme.
     *
+    */
+
+    /* LEZIONE DEL 17/03/2020 (min 25)
+    *  ITERABLE: interfaccia che definisce l'oggetto iteratore
+    * ITERATOR:  oggetto che si contiene il metodi:
+    *               - next();
+    *               - hasNext();
     */
 
 }
