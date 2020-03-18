@@ -23,6 +23,11 @@ public class RevArrayList<T> extends ArrayList<T> {
         super(cap);
     }
 
+    /**
+     * Classe interna statica = Classe globale
+     * Non può vedere il this della calsse che lo contiene
+     * @param <T>
+     */
     public static class RevIterator__static<T> implements Iterator<T> {
         private List<T> l;
         private int pos;
@@ -47,6 +52,7 @@ public class RevArrayList<T> extends ArrayList<T> {
      * Definizione di una classe interna non statica che
      * implementa Iterator<T> ovvero
      * il T della classe che la contiene.
+     * Può vedere il this della classe che lo contiene
      */
     private class RevIterator__nonstatic implements Iterator<T> {
 
@@ -86,6 +92,8 @@ public class RevArrayList<T> extends ArrayList<T> {
         //return new RevIterator<T>(this);            // classe globale
         //return new RevIterator__static<T>(this);    // classe nested STATICA
         //return new RevIterator__nonstatic();        // classe nested NON STATIC
+        // this è la collection che voglio che iteri
+
 
         /* Dalla n del new al ; dopo la } è un espressione
         *  [return Espressione;]
@@ -148,9 +156,9 @@ public class RevArrayList<T> extends ArrayList<T> {
 *   L'aggancio tra iteratore e Command pattern sono le anonymus class.
 *   Iterator: nome di un design pattern.
 *   Anonymus Class: nome di un feature del linguaggio Java (non centra con i design pattern).
-*
-*
-*
-*
-*
-* */
+*/
+
+/*
+* Tra classe globale, classe non statica e anonymus class sono tre cose diverse.
+* 
+*/
