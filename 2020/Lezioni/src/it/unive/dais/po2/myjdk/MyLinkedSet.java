@@ -1,13 +1,13 @@
 package it.unive.dais.po2.myjdk;
 
-<<<<<<< HEAD
+
 // TODO: LinkedSet non è un bel nome, non si capisce: meglio trovarne un'altro
-=======
+
 /**
  * Fatto con una linked list.
  * @param <T>
  */
->>>>>>> PO2
+
 public class MyLinkedSet<T> implements MySet<T> {
     protected MyLinkedList<T> l;
 

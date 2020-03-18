@@ -89,7 +89,7 @@ public class IteratorTest {
         }
     }
 
-<<<<<<< HEAD
+
 
 
 
@@ -115,7 +115,7 @@ public class IteratorTest {
 
     }
 
-=======
+
     /*
     * INSEGNAMENTO LEZIONE 1 del 07/03/2020
     * Si può programmare a metodi statici ai quali passi degli argomenti e loro fanno qualcosa su questi argomenti
@@ -126,6 +126,7 @@ public class IteratorTest {
     */
 
     /*
+    * SUBSUNCTION
     * Quando c'è troppa genericità ci sono dei problemi, perché non posso fare le operazioni con qualsiasi tipo.
     * Un'interfaccia a volte è sbagliata che sia generica per un qualsiasi tipo T.
     * Generalizzare troppo ci porta a non implementare nulla, e lasciare implemenatre ai sottotipi.
@@ -136,5 +137,5 @@ public class IteratorTest {
     * Quando si IMPLEMENTANO interfacce, sono sempre supertipo, non si eredita codice ma solo firme.
     *
     */
->>>>>>> PO2
+
 }

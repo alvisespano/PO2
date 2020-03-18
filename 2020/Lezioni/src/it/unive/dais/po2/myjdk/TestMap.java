@@ -3,20 +3,6 @@ package it.unive.dais.po2.myjdk;
 public class TestMap {
 
     public static void main(String[] args) {
-<<<<<<< HEAD
-        try {
-
-            MyMap<String, Integer> m = new MyIdentityMap<>();
-            m.put("alvise", 42);
-            m.put("francesco", 12);
-            m.put("gianni", 56);
-            m.put("pippo", 78);
-
-            int eta_di_gianni = m.get("gianni");
-            System.out.println("risultato: " + eta_di_gianni);
-
-            m.clear();
-=======
 
         try {
             MyMap<String, Integer> m = new MyIdentityMap<>(); // basta cambiare quest'ultimo MyIdentityMap in MyHashMap se voglio usare le hashMap
@@ -30,15 +16,14 @@ public class TestMap {
             System.out.println("Risultato: " + eta_di_gianni);
 
              m.clear(); // <- se subsumo con HashMap non ho la clear(), se dò MyHashMap non ho problemi
->>>>>>> PO2
+
 
         } catch (NotFoundException e) {
             e.printStackTrace();
         }
     }
 }
-<<<<<<< HEAD
-=======
+
 
 /*
 *
@@ -66,4 +51,4 @@ public class TestMap {
 * è per poter cambiare il tipo dell'oggetto che si costruisce
 * piuttosto che cambiare tutto il resto del codice.
  */
->>>>>>> PO2
+

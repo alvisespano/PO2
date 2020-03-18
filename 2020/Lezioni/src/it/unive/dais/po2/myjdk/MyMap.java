@@ -26,8 +26,8 @@ public interface MyMap<K, V> {
      * @param v
      */
     void put(K k, V v);
-<<<<<<< HEAD
-=======
+
+
 
     /*
     * Metodo che data una chiave e un valore li inserisce in una coppia
@@ -37,6 +37,6 @@ public interface MyMap<K, V> {
     * }
     */
 
->>>>>>> PO2
+
     void clear();
 }

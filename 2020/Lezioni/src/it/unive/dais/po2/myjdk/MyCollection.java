@@ -29,12 +29,10 @@ public interface MyCollection<T> extends MyIterable<T> {
         return size() == 0;
     }
 
-<<<<<<< HEAD
-=======
     /*
     * L'interfaccia non ha un metodo getter.
     * Quando uno ha una collection non può gettare,
     * quando uno ha una lista può gettare.
     */
->>>>>>> PO2
+
 }
