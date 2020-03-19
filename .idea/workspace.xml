@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dbc3e53-cfc3-48ed-a56f-1654f644f7cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/CallbackTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/RevArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/RevArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +15,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,21 +66,46 @@
       <workItem from="1584437730361" duration="3240000" />
       <workItem from="1584456830317" duration="2308000" />
       <workItem from="1584607999939" duration="78000" />
+      <workItem from="1584608137286" duration="3187000" />
     </task>
+    <task id="LOCAL-00001" summary=".idea committed">
+      <created>1584608190454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584608190454</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=".idea committed" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea committed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="235" key="#HTTP_Proxy" timestamp="1584209211096">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="0" y="235" key="#HTTP_Proxy/0.0.2048.1112@0.0.2048.1112" timestamp="1584209211096" />
+    <state x="274" y="362" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584608323760">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="274" y="362" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1584608323760" />
+    <state x="318" y="269" key="#com.intellij.ide.util.MemberChooser" timestamp="1584611183635">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="318" y="269" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1584611183635" />
     <state x="86" y="307" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584211748700">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="86" y="307" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1584211748700" />
+    <state x="16" y="154" key="CommitChangelistDialog2" timestamp="1584608189808">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="16" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1584608189808" />
     <state x="136" y="302" key="FileChooserDialogImpl" timestamp="1584209232588">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

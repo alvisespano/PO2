@@ -137,7 +137,8 @@ public class RevArrayList<T> extends ArrayList<T> {
 *       - <Eventuali Generics>
 *       - ()
 *       - {
-*               - corpo fatto di metodi
+ *               - @Override dei metodi dell'interfaccia
+ *               - corpo fatto di metodi
 *       - };
 *   serve a creare al volo degli oggetti
 *   a cui dare l'implementazione dei metodi,
@@ -164,9 +165,3 @@ public class RevArrayList<T> extends ArrayList<T> {
 *
 */
 
-/*
-* CALL BACK: funzione che passi a qualcun altro
-* è un oggetto che ha un metodo solo che si può chiamare.
-*
-*
-* */
