@@ -24,8 +24,9 @@ public class RevArrayList<T> extends ArrayList<T> {
     }
 
     /**
-     * Classe interna statica = Classe globale
-     * Non può vedere il this della calsse che lo contiene
+     * Classe interna statica = Classe globale.
+     * Non può vedere il this della calsse che lo contiene.
+     * Questa classe funziona con qualsiasi List (non Collection perché non ha get).
      * @param <T>
      */
     public static class RevIterator__static<T> implements Iterator<T> {
@@ -160,5 +161,12 @@ public class RevArrayList<T> extends ArrayList<T> {
 
 /*
 * Tra classe globale, classe non statica e anonymus class sono tre cose diverse.
-* 
+*
 */
+
+/*
+* CALL BACK: funzione che passi a qualcun altro
+* è un oggetto che ha un metodo solo che si può chiamare.
+*
+*
+* */
