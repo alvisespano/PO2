@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dbc3e53-cfc3-48ed-a56f-1654f644f7cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/CallbackTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/RevArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/RevArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +49,26 @@
       <recent name="it.unive.dais.po2.myjdk" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.myjdk.TestMap" />
+      <module name="2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unive.dais.po2.myjdk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestMap" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -66,7 +84,7 @@
       <workItem from="1584437730361" duration="3240000" />
       <workItem from="1584456830317" duration="2308000" />
       <workItem from="1584607999939" duration="78000" />
-      <workItem from="1584608137286" duration="3187000" />
+      <workItem from="1584608137286" duration="3738000" />
     </task>
     <task id="LOCAL-00001" summary=".idea committed">
       <created>1584608190454</created>
@@ -90,6 +108,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="0" y="235" key="#HTTP_Proxy/0.0.2048.1112@0.0.2048.1112" timestamp="1584209211096" />
+    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584612169321">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1584612169321" />
     <state x="274" y="362" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584608323760">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
