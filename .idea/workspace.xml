@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dbc3e53-cfc3-48ed-a56f-1654f644f7cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2020/2020.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyHashSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyLinkedSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyLinkedSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MySet.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MySet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/IteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/IteratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +64,7 @@
       <workItem from="1584371954624" duration="7730000" />
       <workItem from="1584437730361" duration="3240000" />
       <workItem from="1584456830317" duration="2308000" />
+      <workItem from="1584607999939" duration="78000" />
     </task>
     <servers />
   </component>
@@ -93,10 +84,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="136" y="302" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1584209232588" />
-    <state x="59" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1584456829504">
+    <state x="59" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1584608138248">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="59" y="382" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1584456829504" />
+    <state x="59" y="382" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1584608138248" />
     <state x="85" y="454" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584211766239">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
