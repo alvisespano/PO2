@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7dbc3e53-cfc3-48ed-a56f-1654f644f7cc" name="Default Changelist" comment="">
+    <list default="true" id="7dbc3e53-cfc3-48ed-a56f-1654f644f7cc" name="Default Changelist" comment="Lezione2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/CallbackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/CallbackTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +85,7 @@
       <workItem from="1584437730361" duration="3240000" />
       <workItem from="1584456830317" duration="2308000" />
       <workItem from="1584607999939" duration="78000" />
-      <workItem from="1584608137286" duration="3883000" />
+      <workItem from="1584608137286" duration="4026000" />
     </task>
     <task id="LOCAL-00001" summary=".idea committed">
       <created>1584608190454</created>
@@ -132,6 +133,22 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="136" y="302" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1584209232588" />
+    <state width="979" height="305" key="GridCell.Tab.0.bottom" timestamp="1584612910432">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1584612910432" />
+    <state width="979" height="305" key="GridCell.Tab.0.center" timestamp="1584612910432">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1584612910432" />
+    <state width="979" height="305" key="GridCell.Tab.0.left" timestamp="1584612910432">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1584612910432" />
+    <state width="979" height="305" key="GridCell.Tab.0.right" timestamp="1584612910432">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1584612910432" />
     <state x="59" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1584608138248">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
