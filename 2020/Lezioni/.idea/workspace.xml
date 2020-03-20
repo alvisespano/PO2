@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="" />
+    <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/RevArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/RevArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/RevTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/RevTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,14 +44,18 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../LabCloud/RMITest1" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="it.unive.dais.po2.myjdk" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestMap">
+  <component name="RunManager" selected="Application.RevTest">
     <configuration name="IteratorTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.IteratorTest" />
       <module name="Lezioni" />
@@ -96,10 +106,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestList" />
-      <item itemvalue="Application.TestMap" />
       <item itemvalue="Application.IteratorTest" />
       <item itemvalue="Application.RevTest" />
+      <item itemvalue="Application.TestList" />
+      <item itemvalue="Application.TestMap" />
       <item itemvalue="Application.Zoo" />
     </list>
     <recent_temporary>
@@ -109,7 +119,7 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\spano\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -142,38 +152,46 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="690" y="326" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1584456474325" />
-    <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1584463824743">
+    <state x="740" y="334" key="FileChooserDialogImpl" timestamp="1584617247364">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1584463824743" />
-    <state width="1877" height="313" key="GridCell.Tab.0.center" timestamp="1584463824743">
+    <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1584702313053">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1584463824743" />
-    <state width="1877" height="313" key="GridCell.Tab.0.left" timestamp="1584463824743">
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1584702313053" />
+    <state width="1877" height="313" key="GridCell.Tab.0.center" timestamp="1584702313053">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1584463824743" />
-    <state width="1877" height="313" key="GridCell.Tab.0.right" timestamp="1584463824743">
+    <state width="1877" height="313" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1584702313053" />
+    <state width="1877" height="313" key="GridCell.Tab.0.left" timestamp="1584702313053">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1584463824743" />
-    <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1584463482374">
+    <state width="1877" height="313" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1584702313053" />
+    <state width="1877" height="313" key="GridCell.Tab.0.right" timestamp="1584702313053">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1584463482374" />
-    <state width="1877" height="386" key="GridCell.Tab.1.center" timestamp="1584463482374">
+    <state width="1877" height="313" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1584702313053" />
+    <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1584613691250">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1584463482374" />
-    <state width="1877" height="386" key="GridCell.Tab.1.left" timestamp="1584463482374">
+    <state width="1877" height="386" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1584613691250" />
+    <state width="1877" height="386" key="GridCell.Tab.1.center" timestamp="1584613691250">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1584463482374" />
-    <state width="1877" height="386" key="GridCell.Tab.1.right" timestamp="1584463482374">
+    <state width="1877" height="386" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1584613691250" />
+    <state width="1877" height="386" key="GridCell.Tab.1.left" timestamp="1584613691250">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1584463482374" />
+    <state width="1877" height="386" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1584613691250" />
+    <state width="1877" height="386" key="GridCell.Tab.1.right" timestamp="1584613691250">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="386" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1584613691250" />
+    <state x="461" y="222" key="SettingsEditor" timestamp="1584616235838">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="461" y="222" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1584616235838" />
     <state x="664" y="473" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584352964962">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
