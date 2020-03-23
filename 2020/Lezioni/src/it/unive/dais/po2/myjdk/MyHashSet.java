@@ -1,5 +1,7 @@
 package it.unive.dais.po2.myjdk;
 
+import java.util.function.Function;
+
 public class MyHashSet<T> extends MyLinkedSet<T> {
     private HashFun<T> h;
 
@@ -25,6 +27,7 @@ public class MyHashSet<T> extends MyLinkedSet<T> {
         super();
         this.h = h;
     }
+
 
     public MyHashSet() {
         super();
