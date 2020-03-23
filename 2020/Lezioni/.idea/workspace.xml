@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="" />
+    <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/MyHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,10 +134,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1584458652904" />
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1584462897629">
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1584980225398">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1584462897629" />
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1584980225398" />
     <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584458651731">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

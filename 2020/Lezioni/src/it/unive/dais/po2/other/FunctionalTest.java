@@ -9,12 +9,6 @@ import java.util.function.Function;
 
 public class FunctionalTest {
 
-
-    public interface Function<T, S> {
-        S apply(T x);
-    }
-
-
     public static <A, B> Collection<B> map(Collection<A> l, Function<A, B> f) {
         Collection<B> c = new ArrayList<>();
         for (A a : l) {
@@ -35,6 +29,13 @@ public class FunctionalTest {
 
     }
 
+    private static class MiaFunzionePerMap implements Function<Integer, Integer> {
+        @Override
+        public Integer apply(Integer x) {
+            return x + 1;
+        }
+    }
+
     public static void main(String[] args) {
 
         List<Integer> l = new ArrayList<>();
@@ -42,6 +43,7 @@ public class FunctionalTest {
             l.add(i);
         }
         print(l);
+
 
         Collection<Integer> r = map(l, new Function<Integer, Integer>() {
             @Override
@@ -51,6 +53,9 @@ public class FunctionalTest {
         });
         // questa è la stessa cosa fatta con una lambda
         Collection<Integer> r2 = map(l, x -> x + 1);
+        // questa terza variante usa direttamente una classe NON-anonima
+        Collection<Integer> r3 = map(l, new MiaFunzionePerMap());
+
         print(l);
 
         /*
