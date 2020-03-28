@@ -9,6 +9,14 @@ import java.util.function.Function;
 
 public class FunctionalTest {
 
+    /**
+     * Map funzione che ritorna una collection di tutti i risultati
+     * @param l
+     * @param f
+     * @param <A>
+     * @param <B>
+     * @return
+     */
     public static <A, B> Collection<B> map(Collection<A> l, Function<A, B> f) {
         Collection<B> c = new ArrayList<>();
         for (A a : l) {
@@ -18,15 +26,36 @@ public class FunctionalTest {
         return c;
     }
 
+
+    /*
+    * La stampa non ha una computazione (void),
+    * è un side effect, modifica solo lo stato della macchina
+    * Non restituisce alcun risultato.
+    */
     public static <X> void print(Collection<X> c) {
-        map(c, new Function<X, Void>() {
+        /*
+         * void non è un tipo e non può essere usato come generics
+         * Void è un tipo
+         *      -> è una classe inventata solamente per esprimere sottoforma di tipo che non ritorni nulla
+         *          -> è per questo che alla fine c'è un return null;
+         */
+        map(c, new Function<X, Void>() {    //funzione che ritorna un tipo Collection<Void>
             @Override
             public Void apply(X x) {
                 System.out.println(x);
                 return null;
             }
         });
-
+        /*
+         * map(c, (Function<X, Void>) x -> {
+         *       System.out.println(x);
+         *       return null;
+         * });
+         *
+         * Semplificata
+         * map(c, x -> {System.out.println(x); return null;});
+         *        parametro -> {blocco espressioni}
+         */
     }
 
     private static class MiaFunzionePerMap implements Function<Integer, Integer> {
@@ -46,6 +75,7 @@ public class FunctionalTest {
         print(l);
 
 
+        // Collection<Integer> r = map(l, x -> x + 1); // lambda
         Collection<Integer> r = map(l, new Function<Integer, Integer>() {
             @Override
             public Integer apply(Integer x) {
@@ -59,18 +89,40 @@ public class FunctionalTest {
 
         print(l);
 
-        /*
-        TRADUZIONE DA ANONYMOUS CLASS A LAMBDA
-        LA LAMBDA E' UNO ZUCCHERO SINTATTICO PER UNA ANONYMOUS CLASS
-        Collection<B> r = map(l, new Function<A, B>() {
-            @Override
-            public B apply(A x) {
-                BODY;
-            }
-        });
 
-        Collection<B> r = map(l, x -> BODY);
-        */
+
 
     }
 }
+
+/*
+*       TRADUZIONE DA ANONYMOUS CLASS A LAMBDA
+*       LA LAMBDA E' UNO ZUCCHERO SINTATTICO PER UNA ANONYMOUS CLASS
+*       Collection<B> r = map(l, new Function<A, B>() {
+*           @Override
+*           public B apply(A x) {
+*               BODY;
+*           }
+*       });
+*
+*       Collection<B> r = map(l, x -> BODY);
+*/
+
+/*
+* ESPRESSIONI:  right value
+*               Esempio:
+*                   x > 0 ? x+1 : x-1;
+*
+* STATEMENT:    quello che sta su una riga sola con il ';' alla fine
+*               è un'istruzione o un blocco intero è uno statement
+*               (for { blocco } / if (cond) { blocco })
+*               Esempio:
+*                    if (x > 0)
+ *                       return x+1;
+ *                   else
+ *                       return x-1;
+*
+* Nelle Lambda se:
+*   - uso un'espressione da sola non occorrono le graffe.
+*   - se uso uno statement devo usare le graffe.
+*/
