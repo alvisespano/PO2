@@ -122,7 +122,9 @@ public class RevArrayList<T> extends ArrayList<T> {
 
             @Override
             public T next() {
-                return get(pos--);
+                T r = get(pos);
+                pos = pos - 2;
+                return r;
             }
         };
     }
