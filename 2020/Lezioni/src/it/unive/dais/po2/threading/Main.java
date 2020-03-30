@@ -38,11 +38,43 @@ public class Main {
 
 
     private static Random rnd = new Random();
+
     private static int rand(int a, int b) {
         return rnd.nextInt(b - a + 1) + a;
     }
 
+
+    public static abstract class Animale {
+        protected int peso;
+
+        public Animale(int p) {
+            this.peso = p;
+        }
+
+        public abstract void mangia(Animale a);
+    }
+
+    public static class Cane extends Animale {
+        public Cane(int p) {
+            super(p);
+        }
+
+        public void mangia(Animale a) {
+            peso += a.peso * 2;
+        }
+    }
+
+
     public static void main(String[] args) {
+
+
+        Animale a = new Animale(10) {
+            @Override
+            public void mangia(Animale a) {
+                peso += a.peso * 5;
+            }
+        };
+
 
         Collection<Thread> threads = new ArrayList<>();
         for (int i = 0; i < rand(5, 20); ++i) {
@@ -52,20 +84,28 @@ public class Main {
 
             // creazione di un thread passando un Runnable al costruttore
             // Runnable = lambda senza argomenti e senza ritorno
-            Thread t_ = new Thread(() -> {
+            Thread t1 = new Thread(() -> {
                 count(name, millis, times);
             });
-            // creazione di un thread tramite una anoymous class con override al volo del metodo run
-            Thread t__ = new Thread() {
+            // stessa cosa ma con la lambda dezuccherata in un Runnable
+            Thread t2 = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    count(name, millis, times);
+                }
+            });
+            // creazione di un thread tramite una anonymous class con override al volo del metodo run
+            Thread t3 = new Thread() {
                 @Override
                 public void run() {
                     count(name, millis, times);
                 }
             };
-            // creazione di una istanza di CounterThread, cioè di un sottotipo di Threada
+            // creazione di una istanza di CounterThread, cioè di un sottotipo di Thread
             // e passaggio dei parametri al costruttore
-            Thread t = new CounterThread(name, millis, times);
+            Thread t4 = new CounterThread(name, millis, times);
 
+            Thread t = t1;
             t.start();
             threads.add(t);
         }
