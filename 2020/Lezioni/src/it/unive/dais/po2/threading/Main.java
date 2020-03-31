@@ -3,7 +3,6 @@ package it.unive.dais.po2.threading;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
-import java.util.function.Function;
 
 public class Main {
 
@@ -36,45 +35,13 @@ public class Main {
         }
     }
 
-
     private static Random rnd = new Random();
 
     private static int rand(int a, int b) {
         return rnd.nextInt(b - a + 1) + a;
     }
 
-
-    public static abstract class Animale {
-        protected int peso;
-
-        public Animale(int p) {
-            this.peso = p;
-        }
-
-        public abstract void mangia(Animale a);
-    }
-
-    public static class Cane extends Animale {
-        public Cane(int p) {
-            super(p);
-        }
-
-        public void mangia(Animale a) {
-            peso += a.peso * 2;
-        }
-    }
-
-
     public static void main(String[] args) {
-
-
-        Animale a = new Animale(10) {
-            @Override
-            public void mangia(Animale a) {
-                peso += a.peso * 5;
-            }
-        };
-
 
         Collection<Thread> threads = new ArrayList<>();
         for (int i = 0; i < rand(5, 20); ++i) {
