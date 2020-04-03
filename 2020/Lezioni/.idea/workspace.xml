@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/esercizi/Es_RandomIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/esercizi/Es_SkipIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ConsumerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ConsumerProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
       <recent name="it.unive.dais.po2.myjdk" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RandomIter">
+  <component name="RunManager" selected="Application.ConsumerProducer">
     <configuration name="ConsumerProducer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.ConsumerProducer" />
       <module name="Lezioni" />
@@ -198,22 +197,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
-    <state width="1877" height="780" key="GridCell.Tab.0.bottom" timestamp="1585848337429">
+    <state width="1877" height="780" key="GridCell.Tab.0.bottom" timestamp="1585924238397">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1585848337429" />
-    <state width="1877" height="780" key="GridCell.Tab.0.center" timestamp="1585848337428">
+    <state width="1877" height="780" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
+    <state width="1877" height="780" key="GridCell.Tab.0.center" timestamp="1585924238397">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1585848337428" />
-    <state width="1877" height="780" key="GridCell.Tab.0.left" timestamp="1585848337428">
+    <state width="1877" height="780" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
+    <state width="1877" height="780" key="GridCell.Tab.0.left" timestamp="1585924238397">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1585848337428" />
-    <state width="1877" height="780" key="GridCell.Tab.0.right" timestamp="1585848337428">
+    <state width="1877" height="780" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
+    <state width="1877" height="780" key="GridCell.Tab.0.right" timestamp="1585924238397">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1585848337428" />
+    <state width="1877" height="780" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
     <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1584613691250">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

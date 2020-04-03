@@ -1,8 +1,13 @@
 package it.unive.dais.po2.threading;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class ConsumerProducer {
 
@@ -11,6 +16,29 @@ public class ConsumerProducer {
     private static int rand(int a, int b) {
         return rnd.nextInt(b - a + 1) + a;
     }
+
+    // se fosse necessario synchronized
+    private static synchronized int rand__sync(int a, int b) {
+        return rnd.nextInt(b - a + 1) + a;
+    }
+
+    // se fosse necessario synchronized: dezuccherata
+    private static synchronized int rand__sync_desugared(int a, int b) {
+        synchronized (ConsumerProducer.class) {
+            return rnd.nextInt(b - a + 1) + a;
+        }
+    }
+
+    // se fosse necessario usare i lock
+    private static int rand__lock(int a, int b) {
+        ReentrantLock l = new ReentrantLock();
+        try {
+            return rnd.nextInt(b - a + 1) + a;
+        } finally {
+            l.unlock();
+        }
+    }
+
 
     private static void log(String msg) {
         Thread self = Thread.currentThread();
@@ -95,4 +123,5 @@ public class ConsumerProducer {
             e.printStackTrace();
         }
     }
+
 }
