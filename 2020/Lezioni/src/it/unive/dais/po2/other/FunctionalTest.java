@@ -58,6 +58,7 @@ public class FunctionalTest {
          */
     }
 
+
     private static class MiaFunzionePerMap implements Function<Integer, Integer> {
         @Override
         public Integer apply(Integer x) {
@@ -74,8 +75,9 @@ public class FunctionalTest {
         }
         print(l);
 
-
-        // Collection<Integer> r = map(l, x -> x + 1); // lambda
+        /* il tipo dell'espressione da new a } ha tipo Function<Integer, Integer>
+        * l'espressione ha lo stesso tipo della cosa che costruisco (dopo new)
+        */
         Collection<Integer> r = map(l, new Function<Integer, Integer>() {
             @Override
             public Integer apply(Integer x) {
@@ -125,4 +127,18 @@ public class FunctionalTest {
 * Nelle Lambda se:
 *   - uso un'espressione da sola non occorrono le graffe.
 *   - se uso uno statement devo usare le graffe.
-*/
+*
+* LAMBDA: il tipo è dedotto da Java (tipe inference, in Java, c'è solo nelle lambda)
+* Collection<Integer> r2 = map(l, x -> x + 1);
+* LAMBDA CON ARGOMENTO TIPATO (lambda with type inference)
+* Collection<Integer> r2 = map(l, (Integer x) -> x + 1);
+*
+* TYPE INFERENCE: tipi dedotti dal compilatore (solo nelle lambda, in Java)
+* Il tipo delle lambda è il tipo che avrebbe l'anonymus class di cui la lambda è zucchero sintattico,
+* ovvero il tipo di un'interfaccia
+*
+*
+*
+*
+* MIN 36:41 lezione 7
+ */
