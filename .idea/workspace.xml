@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2018/pitagora/pitagora.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2018/pitagora/pitagora.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019/TinyJDK/TinyJDK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2019/TinyJDK/TinyJDK.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2020/2020.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 20 6 19/Scritto PO2 20 6 19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 20 6 19/Scritto PO2 20 6 19.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 4 9 18/Scritto PO2 4 9 18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 4 9 18/Scritto PO2 4 9 18.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 6 9 19/Scritto PO2 6 9 19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 6 9 19/Scritto PO2 6 9 19.iml" afterDir="false" />
-    </list>
+    <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,10 +44,25 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1585394843641">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1585394843641" />
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586015855775">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586015855775" />
   </component>
 </project>
