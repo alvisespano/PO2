@@ -7,6 +7,7 @@
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
 >>>>>>> master
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ConsumerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ConsumerProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,17 +74,53 @@
     </key>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.TestMap">
     <configuration name="IteratorTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.IteratorTest" />
       <module name="Lezioni" />
 =======
   <component name="RunManager" selected="Application.Thread">
+=======
+  <component name="RunManager" selected="Application.ConsumerProducer">
+    <configuration name="ConsumerProducer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.ConsumerProducer" />
+      <module name="Lezioni" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Es_SkipIterator" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="esercizi.Es_SkipIterator" />
+      <module name="Lezioni" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> master
     <configuration name="IteratorTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.IteratorTest" />
       <module name="Lezioni" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
 >>>>>>> master
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProvaIterator" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="esercizi.ProvaIterator" />
+      <module name="Lezioni" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomIter" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="esercizi.Es_RandomIterator" />
+      <module name="Lezioni" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,11 +196,17 @@
     <list>
       <item itemvalue="Application.IteratorTest" />
       <item itemvalue="Application.RevTest" />
-      <item itemvalue="Application.Thread" />
       <item itemvalue="Application.TestList" />
       <item itemvalue="Application.TestMap" />
+<<<<<<< HEAD
+>>>>>>> master
+=======
+      <item itemvalue="Application.Thread" />
+      <item itemvalue="Application.ConsumerProducer" />
 >>>>>>> master
       <item itemvalue="Application.Zoo" />
+      <item itemvalue="Application.Es_SkipIterator" />
+      <item itemvalue="Application.RandomIter" />
     </list>
     <recent_temporary>
       <list>
@@ -219,18 +262,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585062759480">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585846538677">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585062759480" />
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1585062538175">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585846538677" />
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1585848158827">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1585062538175" />
-    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585062757447">
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1585848158827" />
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585846536786">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
+<<<<<<< HEAD
     <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585062757447" />
+>>>>>>> master
+=======
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585846536786" />
 >>>>>>> master
     <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584352220605">
       <screen x="0" y="0" width="1920" height="1160" />
@@ -282,22 +329,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
-    <state width="1877" height="385" key="GridCell.Tab.0.bottom" timestamp="1585068557608">
+    <state width="1877" height="780" key="GridCell.Tab.0.bottom" timestamp="1585924238397">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="385" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1585068557608" />
-    <state width="1877" height="385" key="GridCell.Tab.0.center" timestamp="1585068557608">
+    <state width="1877" height="780" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
+    <state width="1877" height="780" key="GridCell.Tab.0.center" timestamp="1585924238397">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="385" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1585068557608" />
-    <state width="1877" height="385" key="GridCell.Tab.0.left" timestamp="1585068557608">
+    <state width="1877" height="780" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
+    <state width="1877" height="780" key="GridCell.Tab.0.left" timestamp="1585924238397">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="385" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1585068557608" />
-    <state width="1877" height="385" key="GridCell.Tab.0.right" timestamp="1585068557608">
+    <state width="1877" height="780" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
+    <state width="1877" height="780" key="GridCell.Tab.0.right" timestamp="1585924238397">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="385" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1585068557608" />
+    <state width="1877" height="780" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
     <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1584613691250">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
