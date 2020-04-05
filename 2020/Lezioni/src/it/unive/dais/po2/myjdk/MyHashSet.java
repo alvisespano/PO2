@@ -59,7 +59,7 @@ public class MyHashSet<T> extends MyLinkedSet<T> {
      */
     public MyHashSet() {
         super();
-        /**
+        /*
          * TUTTE QUESTE ESPRESSIONI (qui sotto) SONO EQUIVALENTI
          * Sono 5 modi per rendere la classe HashSet in grado di
          * accettare una funzione di hashing come parametro di costruzione
@@ -112,20 +112,19 @@ public class MyHashSet<T> extends MyLinkedSet<T> {
             }
         };
 
-
         // non-anonymous instance
         this.h = new DefaultHashFun<T>();
         // non-anonymous non-static instance
         this.h = new DefaultHashFun__nonstatic();
     }
 
-    @Override
     /**
-     * funzione che prende un elemento da aggiungere al Set,
+     * Funzione che prende un elemento da aggiungere al Set,
      * controlla tutto il Set se quell'elemento c'è già,
      * se c'è non lo aggiunge, altrimenti lo aggiunge.
      * @param x generic type T
      */
+    @Override
     public void add(T x) {
         MyIterator<T> it = iterator();
         boolean found = false;

@@ -144,12 +144,24 @@ public class FunctionalTest {
 * Collection<Integer> r2 = map(l, x -> x + 1);
 * LAMBDA CON ARGOMENTO TIPATO (lambda with type inference)
 * Collection<Integer> r2 = map(l, (Integer x) -> x + 1);
-* ===========================================================================
+*
+*
+* ==============================================================================================
 * Una lambda, in Java, deve essere compatibile non solo con il tipo Function
 * ma con qualunque tipo, l'importante è che abbia:
 *  - un solo metodo;
 *  - un solo argomento in tipo di ritorno.
-*============================================================================
+*
+* Dentro alle lambda non si possono usare variabili non final che appartengono allo scope.
+*
+* La lambda è uno zucchero sintattico delle anonymus class aventi UN solo metodo.
+*
+* Le lambda permettono di scrivere dei pezzi di codice con scoping condiviso,
+* quindi posso accedere alle variabili che ho nello scope del chiamante
+* anche da dentro alla lambda, è un modo molto più moderno di programmare.
+*===============================================================================================
+*
+*
 * TYPE INFERENCE: tipi dedotti dal compilatore (solo nelle lambda, in Java)
 * Il tipo delle lambda è il tipo che avrebbe l'anonymus class di cui la lambda è zucchero sintattico,
 * ovvero il tipo di un'interfaccia

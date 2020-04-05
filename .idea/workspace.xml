@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2020/2020.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyHashSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,15 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RunManager">
+    <configuration name="MainThread" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.Main" />
+      <module name="2020" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -49,7 +58,8 @@
       <workItem from="1585388470545" duration="4272000" />
       <workItem from="1586015855638" duration="2486000" />
       <workItem from="1586025159118" duration="623000" />
-      <workItem from="1586074404313" duration="6080000" />
+      <workItem from="1586074404313" duration="6132000" />
+      <workItem from="1586098951597" duration="8234000" />
     </task>
     <task id="LOCAL-00001" summary="update 04/04/2020 17:58">
       <created>1586015940164</created>
@@ -65,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586018321915</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lezione 7 [LIVE] update05/04/2020 12:20">
+      <created>1586082033149</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586082033149</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,24 +104,37 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update 04/04/2020 17:58" />
     <MESSAGE value="update 04/04/2020 18:38" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 04/04/2020 18:38" />
+    <MESSAGE value="Lezione 7 [LIVE] update05/04/2020 12:20" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lezione 7 [LIVE] update05/04/2020 12:20" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586018321266">
+    <state x="230" y="218" key="#MainThread" timestamp="1586106446962">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586018321266" />
-    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586074405691">
+    <state x="230" y="218" key="#MainThread/0.0.2048.1112@0.0.2048.1112" timestamp="1586106446962" />
+    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586106506710">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586074405691" />
+    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586106506710" />
+    <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586106407118">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586106407118" />
+    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586082032343">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586082032343" />
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586098951792">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586098951792" />
     <state x="242" y="453" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586078313971">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="242" y="453" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2048.1112@0.0.2048.1112" timestamp="1586078313971" />
-    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1586018203071">
+    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1586105776187">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1586018203071" />
+    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1586105776187" />
   </component>
 </project>
