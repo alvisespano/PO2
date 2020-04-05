@@ -9,6 +9,12 @@ import java.util.function.Function;
 
 public class FunctionalTest {
 
+    /* Funzione sostituita da import java.util.function.Function;
+    *  public interface Function<T,S> {
+    *    S apply(T x);
+    *  }
+    */
+
     /**
      * Map funzione che ritorna una collection di tutti i risultati
      * @param l
@@ -59,6 +65,10 @@ public class FunctionalTest {
     }
 
 
+    /**
+     * Classe MiaFunzionePerMap
+     * Implementa Function<Integer, Integer>
+     */
     private static class MiaFunzionePerMap implements Function<Integer, Integer> {
         @Override
         public Integer apply(Integer x) {
@@ -86,7 +96,7 @@ public class FunctionalTest {
         });
         // questa è la stessa cosa fatta con una lambda
         Collection<Integer> r2 = map(l, x -> x + 1);
-        // questa terza variante usa direttamente una classe NON-anonima
+        // questa terza variante usa direttamente una classe NON-anonima, ha tipo MiaFunzionePerMap
         Collection<Integer> r3 = map(l, new MiaFunzionePerMap());
 
         print(l);
@@ -120,25 +130,29 @@ public class FunctionalTest {
 *               (for { blocco } / if (cond) { blocco })
 *               Esempio:
 *                    if (x > 0)
- *                       return x+1;
- *                   else
- *                       return x-1;
+*                       return x+1;
+*                   else
+*                       return x-1;
+*______________________________________________________________________________________________
+* LAMBDA EXPRESSION
 *
 * Nelle Lambda se:
 *   - uso un'espressione da sola non occorrono le graffe.
 *   - se uso uno statement devo usare le graffe.
 *
-* LAMBDA: il tipo è dedotto da Java (tipe inference, in Java, c'è solo nelle lambda)
+* LAMBDA: il tipo è dedotto da Java (type inference, in Java, c'è solo nelle lambda)
 * Collection<Integer> r2 = map(l, x -> x + 1);
 * LAMBDA CON ARGOMENTO TIPATO (lambda with type inference)
 * Collection<Integer> r2 = map(l, (Integer x) -> x + 1);
-*
+* ===========================================================================
+* Una lambda, in Java, deve essere compatibile non solo con il tipo Function
+* ma con qualunque tipo, l'importante è che abbia:
+*  - un solo metodo;
+*  - un solo argomento in tipo di ritorno.
+*============================================================================
 * TYPE INFERENCE: tipi dedotti dal compilatore (solo nelle lambda, in Java)
 * Il tipo delle lambda è il tipo che avrebbe l'anonymus class di cui la lambda è zucchero sintattico,
 * ovvero il tipo di un'interfaccia
 *
 *
-*
-*
-* MIN 36:41 lezione 7
  */

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2020/2020.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyHashSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +22,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -41,7 +47,9 @@
       <option name="presentableId" value="Default" />
       <updated>1585388468968</updated>
       <workItem from="1585388470545" duration="4272000" />
-      <workItem from="1586015855638" duration="2440000" />
+      <workItem from="1586015855638" duration="2486000" />
+      <workItem from="1586025159118" duration="623000" />
+      <workItem from="1586074404313" duration="6080000" />
     </task>
     <task id="LOCAL-00001" summary="update 04/04/2020 17:58">
       <created>1586015940164</created>
@@ -50,7 +58,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586015940164</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update 04/04/2020 18:38">
+      <created>1586018321915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586018321915</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,17 +86,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update 04/04/2020 17:58" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 04/04/2020 17:58" />
+    <MESSAGE value="update 04/04/2020 18:38" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 04/04/2020 18:38" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586015939318">
+    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586018321266">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586015939318" />
-    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586015855775">
+    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586018321266" />
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586074405691">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586015855775" />
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586074405691" />
+    <state x="242" y="453" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586078313971">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="242" y="453" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2048.1112@0.0.2048.1112" timestamp="1586078313971" />
     <state x="182" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1586018203071">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
