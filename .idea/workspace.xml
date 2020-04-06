@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/CallbackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/CallbackTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/IteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/IteratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/ConsumerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/ConsumerProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +34,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ConsumerProducer">
+    <configuration name="ConsumerProducer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.ConsumerProducer" />
+      <module name="2020" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainThread" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.Main" />
       <module name="2020" />
@@ -45,6 +49,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.MainThread" />
+      <item itemvalue="Application.ConsumerProducer" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -61,7 +69,8 @@
       <workItem from="1586025159118" duration="623000" />
       <workItem from="1586074404313" duration="6132000" />
       <workItem from="1586098951597" duration="8265000" />
-      <workItem from="1586158845551" duration="11005000" />
+      <workItem from="1586158845551" duration="11195000" />
+      <workItem from="1586178129603" duration="11927000" />
     </task>
     <task id="LOCAL-00001" summary="update 04/04/2020 17:58">
       <created>1586015940164</created>
@@ -91,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586108009172</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lezione 9 [LIVE] update 06/04/2020 13:40">
+      <created>1586173226978</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586173226978</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,45 +131,46 @@
     <MESSAGE value="update 04/04/2020 18:38" />
     <MESSAGE value="Lezione 7 [LIVE] update05/04/2020 12:20" />
     <MESSAGE value="Lezione 8 [LIVE] update05/04/2020 19:33" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lezione 8 [LIVE] update05/04/2020 19:33" />
+    <MESSAGE value="Lezione 9 [LIVE] update 06/04/2020 13:40" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lezione 9 [LIVE] update 06/04/2020 13:40" />
   </component>
   <component name="WindowStateProjectService">
     <state x="230" y="218" key="#MainThread" timestamp="1586106446962">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="230" y="218" key="#MainThread/0.0.2048.1112@0.0.2048.1112" timestamp="1586106446962" />
-    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586106506710">
+    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586179780297">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586106506710" />
-    <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586106407118">
+    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586179780297" />
+    <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586179774596">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586106407118" />
-    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586108008434">
+    <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586179774596" />
+    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586173225810">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586108008434" />
-    <state width="979" height="305" key="GridCell.Tab.0.bottom" timestamp="1586108018743">
+    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586173225810" />
+    <state width="979" height="305" key="GridCell.Tab.0.bottom" timestamp="1586179835563">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1586108018743" />
-    <state width="979" height="305" key="GridCell.Tab.0.center" timestamp="1586108018743">
+    <state width="979" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1586179835563" />
+    <state width="979" height="305" key="GridCell.Tab.0.center" timestamp="1586179835563">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1586108018743" />
-    <state width="979" height="305" key="GridCell.Tab.0.left" timestamp="1586108018743">
+    <state width="979" height="305" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1586179835563" />
+    <state width="979" height="305" key="GridCell.Tab.0.left" timestamp="1586179835563">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1586108018743" />
-    <state width="979" height="305" key="GridCell.Tab.0.right" timestamp="1586108018743">
+    <state width="979" height="305" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1586179835563" />
+    <state width="979" height="305" key="GridCell.Tab.0.right" timestamp="1586179835563">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1586108018743" />
-    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586159048312">
+    <state width="979" height="305" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1586179835563" />
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586178130987">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586159048312" />
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586178130987" />
     <state x="242" y="453" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586078313971">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
