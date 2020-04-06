@@ -39,7 +39,6 @@ public class ConsumerProducer {
         }
     }
 
-
     private static void log(String msg) {
         Thread self = Thread.currentThread();
         System.out.println(String.format("%s[%d]: %s", self.getName(), self.getId(), msg));
@@ -111,6 +110,7 @@ public class ConsumerProducer {
             Consumer c = new Consumer(l1, l2);
             Producer p1 = new Producer(l1, l2);
             Producer p2 = new Producer(l1, l2);
+
             c.start();
             p1.start();
             p2.start();
