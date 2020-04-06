@@ -95,6 +95,5 @@ public class CallbackTest {
        *  Per stampare: faccio la map e gli passo la funzione che fa la stampa
        */
        print(l);
-
     }
 }

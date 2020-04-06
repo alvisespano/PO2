@@ -145,7 +145,6 @@ public class FunctionalTest {
 * LAMBDA CON ARGOMENTO TIPATO (lambda with type inference)
 * Collection<Integer> r2 = map(l, (Integer x) -> x + 1);
 *
-*
 * ==============================================================================================
 * Una lambda, in Java, deve essere compatibile non solo con il tipo Function
 * ma con qualunque tipo, l'importante è che abbia:
@@ -161,10 +160,26 @@ public class FunctionalTest {
 * anche da dentro alla lambda, è un modo molto più moderno di programmare.
 *===============================================================================================
 *
-*
 * TYPE INFERENCE: tipi dedotti dal compilatore (solo nelle lambda, in Java)
 * Il tipo delle lambda è il tipo che avrebbe l'anonymus class di cui la lambda è zucchero sintattico,
 * ovvero il tipo di un'interfaccia
 *
+*_______________________________________________________________________________________________
 *
+* CLASSE ASTRATTA
+* Una classe astratta è una classe che ha almeno un metodo astratto
+* Il metodo astratto serve a dire che metto:
+*  - nome
+*  - #parametri
+*  - tipo di ritorno
+* ma non dico cosa fa, chi la eredita è obbligato a implementare quel metodo altrimenti
+* non può istanziare la classe.
+* Una classe astratta nel mondo dei thread sono un ottimo modo per realizzare un sistema di thread
+* in un linguaggio ad oggetti perché rappresenta:
+*  - un thread come una classe astratta, dove ci sono tutte le funzionalità:
+*       - per farlo partire
+*       - ucciderlo
+*       - aspettarlo
+*       - interromperlo
+*    manca solo cosa deve fare, che deve essere definito da chi sta sotto.
  */

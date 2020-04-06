@@ -88,21 +88,24 @@ public class Main {
 
 
             /* creazione di un thread passando un Runnable al costruttore
+             * Runnable = lambda senza parametri e senza ritorno
              *
              * Questa sintassi è l'invocazione di un costruttore della classe Thread.
              * Sintassi della costruzione degli oggetti:
              *  - new
              *  - NomeClasse
-             *  - argomenti per il costruttore
+             *  - argomenti per il costruttore (che in questo caso è una Runnable)
              *  - );
              */
-
             Thread t1 = new Thread(() -> {
                 count(name, millis, times);
             });
 
 
-            // stessa cosa ma con la lambda dezuccherata in un Runnable
+            /* stessa cosa ma con la lambda dezuccherata in un Runnable
+             *
+             * In questo caso l'anonymus class parte da new Runnable() { e finisce alla prima }
+             */
             Thread t2 = new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -114,13 +117,7 @@ public class Main {
             /* creazione di un thread tramite una anonymous class con override al volo del metodo run
              *
              * Questa è sintassi della classe anonima.
-             * Sintassi dell'anonymus class:
-             *  - new
-             *  - NomeClasse
-             *  - ()
-             *  - {
-             *  - Override del metodo
-             *  - }
+             * Sintassi dell'anonymus class: new NomeClasse() { Override del metodo }
              */
             Thread t3 = new Thread() {
                 @Override
@@ -135,9 +132,13 @@ public class Main {
             Thread t4 = new CounterThread(name, millis, times);
 
 
+
+            // rinnomino il Thread
             Thread t = t1;
-            t.start();  // il metodo start() serve a far spounare il thread
-                        // TO SPOUN, in SO, significa: creare un thread
+
+            // il mainThread sta startando altri thread
+            t.start();  // il metodo start() serve a far spawnare il thread
+                        // TO SPAWN, in SO, significa: creare un thread
 
 
             // aggiungo i thread alla Collection thread
@@ -147,14 +148,22 @@ public class Main {
         // attendo che tutti i thread creati finiscano
         for (Thread t : threads) {
             try {
+                /*
+                 * Ogni processo può avere più thread (fili) in esecuzione
+                 *
+                 * Join significa unire, quindi se voglio aspettare che uno di questi
+                 * fili finisca, lo unisco al mio filo (programma principale).
+                 *
+                 * Wait: è il metodo che hanno tutti gli object, e serve ad aspettare
+                 * la notifica del monitor (commissional mutex),
+                 * quindi wait è un nome già occupato
+                 */
                 t.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-
     }
-
 }
 
 
@@ -177,4 +186,30 @@ public class Main {
  * COMPATIBILITA' DI Runnable
  * Runnable è compatibile solo con le funzioni lambda
  * che prendono niente e non ritornano niente.
+ *
+ * AVVIO DI UN THREAD (differenza tra start() e run())
+ * Per avviare un thread chiamo il metodo start() e non run()
+ * perché run() contiene il codice che deve eseguire il thread,
+ * invece start() avvia il thread.
+ *
+ * Grazie alla sintassi delle anonymus class si può costruire un oggetto di una
+ * sottoclasse che non ho neanche costruito
+ *      Thread t = new Thread() {
+ *          @Override
+ *          public void run() {
+ *              count(name, millis, times);
+ *          }
+ *      }
+ *
+ * COLLECTION DI THREAD
+ * Sono stati messi tutti i thread creati in una Collection per un motivo di coding:
+ * come faccio a sapere quando finiscono i thread se non so quanti sono,
+ * perché sono un numero casuale?
+ * Quando creo i thread, lo metto in una ArrayList, dopo di ché scorro l'ArrayList e
+ * li joino tutti quanti.
+ *
+ *
+ * ANONYMUS CLASS
+ * L'anonymus class è l'istanziazione di una sottoclasse di quella che si sta scrivendo,
+ * solo che non viene dato il nome della sottoclasse, ma si crea immediatamente l'oggetto.
  */

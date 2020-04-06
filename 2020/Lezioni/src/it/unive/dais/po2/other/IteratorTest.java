@@ -144,7 +144,7 @@ public class IteratorTest {
 
     /* LEZIONE DEL 17/03/2020 (min 25)
     *  ITERABLE: interfaccia che definisce l'oggetto iteratore
-    * ITERATOR:  oggetto che si contiene il metodi:
+    *  ITERATOR:  oggetto che si contiene il metodi:
     *               - next();
     *               - hasNext();
     */

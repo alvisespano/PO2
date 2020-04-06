@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/CallbackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/CallbackTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/IteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/IteratorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +60,8 @@
       <workItem from="1586015855638" duration="2486000" />
       <workItem from="1586025159118" duration="623000" />
       <workItem from="1586074404313" duration="6132000" />
-      <workItem from="1586098951597" duration="8234000" />
+      <workItem from="1586098951597" duration="8265000" />
+      <workItem from="1586158845551" duration="11005000" />
     </task>
     <task id="LOCAL-00001" summary="update 04/04/2020 17:58">
       <created>1586015940164</created>
@@ -82,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586082033149</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Lezione 8 [LIVE] update05/04/2020 19:33">
+      <created>1586108009172</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586108009172</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,7 +114,8 @@
     <MESSAGE value="update 04/04/2020 17:58" />
     <MESSAGE value="update 04/04/2020 18:38" />
     <MESSAGE value="Lezione 7 [LIVE] update05/04/2020 12:20" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lezione 7 [LIVE] update05/04/2020 12:20" />
+    <MESSAGE value="Lezione 8 [LIVE] update05/04/2020 19:33" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lezione 8 [LIVE] update05/04/2020 19:33" />
   </component>
   <component name="WindowStateProjectService">
     <state x="230" y="218" key="#MainThread" timestamp="1586106446962">
@@ -120,21 +130,37 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586106407118" />
-    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586082032343">
+    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586108008434">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586082032343" />
-    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586098951792">
+    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586108008434" />
+    <state width="979" height="305" key="GridCell.Tab.0.bottom" timestamp="1586108018743">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586098951792" />
+    <state width="979" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1586108018743" />
+    <state width="979" height="305" key="GridCell.Tab.0.center" timestamp="1586108018743">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1586108018743" />
+    <state width="979" height="305" key="GridCell.Tab.0.left" timestamp="1586108018743">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1586108018743" />
+    <state width="979" height="305" key="GridCell.Tab.0.right" timestamp="1586108018743">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="979" height="305" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1586108018743" />
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586159048312">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586159048312" />
     <state x="242" y="453" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586078313971">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="242" y="453" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2048.1112@0.0.2048.1112" timestamp="1586078313971" />
-    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1586105776187">
+    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1586166336651">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1586105776187" />
+    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1586166336651" />
   </component>
 </project>
