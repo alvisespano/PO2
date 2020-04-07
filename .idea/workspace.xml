@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="">
+    <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="Lezione 9 [LIVE] update 06/04/2020 13:40">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/ConsumerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/ConsumerProducer.java" afterDir="false" />
     </list>
@@ -9,6 +9,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -113,6 +127,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -147,10 +171,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586179774596" />
-    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586173225810">
+    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586248394383">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586173225810" />
+    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586248394383" />
     <state width="979" height="305" key="GridCell.Tab.0.bottom" timestamp="1586179835563">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -175,9 +199,9 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="242" y="453" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2048.1112@0.0.2048.1112" timestamp="1586078313971" />
-    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1586166336651">
+    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1586251339831">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1586166336651" />
+    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1586251339831" />
   </component>
 </project>
