@@ -88,7 +88,8 @@ public class Main {
 
 
             /* creazione di un thread passando un Runnable al costruttore
-             * Runnable = lambda senza parametri e senza ritorno
+             * Runnable = lambda senza parametri e senza ritorno;
+             *            interfaccia che non prende niente e non ritorna niente.
              *
              * Questa sintassi è l'invocazione di un costruttore della classe Thread.
              * Sintassi della costruzione degli oggetti:

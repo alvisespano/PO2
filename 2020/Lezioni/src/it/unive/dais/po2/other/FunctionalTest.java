@@ -9,12 +9,34 @@ import java.util.function.Supplier;
 
 public class FunctionalTest {
 
-<<<<<<< HEAD
+
     /* Funzione sostituita da import java.util.function.Function;
-    *  public interface Function<T,S> {
-    *    S apply(T x);
-    *  }
+     * Function: prende qualcosa e ritorna qualcosa
+     *  public interface Function<T,S> {
+     *    S apply(T x);
+     *  }
     */
+
+    /* Funzione sostituita di import java.util.function.Supplier;
+     * Supplier: non prende nulla ma ritorna qualcosa
+     * public interface Supplier<T> {
+     *     T get();
+     * }
+    */
+
+    /* Funzione sostituita di import java.util.function.Supplier;
+     * Consumer: prende qualcosa ma non ritorna nulla
+     * public interface Consumer<T> {
+     *     T accept();
+     * }
+     */
+
+    /*
+     * Runnable: non prende niente e non ritorna nulla
+     * public interface Rubbable {
+     *     T run();
+     * }
+     */
 
     /**
      * Map funzione che ritorna una collection di tutti i risultati
@@ -24,9 +46,6 @@ public class FunctionalTest {
      * @param <B>
      * @return
      */
-=======
-
->>>>>>> master
     public static <A, B> Collection<B> map(Collection<A> l, Function<A, B> f) {
         Collection<B> c = new ArrayList<>();
         for (A a : l) {
@@ -89,14 +108,13 @@ public class FunctionalTest {
         }
         print(l);
 
-<<<<<<< HEAD
-        /* il tipo dell'espressione da new a } ha tipo Function<Integer, Integer>
-        * l'espressione ha lo stesso tipo della cosa che costruisco (dopo new)
-        */
-        Collection<Integer> r = map(l, new Function<Integer, Integer>() {
-=======
+
+
+
+
         // LE 4 FORME DI LAMBDA IN JAVA
         Function<Integer, Integer> f = x -> x + 1;
+
         Function<Integer, Integer> f2 = new Function<Integer, Integer>() {
             @Override
             public Integer apply(Integer x) {
@@ -104,10 +122,12 @@ public class FunctionalTest {
             }
         };
 
+        // Lambda diverse da Function
         Supplier<Integer> g = () -> {
             if (l.size() > 4) return 1;
             else return 2;
         };
+
         Supplier<Integer> g2 = new Supplier<Integer>() {
             @Override
             public Integer get() {
@@ -116,10 +136,12 @@ public class FunctionalTest {
             }
         };
 
-        Consumer<Integer> h = (x) -> {
+        // Lambda che non computa nulla (non ritorna) ma fa qualcosa (stampa)
+        Consumer<Integer> h = (x) -> {  // x è Integer
             for (int i = 0; i < x; ++i)
                 System.out.println(i);
         };
+
         Consumer<Integer> h2 = new Consumer<Integer>() {
             @Override
             public void accept(Integer x) {
@@ -128,10 +150,11 @@ public class FunctionalTest {
             }
         };
 
-        Runnable r = () -> {
+        // Lambda che non prende nulla e non ritorna nulla
+        Runnable runnable1 = () -> {
             System.out.println("ciao");
         };
-        Runnable r2 = new Runnable() {
+        Runnable runnable2 = new Runnable() {
             @Override
             public void run() {
                 System.out.println("ciao");
@@ -143,35 +166,28 @@ public class FunctionalTest {
 
         // questa è la stessa cosa fatta con una lambda
         Collection<Integer> x1 = map(l, x -> x + 1);
-        // questa è con la classe anonima
+
+        /* il tipo dell'espressione da new a } ha tipo Function<Integer, Integer>
+         * l'espressione ha lo stesso tipo della cosa che costruisco (dopo new)
+         */
         Collection<Integer> x2 = map(l, new Function<Integer, Integer>() {
->>>>>>> master
             @Override
             public Integer apply(Integer x) {
                 return x + 1;
             }
         });
-<<<<<<< HEAD
-        // questa è la stessa cosa fatta con una lambda
-        Collection<Integer> r2 = map(l, x -> x + 1);
+
         // questa terza variante usa direttamente una classe NON-anonima, ha tipo MiaFunzionePerMap
-        Collection<Integer> r3 = map(l, new MiaFunzionePerMap());
-=======
-        // questa terza variante usa direttamente una classe NON-anonima
         Collection<Integer> x3 = map(l, new MiaFunzionePerMap());
->>>>>>> master
+
 
         print(l);
-
-
-
-
     }
 }
 
 /*
-*       TRADUZIONE DA ANONYMOUS CLASS A LAMBDA
-*       LA LAMBDA E' UNO ZUCCHERO SINTATTICO PER UNA ANONYMOUS CLASS
+* TRADUZIONE DA ANONYMOUS CLASS A LAMBDA
+* LA LAMBDA E' UNO ZUCCHERO SINTATTICO PER UNA ANONYMOUS CLASS
 *       Collection<B> r = map(l, new Function<A, B>() {
 *           @Override
 *           public B apply(A x) {
@@ -195,7 +211,7 @@ public class FunctionalTest {
 *                       return x+1;
 *                   else
 *                       return x-1;
-*______________________________________________________________________________________________
+*______________________________________________________________________________________________________________________
 * LAMBDA EXPRESSION
 *
 * Nelle Lambda se:
@@ -207,7 +223,7 @@ public class FunctionalTest {
 * LAMBDA CON ARGOMENTO TIPATO (lambda with type inference)
 * Collection<Integer> r2 = map(l, (Integer x) -> x + 1);
 *
-* ==============================================================================================
+* ======================================================================================================================
 * Una lambda, in Java, deve essere compatibile non solo con il tipo Function
 * ma con qualunque tipo, l'importante è che abbia:
 *  - un solo metodo;
@@ -220,13 +236,13 @@ public class FunctionalTest {
 * Le lambda permettono di scrivere dei pezzi di codice con scoping condiviso,
 * quindi posso accedere alle variabili che ho nello scope del chiamante
 * anche da dentro alla lambda, è un modo molto più moderno di programmare.
-*===============================================================================================
+*======================================================================================================================
 *
 * TYPE INFERENCE: tipi dedotti dal compilatore (solo nelle lambda, in Java)
 * Il tipo delle lambda è il tipo che avrebbe l'anonymus class di cui la lambda è zucchero sintattico,
 * ovvero il tipo di un'interfaccia
 *
-*_______________________________________________________________________________________________
+*______________________________________________________________________________________________________________________
 *
 * CLASSE ASTRATTA
 * Una classe astratta è una classe che ha almeno un metodo astratto
@@ -244,4 +260,6 @@ public class FunctionalTest {
 *       - aspettarlo
 *       - interromperlo
 *    manca solo cosa deve fare, che deve essere definito da chi sta sotto.
- */
+* ______________________________________________________________________________________________________________________
+*
+*/

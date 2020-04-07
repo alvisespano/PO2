@@ -120,7 +120,7 @@ public class ConsumerProducer {
          *                  ognuno ha la sua nuova stringa.
          * getName(): getter
          * getId():   getter
-         * msg
+         * msg:       String
         */
     }
 
@@ -144,6 +144,11 @@ public class ConsumerProducer {
             this.l2 = l2;
         }
 
+        /**
+         * Metodo run originariamente definito da Thread.
+         * Se Thread definisce il metodo run e anche dichiara di implementare Runnable.
+         * La classe Thread implementa runnable.
+         */
         @Override
         public void run() {
             while (true) {
@@ -253,12 +258,15 @@ public class ConsumerProducer {
             p2.join();  // il main thread fa aspettare che il thread p2 finisca
 
         } catch (InterruptedException e) { // qualsiasi cosa succeda il programma viene interrotto
-
             e.printStackTrace();
         }
     }
 
 }
+
+
+
+
 
 /*
  * String.format piuttosto della + per concatenare le stringhe:
