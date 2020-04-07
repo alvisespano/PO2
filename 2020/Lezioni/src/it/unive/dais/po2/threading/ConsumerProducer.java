@@ -44,6 +44,7 @@ public class ConsumerProducer {
         }
     }
 
+<<<<<<< HEAD
     /**
      * Funzione che fa in modo che un thread quando scrive in System.out.println,
      * scrive anche come si chiama.
@@ -51,6 +52,8 @@ public class ConsumerProducer {
      * viene passato un messaggio
      * @param msg   messaggio che si vuole stampare
      */
+=======
+>>>>>>> master
     private static void log(String msg) {
         /*
          * currentThread()
@@ -173,6 +176,7 @@ public class ConsumerProducer {
         try {
             List<Integer> l1 = new ArrayList<>();
             List<Integer> l2 = new ArrayList<>();
+<<<<<<< HEAD
             Consumer c = new Consumer(l1, l2);  // creo consumatore
             Producer p1 = new Producer(l1, l2); // creo produttore 1
             Producer p2 = new Producer(l1, l2); // creo produttore 2
@@ -188,6 +192,21 @@ public class ConsumerProducer {
             p2.join();  // il main thread fa aspettare che il thread p2 finisca
 
         } catch (InterruptedException e) { // qualsiasi cosa succeda il programma viene interrotto
+=======
+            Consumer c = new Consumer(l1, l2);
+            Producer p1 = new Producer(l1, l2);
+            Producer p2 = new Producer(l1, l2);
+
+            c.start();
+            p1.start();
+            p2.start();
+
+            c.join();
+            p1.join();
+            p2.join();
+
+        } catch (InterruptedException e) {
+>>>>>>> master
             e.printStackTrace();
         }
     }

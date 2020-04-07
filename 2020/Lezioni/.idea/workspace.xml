@@ -7,6 +7,7 @@
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
 >>>>>>> master
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ConsumerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ConsumerProducer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +195,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ConsumerProducer" />
+      <item itemvalue="Application.Es_SkipIterator" />
       <item itemvalue="Application.IteratorTest" />
+      <item itemvalue="Application.ProvaIterator" />
+      <item itemvalue="Application.RandomIter" />
       <item itemvalue="Application.RevTest" />
       <item itemvalue="Application.TestList" />
       <item itemvalue="Application.TestMap" />
@@ -202,11 +207,12 @@
 >>>>>>> master
 =======
       <item itemvalue="Application.Thread" />
+<<<<<<< HEAD
       <item itemvalue="Application.ConsumerProducer" />
 >>>>>>> master
+=======
+>>>>>>> master
       <item itemvalue="Application.Zoo" />
-      <item itemvalue="Application.Es_SkipIterator" />
-      <item itemvalue="Application.RandomIter" />
     </list>
     <recent_temporary>
       <list>
@@ -266,10 +272,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585846538677" />
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1585848158827">
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1586183375425">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1585848158827" />
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1586183375425" />
     <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585846536786">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -278,11 +284,15 @@
 >>>>>>> master
 =======
     <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585846536786" />
+<<<<<<< HEAD
 >>>>>>> master
     <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584352220605">
+=======
+    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585928632648">
+>>>>>>> master
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1584352220605" />
+    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585928632648" />
     <state x="690" y="326" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584456474325">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -329,22 +339,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
-    <state width="1877" height="780" key="GridCell.Tab.0.bottom" timestamp="1585924238397">
+    <state width="1877" height="780" key="GridCell.Tab.0.bottom" timestamp="1585928655953">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
-    <state width="1877" height="780" key="GridCell.Tab.0.center" timestamp="1585924238397">
+    <state width="1877" height="780" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1585928655953" />
+    <state width="1877" height="780" key="GridCell.Tab.0.center" timestamp="1585928655953">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
-    <state width="1877" height="780" key="GridCell.Tab.0.left" timestamp="1585924238397">
+    <state width="1877" height="780" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1585928655953" />
+    <state width="1877" height="780" key="GridCell.Tab.0.left" timestamp="1585928655953">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
-    <state width="1877" height="780" key="GridCell.Tab.0.right" timestamp="1585924238397">
+    <state width="1877" height="780" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1585928655953" />
+    <state width="1877" height="780" key="GridCell.Tab.0.right" timestamp="1585928655953">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1585924238397" />
+    <state width="1877" height="780" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1585928655953" />
     <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1584613691250">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
