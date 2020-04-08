@@ -1,6 +1,7 @@
 package it.unive.dais.po2.myjdk;
 
 
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 // TODO: sistemare le possibili eccezioni NullPointerException
@@ -13,11 +14,19 @@ public class MyLinkedList<T> implements MyList<T> {
 
     // TODO: come esercizio provare a rendere questa classe statica in modo che abbia il suo generic; e poi modificare MyLinkedList opportunamente
     protected class Node {
+        @Nullable
         public T data;
+        @Nullable
         public Node next;
-        public Node(T data, Node next) {
+
+        public Node(@Nullable T data, @NotNull Node next) {
             this.data = data;
             this.next = next;
+        }
+
+        public Node(@Nullable T data) {
+            this.data = data;
+            this.next = null;
         }
     }
 
@@ -29,18 +38,18 @@ public class MyLinkedList<T> implements MyList<T> {
     }
 
     public void add(T e) {
-        head = new Node(e, head);
+        head = head == null ? new Node(e) : new Node(e, head);
     }
 
     @Override
     public int size() {
         int r = 0;
-        for (Node n = head; n.next != null; ++r);
+        for (@Nullable Node n = head; n.next != null; ++r);
         return r;
     }
 
     @Override
-    public boolean contains(T x) {
+    public boolean contains(@NotNull T x) {
         MyIterator<T> it = iterator();
         while (it.hasNext()) {
             T e = it.next();
@@ -54,6 +63,7 @@ public class MyLinkedList<T> implements MyList<T> {
         head = null;
     }
 
+    @Nullable
     public T get(int pos) throws OutOfBoundsException {
         Node n = head;
         for (; pos > 0; --pos)

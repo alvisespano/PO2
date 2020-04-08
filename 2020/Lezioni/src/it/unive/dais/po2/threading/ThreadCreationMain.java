@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
 
-public class Main {
+public class ThreadCreationMain {
 
     private static void count(String id, long millis, int times) {
         try {

@@ -9,7 +9,6 @@ import java.util.function.Supplier;
 
 public class FunctionalTest {
 
-
     public static <A, B> Collection<B> map(Collection<A> l, Function<A, B> f) {
         Collection<B> c = new ArrayList<>();
         for (A a : l) {
