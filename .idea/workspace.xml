@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="">
+    <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="Lezione 11 [LIVE] update 07/04/2020 14:51">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/ShapeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/ShapeFactoryWider.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/ShapeFactoryWider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/ConsumerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/ConsumerProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +35,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1ZkgNslMukL7aL0tQ4ayFKBkC74" />
   <component name="ProjectViewState">
@@ -50,7 +58,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.ConsumerProducer">
+  <component name="RunManager" selected="Application.Singleton">
     <configuration name="ConsumerProducer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.ConsumerProducer" />
       <module name="2020" />
@@ -59,7 +67,14 @@
       </method>
     </configuration>
     <configuration name="MainThread" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.Main" />
+      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.ThreadCreationMain" />
+      <module name="2020" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Singleton" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.patterns.Singleton" />
       <module name="2020" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -67,6 +82,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.MainThread" />
+      <item itemvalue="Application.Singleton" />
       <item itemvalue="Application.ConsumerProducer" />
     </list>
   </component>
@@ -88,6 +104,9 @@
       <workItem from="1586158845551" duration="11195000" />
       <workItem from="1586178129603" duration="11927000" />
       <workItem from="1586267134692" duration="7094000" />
+      <workItem from="1586417345500" duration="64000" />
+      <workItem from="1586425058348" duration="7687000" />
+      <workItem from="1586445882974" duration="4285000" />
     </task>
     <task id="LOCAL-00001" summary="update 04/04/2020 17:58">
       <created>1586015940164</created>
@@ -174,49 +193,57 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="230" y="218" key="#MainThread/0.0.2048.1112@0.0.2048.1112" timestamp="1586106446962" />
-    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586179780297">
+    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586428264298">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586179780297" />
+    <state x="0" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586428264298" />
     <state x="364" y="269" key="#com.intellij.ide.util.MemberChooser" timestamp="1586267676295">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="364" y="269" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1586267676295" />
-    <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586179774596">
+    <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586428258111">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586179774596" />
-    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586263918854">
+    <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586428258111" />
+    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586417406983">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586263918854" />
-    <state width="979" height="305" key="GridCell.Tab.0.bottom" timestamp="1586179835563">
+    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586417406983" />
+    <state width="979" height="297" key="GridCell.Tab.0.bottom" timestamp="1586433719406">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1586179835563" />
-    <state width="979" height="305" key="GridCell.Tab.0.center" timestamp="1586179835563">
+    <state width="979" height="297" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1586433719406" />
+    <state width="979" height="297" key="GridCell.Tab.0.center" timestamp="1586433719406">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1586179835563" />
-    <state width="979" height="305" key="GridCell.Tab.0.left" timestamp="1586179835563">
+    <state width="979" height="297" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1586433719406" />
+    <state width="979" height="297" key="GridCell.Tab.0.left" timestamp="1586433719405">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1586179835563" />
-    <state width="979" height="305" key="GridCell.Tab.0.right" timestamp="1586179835563">
+    <state width="979" height="297" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1586433719405" />
+    <state width="979" height="297" key="GridCell.Tab.0.right" timestamp="1586433719406">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="305" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1586179835563" />
-    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586267135154">
+    <state width="979" height="297" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1586433719406" />
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1586445884120">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586267135154" />
+    <state x="216" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586445884120" />
     <state x="242" y="453" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586078313971">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="242" y="453" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2048.1112@0.0.2048.1112" timestamp="1586078313971" />
-    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1586251339831">
+    <state x="323" y="476" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586425610901">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1586251339831" />
+    <state x="323" y="476" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1112@0.0.2048.1112" timestamp="1586425610901" />
+    <state x="219" y="178" key="refactoring.ChangeSignatureDialog" timestamp="1586426539695">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="219" y="178" key="refactoring.ChangeSignatureDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586426539695" />
+    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1586428561209">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="182" y="247" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1586428561209" />
   </component>
 </project>

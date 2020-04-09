@@ -1,10 +1,7 @@
 package it.unive.dais.po2.myjdk;
 
-<<<<<<< HEAD
-=======
-
 import org.jetbrains.annotations.NotNull;
->>>>>>> master
+
 import org.jetbrains.annotations.Nullable;
 
 // TODO: sistemare le possibili eccezioni NullPointerException
@@ -55,6 +52,7 @@ public class MyLinkedList<T> implements MyList<T> {
             this.next = next;
         }
 
+        // Costruttore ultimo nodo
         public Node(@Nullable T data) {
             this.data = data;
             this.next = null;
@@ -71,12 +69,18 @@ public class MyLinkedList<T> implements MyList<T> {
 
     public void add(T e) {
         head = head == null ? new Node(e) : new Node(e, head);
+        /*
+         * if(head == null)
+         *      head = new Node(e);
+         * else
+         *      head = new Node(e, head);
+         */
     }
 
     @Override
     public int size() {
         int r = 0;
-<<<<<<< HEAD
+
         for (Node n = head; n.next != null; ++r);
         /*
         * OPPURE trasformo un for senza corpo che conta in un while ...
@@ -84,9 +88,9 @@ public class MyLinkedList<T> implements MyList<T> {
         * while(n.next != null)
         *   ++r;
         */
-=======
+
         for (@Nullable Node n = head; n.next != null; ++r);
->>>>>>> master
+
         return r;
     }
 
@@ -95,14 +99,12 @@ public class MyLinkedList<T> implements MyList<T> {
      * @param x è una lista
      * @return true se x e' contenuto nella lista, false altrimenti
      */
-    @Override
-<<<<<<< HEAD
+    /*@Override
     public boolean contains(T x) {
-        MyIterator<T> it = iterator(); // metodo iterator
-=======
+        MyIterator<T> it = iterator(); // metodo iterator*/
+
     public boolean contains(@NotNull T x) {
         MyIterator<T> it = iterator();
->>>>>>> master
         while (it.hasNext()) {
             T e = it.next();
             if (x.equals(e)) return true;

@@ -9,8 +9,6 @@ import java.util.function.Supplier;
 
 public class FunctionalTest {
 
-<<<<<<< HEAD
-
     /* Funzione sostituita da import java.util.function.Function;
      * Function: prende qualcosa e ritorna qualcosa
      *  public interface Function<T,S> {
@@ -47,8 +45,6 @@ public class FunctionalTest {
      * @param <B>
      * @return
      */
-=======
->>>>>>> master
     public static <A, B> Collection<B> map(Collection<A> l, Function<A, B> f) {
         Collection<B> c = new ArrayList<>();
         for (A a : l) {
@@ -110,9 +106,6 @@ public class FunctionalTest {
             l.add(i);
         }
         print(l);
-
-
-
 
 
         // LE 4 FORME DI LAMBDA IN JAVA
@@ -264,5 +257,23 @@ public class FunctionalTest {
 *       - interromperlo
 *    manca solo cosa deve fare, che deve essere definito da chi sta sotto.
 * ______________________________________________________________________________________________________________________
+*
+* ANNOTAZIONI
+* Le annotazioni servono a scrivere delle cose speciali per decorare i metodi/campi/classi
+* con informazioni che il linguaggio non ha.
+* Le annotazioni servono al compilatore, che quando la vede si comporta in maniera diversa.
+* Si può dire che cosa devono fare.
+* Esempio:
+*   quando un programmatore si definisce una propria interfaccia funzionale
+*       @FunciotnalInteface
+*       public interface Funct<T,S> {
+*           S exec(T x);
+*       }
+*   che dice al compilatore Java che quell'interfaccia è una di quelle per trasformare la lambra,
+*   quindi il compilatore sa che:
+*    - deve essere un interfaccia con un solo metodo;
+*    - non glie ne interessa di come si chiama il metodo;
+*    - può usarla per trasformare le lambda.
+* Queste annotazioni sono decorazioni che, non sono key-word, fanno fare delle cose speciali al compilatore.
 *
 */

@@ -234,6 +234,8 @@ public class ConsumerProducer {
         }
     }
 
+
+
     /**
      * MAIN
      * @param args  standard arguments
@@ -246,6 +248,79 @@ public class ConsumerProducer {
             Consumer c = new Consumer(l1, l2);  // creo consumatore
             Producer p1 = new Producer(l1, l2); // creo produttore 1
             Producer p2 = new Producer(l1, l2); // creo produttore 2
+
+
+           /*
+            Thread p2 = new Thread() {
+                @Override
+                public void run() {
+                    while (true) {
+                        int n = counter++;
+                        synchronized (dummy) {
+                            // Producer pusha lo stesso numero in entrambe le liste
+                            l1.add(n);
+                            l2.add(n);
+                            // messaggio da passare a log del produttore
+                            log(String.format("Producer: push: %d (size: %d, %d) %s %s", n, l1.size(), l2.size(), l1, l2));
+                        }
+                        // controllo se la sleep va a buon fine
+                        try {
+                            // il rand crea delle attese sempre diverse di rand(1,50) secondi
+                            Thread.sleep(rand(1, 50));
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            };
+
+
+            Thread p3 = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (true) {
+                        int n = counter++;
+                        synchronized (dummy) {
+                            // Producer pusha lo stesso numero in entrambe le liste
+                            l1.add(n);
+                            l2.add(n);
+                            // messaggio da passare a log del produttore
+                            log(String.format("Producer: push: %d (size: %d, %d) %s %s", n, l1.size(), l2.size(), l1, l2));
+                        }
+                        // controllo se la sleep va a buon fine
+                        try {
+                            // il rand crea delle attese sempre diverse di rand(1,50) secondi
+                            Thread.sleep(rand(1, 50));
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            });
+
+
+            // Lambda di 4° tipo: non prende niente e non ritorna niente, dopo la freccia è il blocco del run
+            Thread p4 = new Thread(() -> {
+                while (true) {
+                    int n = counter++;
+                    synchronized (dummy) {
+                        // Producer pusha lo stesso numero in entrambe le liste
+                        l1.add(n);
+                        l2.add(n);
+                        // messaggio da passare a log del produttore
+                        log(String.format("Producer: push: %d (size: %d, %d) %s %s", n, l1.size(), l2.size(), l1, l2));
+                    }
+                    // controllo se la sleep va a buon fine
+                    try {
+                        // il rand crea delle attese sempre diverse di rand(1,50) secondi
+                        Thread.sleep(rand(1, 50));
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+    */
+
 
             // START
             c.start();  // inizia il thread consumatore
@@ -455,6 +530,15 @@ public class ConsumerProducer {
  * WRITE LOCK: basta che ce ne sia uno e blocca tutti gli altri.
  * ____________________________________________________________________________________________________________
  *
+ * DESIGN PATTERNS
+ *  - Iteratore: aggeggio che serve a produrre dati in maniera sequenziale
+ *  - Command:  il fatto di passarsi le callBack, che sono delle funzioni che passi a
+ *              qualcunaltro e qualcun altro le chiamerà (lambda, anonymus class)
+ *  - ConsumerProcer: tecnica di programmazione multithreading
+ *  - Resource allocator: pattern del prendo una risorsa, ci faccio qualcosa e poi la libero.
+ *                        (mutex, try-finally)
+ *  - Singleton:
+ *  - Factory:
  *
  */
 
