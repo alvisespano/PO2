@@ -9,6 +9,7 @@ import java.util.function.Supplier;
 
 public class FunctionalTest {
 
+<<<<<<< HEAD
 
     /* Funzione sostituita da import java.util.function.Function;
      * Function: prende qualcosa e ritorna qualcosa
@@ -46,6 +47,8 @@ public class FunctionalTest {
      * @param <B>
      * @return
      */
+=======
+>>>>>>> master
     public static <A, B> Collection<B> map(Collection<A> l, Function<A, B> f) {
         Collection<B> c = new ArrayList<>();
         for (A a : l) {
