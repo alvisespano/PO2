@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="Lezione 11 [LIVE] update 07/04/2020 14:51">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/myjdk/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/ShapeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/ShapeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/ShapeFactoryWider.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/patterns/factory/ShapeFactoryWider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/ConsumerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/2020/Lezioni/src/it/unive/dais/po2/threading/ConsumerProducer.java" afterDir="false" />
-    </list>
+    <list default="true" id="4b3b3286-663e-4f0c-8457-640c500b2208" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +94,7 @@
       <workItem from="1586267134692" duration="7094000" />
       <workItem from="1586417345500" duration="64000" />
       <workItem from="1586425058348" duration="7687000" />
-      <workItem from="1586445882974" duration="4285000" />
+      <workItem from="1586445882974" duration="4361000" />
     </task>
     <task id="LOCAL-00001" summary="update 04/04/2020 17:58">
       <created>1586015940164</created>
@@ -150,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586263919597</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lezione 13 [LIVE] update 09/04/2020 18:36">
+      <created>1586450243334</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586450243334</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +181,8 @@
     <MESSAGE value="Lezione 8 [LIVE] update05/04/2020 19:33" />
     <MESSAGE value="Lezione 9 [LIVE] update 06/04/2020 13:40" />
     <MESSAGE value="Lezione 11 [LIVE] update 07/04/2020 14:51" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lezione 11 [LIVE] update 07/04/2020 14:51" />
+    <MESSAGE value="Lezione 13 [LIVE] update 09/04/2020 18:36" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lezione 13 [LIVE] update 09/04/2020 18:36" />
   </component>
   <component name="WindowStateProjectService">
     <state x="230" y="218" key="#MainThread" timestamp="1586106446962">
@@ -205,10 +201,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="275" y="343" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1586428258111" />
-    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586417406983">
+    <state x="0" y="154" key="CommitChangelistDialog2" timestamp="1586450242426">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586417406983" />
+    <state x="0" y="154" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1586450242426" />
     <state width="979" height="297" key="GridCell.Tab.0.bottom" timestamp="1586433719406">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
