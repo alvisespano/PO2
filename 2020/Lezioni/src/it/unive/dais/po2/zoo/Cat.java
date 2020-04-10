@@ -1,10 +1,10 @@
 package it.unive.dais.po2.zoo;
 
 
-public class Cat extends ColoredAnimal<Cat> {
+public class Cat extends ColoredAnimal {
 
-    public Cat(int w, String c, Cat p) {
-        super(w, c, p);
+    public Cat(int w, String c) {
+        super(w, c);
     }
 
     @Override
@@ -12,7 +12,6 @@ public class Cat extends ColoredAnimal<Cat> {
         weight += a.weight / 3;
         color = color + " fat";
     }
-
 
     public void meow() {
         System.out.println("miao!");

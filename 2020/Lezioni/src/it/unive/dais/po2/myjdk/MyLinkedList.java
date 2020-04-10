@@ -197,6 +197,6 @@ public class MyLinkedList<T> implements MyList<T> {
         n.next = n.next.next;
         return true;
     }
-
-
 }
+
+

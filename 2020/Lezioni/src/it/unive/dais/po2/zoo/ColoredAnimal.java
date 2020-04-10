@@ -1,10 +1,10 @@
 package it.unive.dais.po2.zoo;
 
-public abstract class ColoredAnimal<A extends Animal> extends Animal<A> {
+public abstract class ColoredAnimal extends Animal {
     protected String color;
 
-    protected ColoredAnimal(int w, String c, A p) {
-        super(w, p);
+    protected ColoredAnimal(int w, String c) {
+        super(w);
         this.color = c;
     }
 

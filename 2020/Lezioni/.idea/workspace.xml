@@ -6,6 +6,7 @@
 =======
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
       <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/Singleton.java" afterDir="false" />
@@ -16,10 +17,21 @@
       <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/factory/ShapeFactory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/factory/ShapeFactoryWider.java" afterDir="false" />
 >>>>>>> master
+=======
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/SortingTest.java" afterDir="false" />
+>>>>>>> master
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/esercizi/Es_RandomIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/esercizi/Es_RandomIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/MyHashSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ThreadCreationMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/IteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/IteratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ConsumerProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/ConsumerProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/ColoredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/ColoredAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Persian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Persian.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +102,7 @@
   </component>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.TestMap">
     <configuration name="IteratorTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.IteratorTest" />
@@ -98,8 +111,11 @@
   <component name="RunManager" selected="Application.Thread">
 =======
   <component name="RunManager" selected="Application.ConsumerProducer">
+=======
+  <component name="RunManager" selected="Application.SortingTest">
+>>>>>>> master
     <configuration name="ConsumerProducer" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.ConsumerProducer" />
+      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.patterns.ConsumerProducer" />
       <module name="Lezioni" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
@@ -147,6 +163,14 @@
 =======
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
 >>>>>>> master
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortingTest" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.SortingTest" />
+      <module name="Lezioni" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,6 +234,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.ConsumerProducer" />
+      <item itemvalue="Application.SortingTest" />
       <item itemvalue="Application.Es_SkipIterator" />
       <item itemvalue="Application.IteratorTest" />
       <item itemvalue="Application.ProvaIterator" />
@@ -282,17 +307,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585846538677">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586530944260">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585846538677" />
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1586271953859">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586530944260" />
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1586532432138">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1586271953859" />
-    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585846536786">
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1586532432138" />
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586530943000">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585062757447" />
 >>>>>>> master
@@ -302,6 +328,9 @@
 >>>>>>> master
     <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584352220605">
 =======
+=======
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586530943000" />
+>>>>>>> master
     <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585928632648">
 >>>>>>> master
       <screen x="0" y="0" width="1920" height="1160" />
@@ -315,6 +344,14 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="753" y="415" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586273397042" />
+    <state x="764" y="410" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1586362503019">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="764" y="410" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586362503019" />
+    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586362505953">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586362505953" />
     <state x="690" y="326" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584456474325">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -368,22 +405,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
-    <state width="1877" height="780" key="GridCell.Tab.0.bottom" timestamp="1585928655953">
+    <state width="1877" height="508" key="GridCell.Tab.0.bottom" timestamp="1586532701503">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1585928655953" />
-    <state width="1877" height="780" key="GridCell.Tab.0.center" timestamp="1585928655953">
+    <state width="1877" height="508" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1586532701503" />
+    <state width="1877" height="508" key="GridCell.Tab.0.center" timestamp="1586532701503">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1585928655953" />
-    <state width="1877" height="780" key="GridCell.Tab.0.left" timestamp="1585928655953">
+    <state width="1877" height="508" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1586532701503" />
+    <state width="1877" height="508" key="GridCell.Tab.0.left" timestamp="1586532701503">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1585928655953" />
-    <state width="1877" height="780" key="GridCell.Tab.0.right" timestamp="1585928655953">
+    <state width="1877" height="508" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1586532701503" />
+    <state width="1877" height="508" key="GridCell.Tab.0.right" timestamp="1586532701503">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="780" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1585928655953" />
+    <state width="1877" height="508" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1586532701503" />
     <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1584613691250">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -420,6 +457,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="536" y="315" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1160@0.0.1920.1160" timestamp="1584463463386" />
+    <state x="342" y="200" key="new project wizard" timestamp="1586513207073">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="342" y="200" key="new project wizard/0.0.1920.1160@0.0.1920.1160" timestamp="1586513207073" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

@@ -1,5 +1,6 @@
 package it.unive.dais.po2.myjdk;
 
+<<<<<<< HEAD
 import java.util.function.Function;
 
 
@@ -8,6 +9,8 @@ import java.util.function.Function;
  * non li fa l'interfaccia.
  * @param <T>
  */
+=======
+>>>>>>> master
 public class MyHashSet<T> extends MyLinkedSet<T> {
     private HashFun<T> h;
 
