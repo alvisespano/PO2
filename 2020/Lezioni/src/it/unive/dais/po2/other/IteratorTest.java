@@ -1,5 +1,7 @@
 package it.unive.dais.po2.other;
 
+import it.unive.dais.po2.myjdk.MyIterator;
+
 import java.util.*;
 
 public class IteratorTest {
@@ -75,13 +77,11 @@ public class IteratorTest {
             l.add(i);
         }
 
-
         Iterator<Integer> it = l.iterator();
         while (it.hasNext()) {
             int n = it.next();
             System.out.println(n);
         }
-
 
         for (int n : l) {
             System.out.println(n);

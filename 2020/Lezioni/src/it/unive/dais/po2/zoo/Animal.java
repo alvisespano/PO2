@@ -1,19 +1,20 @@
 package it.unive.dais.po2.zoo;
 
-public class Animal<A extends Animal> implements Creature {
-    protected int weight;
-    protected A partner;
+import org.jetbrains.annotations.NotNull;
 
-    public Animal(int weight, A p) {
+public class Animal implements Creature, Comparable<Animal> {
+    protected int weight;
+
+    public Animal(int weight) {
         this.weight = weight;
-        this.partner = p;
     }
 
     public void eat(Animal a) {
         this.weight += a.weight;
     }
 
-    public A getPartner() {
-        return partner;
+    @Override
+    public int compareTo(@NotNull Animal o) {
+        return this.weight - o.weight;
     }
 }

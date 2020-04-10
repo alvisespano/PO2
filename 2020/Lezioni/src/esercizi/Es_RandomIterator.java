@@ -16,8 +16,6 @@ public class Es_RandomIterator {
         }
     }
 
-
-
     public static void main(String[] args) {
         int cnt = 0;
         for (int n : new RandomSequence(100)) {
