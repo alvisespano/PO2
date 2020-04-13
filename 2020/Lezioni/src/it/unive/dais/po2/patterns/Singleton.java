@@ -24,35 +24,19 @@ public class Singleton {
         // eventuali campi privati non-statici
         //private Screen screen; // screen wrappato da display
 
-        /*
-         * Campo statico di tipo Display
-         */
+        // Campo statico di tipo Display
         @Nullable
         private static Display instance = null;
 
-<<<<<<< HEAD
-        /**
-         * Costruttore di display privato
-         */
-        private Display() {
-=======
         private int cnt;
 
         private Display(int n) {
             this.cnt = n;
->>>>>>> master
+
             // inizializzazione di tutti i tuoi campi privati non-statici
             // es this.screen = ...
         }
 
-<<<<<<< HEAD
-        /**
-         * Metodo getInstance è il metodo che crea l'istanza una volta sola (create)
-         * @return
-         */
-        @NotNull // non voglio che getInstance() ritorni NULL ma che sia sempre un Display
-        public static Display getInstance() {
-=======
         // metodi che modificano lo stato
         public synchronized int getCounter() {
             return cnt;
@@ -66,9 +50,13 @@ public class Singleton {
             ++cnt;
         }
 
+        /**
+         * Metodo getInstance è il metodo che crea l'istanza una volta sola (create)
+         * @return
+         */
         @NotNull
         public static synchronized Display getInstance(int cnt) {
->>>>>>> master
+
             if (instance == null) {
                 instance = new Display(cnt);
             }
@@ -81,14 +69,11 @@ public class Singleton {
     }
 
     public static void main(String[] args) {
-<<<<<<< HEAD
-        // nessuno mi vieta di creare più display.
-        Display d = Display.getInstance();
-        Display d2 = Display.getInstance(); // non viene creato un altro display
-=======
+
+        // nessuno mi vieta di creare più display
         Display d = Display.getInstance(50);
         Display d2 = Display.getInstance(50);
->>>>>>> master
+
     }
 
 

@@ -1,6 +1,7 @@
 package it.unive.dais.po2.other;
 
 import it.unive.dais.po2.zoo.Dog;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,8 +10,13 @@ import java.util.Random;
 
 public class SortingTest {
 
+
     private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
+    /**
+     * Metodo che genera stringhe alfanumeriche random.
+     */
+    @NotNull
     public static String randomAlphaNumeric(int count) {
         StringBuilder builder = new StringBuilder();
         while (count-- != 0) {
@@ -36,14 +42,17 @@ public class SortingTest {
             l3.add(new Dog(rand.nextInt(100), randomAlphaNumeric(5)));
         }
 
+        // Lista di numeri
         System.out.println(l);
         Collections.sort(l);
         System.out.println(l);
 
+        // Lista di stringhe in ordine lessicografico
         System.out.println(l2);
         Collections.sort(l2);
         System.out.println(l2);
 
+        // Lista di cani
         System.out.println(l3);
         Collections.sort(l3);
         sort__(l3);
@@ -51,6 +60,10 @@ public class SortingTest {
 
     }
 
+    /**
+     * Metodo sort del JDK
+     */
     static <T extends Comparable<? super T>> void sort__(List<T> list) {}
 
 }
+

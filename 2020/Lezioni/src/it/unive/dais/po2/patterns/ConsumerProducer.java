@@ -3,14 +3,11 @@ package it.unive.dais.po2.patterns;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-<<<<<<< HEAD:2020/Lezioni/src/it/unive/dais/po2/threading/ConsumerProducer.java
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantLock;    // usata per lock
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-=======
 import java.util.concurrent.locks.ReentrantLock;
->>>>>>> master:2020/Lezioni/src/it/unive/dais/po2/patterns/ConsumerProducer.java
 
 
 /**

@@ -103,24 +103,22 @@ public class IteratorTest {
             l.add(i);
         }
 
-<<<<<<< HEAD
+
         System.out.println("\nIterator");
-=======
->>>>>>> master
+
         Iterator<Integer> it = l.iterator();
         while (it.hasNext()) {
             int n = it.next();
             System.out.println(n);
         }
 
-<<<<<<< HEAD
+
         /* ZUCCHERO SINTATTICO DEL CICLO SOPRA
         *  Per ogni intero n, contenuto nella collection l
         *  fai il blocco (stampa(n))
         */
         System.out.println("\nFor each");
-=======
->>>>>>> master
+
         for (int n : l) {
             System.out.println(n);
         }
