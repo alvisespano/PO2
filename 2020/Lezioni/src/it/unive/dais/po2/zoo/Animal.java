@@ -9,6 +9,8 @@ public class Animal implements Creature, Comparable<Animal> {
         this.weight = weight;
     }
 
+    public int getWeight() { return weight; }
+
     public void eat(Animal a) {
         this.weight += a.weight;
     }

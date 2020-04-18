@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
       <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/Singleton.java" afterDir="false" />
@@ -24,8 +25,14 @@
 =======
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
 >>>>>>> master
+=======
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FilosofiACena__Francesco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalPrimitives.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/IteratorTest__Mattia.java" afterDir="false" />
+>>>>>>> master
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/SortingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/ColoredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/ColoredAnimal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -406,22 +413,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
-    <state width="1877" height="382" key="GridCell.Tab.0.bottom" timestamp="1586876730378">
+    <state width="1877" height="382" key="GridCell.Tab.0.bottom" timestamp="1586970235435">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1586876730378" />
-    <state width="1877" height="382" key="GridCell.Tab.0.center" timestamp="1586876730378">
+    <state width="1877" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235435" />
+    <state width="1877" height="382" key="GridCell.Tab.0.center" timestamp="1586970235435">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1586876730378" />
-    <state width="1877" height="382" key="GridCell.Tab.0.left" timestamp="1586876730378">
+    <state width="1877" height="382" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235435" />
+    <state width="1877" height="382" key="GridCell.Tab.0.left" timestamp="1586970235434">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1586876730378" />
-    <state width="1877" height="382" key="GridCell.Tab.0.right" timestamp="1586876730378">
+    <state width="1877" height="382" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235434" />
+    <state width="1877" height="382" key="GridCell.Tab.0.right" timestamp="1586970235435">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1586876730378" />
+    <state width="1877" height="382" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235435" />
     <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1584613691250">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

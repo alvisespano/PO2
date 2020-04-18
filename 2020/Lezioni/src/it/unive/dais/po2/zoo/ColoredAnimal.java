@@ -8,4 +8,6 @@ public abstract class ColoredAnimal extends Animal {
         this.color = c;
     }
 
+    public String getColor() { return color; }
+
 }
