@@ -87,7 +87,9 @@ public class FilosofiACena__Francesco {
         Collection<Thread> filosofi = new ArrayList<>();
         for (int i = 0; i < nFilosofi; ++i) {
             //  Filosofo filosofo = new Filosofo(i, tavola);
+
             final int[] posto = new int[] { i };    // trucco dell'array final con 1 solo elemento
+            // final int posto = i;                 // trucco built-in
 
             Thread filosofo = new Thread(() -> {
                 try {
