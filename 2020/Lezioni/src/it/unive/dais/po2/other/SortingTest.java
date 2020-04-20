@@ -10,6 +10,10 @@ public class SortingTest {
 
     private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
+    /**
+     * Metodo che genera stringhe alfanumeriche random.
+     */
+    @NotNull
     public static String randomAlphaNumeric(int count) {
         StringBuilder builder = new StringBuilder();
         while (count-- != 0) {
@@ -35,6 +39,8 @@ public class SortingTest {
             l3.add(new Dog(rand.nextInt(100), randomAlphaNumeric(5)));
         }
 
+
+
         List<Rectangle> l4 = new ArrayList<>();
         for (int i = 0; i < 10; ++i) {
             l4.add(new Rectangle(rand.nextDouble(), rand.nextDouble()));
@@ -45,33 +51,41 @@ public class SortingTest {
             l5.add(new Square(rand.nextDouble() * 10.));
         }
 
+
+        // Lista di numeri
         System.out.println(l);
         Collections.sort(l);
         System.out.println(l);
 
+        // Lista di stringhe in ordine lessicografico
         System.out.println(l2);
         Collections.sort(l2);
         System.out.println(l2);
 
+        // Lista di cani
         System.out.println(l3);
         Collections.sort(l3);
         System.out.println(l3);
 
         System.out.println(l4);
+        //Ordino in base alla base
         Collections.sort(l4, new Comparator<Rectangle>() {
             @Override
             public int compare(Rectangle o1, Rectangle o2) {
                 return Double.compare(o1.base, o2.base);
                 // confronto a mano tra due double
-                /*if (Math.abs(o1.base - o2.base) <= Double.MIN_VALUE)
-                    return 0;
-                else if (o1.base - o2.base > 0.) return 1;
-                else return -1;*/
+                /*  if (Math.abs(o1.base - o2.base) <= Double.MIN_VALUE)   //[valore più piccolo dei Double]
+                        return 0;
+                    else if (o1.base - o2.base > 0.) return 1;
+                    else return -1;
+                 */
+
                 // confronto a mano tra due double con if funzionale
                 // return Math.abs(o1.base - o2.base) <= Double.MIN_VALUE ? 0 : o1.base - o2.base > 0. ? 1 : -1;
             }
         });
         System.out.println(l4);
+        // Ordino in base all'altezza
         Collections.sort(l4, new Comparator<Rectangle>() {
             @Override
             public int compare(Rectangle o1, Rectangle o2) {
@@ -83,7 +97,7 @@ public class SortingTest {
         //Collections.sort(l4, (Square s1, Square s2) -> Double.compare(s1.diag(), s2.diag()));
         System.out.println(l4);
 
-
+        // Scritto sottoforma di lambda
         System.out.println(l5);
         Collections.sort(l5, (Square s1, Square s2) -> Double.compare(s1.diag(), s2.diag()));
         System.out.println(l5);
@@ -91,6 +105,7 @@ public class SortingTest {
         System.out.println(l5);
 
     }
+
 
 
     private static class Rectangle {
@@ -110,12 +125,20 @@ public class SortingTest {
         }
     }
 
+    /**
+     * Sottoclasse di Rectangle
+     */
     private static class Square extends Rectangle {
         public Square(double l) {
             super(l, l);
         }
 
         public double side() { return base; }
+
+        /**
+         * Metodo che calcola la diagonale del quadrato
+         * @return
+         */
         public double diag() { return side() * Math.sqrt(2.); }
 
         @Override
@@ -125,7 +148,11 @@ public class SortingTest {
     }
 
 
+    /**
+     * Metodo sort del JDK
+     */
     static <T extends Comparable<? super T>> void sort__(List<T> list) {}
 
     static <T>                               void sort__(List<T> list, Comparator<? super T> c) {}
 }
+

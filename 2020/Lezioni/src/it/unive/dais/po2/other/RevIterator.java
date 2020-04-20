@@ -7,6 +7,10 @@ public class RevIterator<T> implements Iterator<T> {
     private List<T> l;
     private int pos;
 
+    /**
+     * Costruttore
+     * @param l List per poter chiamare size e get
+     */
     public RevIterator(List<T> l) {
         this.l = l;
         this.pos = l.size() - 1;

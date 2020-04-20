@@ -30,6 +30,10 @@ public class Dog extends ColoredAnimal {
         }
     }
 
+    /**
+     * Pretty printer: funzioni che stampano oggetti secondo un determinato formato
+     * @return String.format
+     */
     @Override
     public String toString() {
         return String.format("Dog[%d, %s]", weight, color);

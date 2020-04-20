@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2020/2020.iml" filepath="$PROJECT_DIR$/2020/2020.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soluzione appelli/Scritto PO2 20 6 18/Scritto PO2 20 6 18.iml" filepath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 20 6 18/Scritto PO2 20 6 18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soluzione appelli/Scritto PO2 20 6 19/Scritto PO2 20 6 19.iml" filepath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 20 6 19/Scritto PO2 20 6 19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soluzione appelli/Scritto PO2 22 1 19/Scritto PO2 22 1 19.iml" filepath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 22 1 19/Scritto PO2 22 1 19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soluzione appelli/Scritto PO2 24 5 18/Scritto PO2 24 5 18.iml" filepath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 24 5 18/Scritto PO2 24 5 18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soluzione appelli/Scritto PO2 30 5 19/Scritto PO2 30 5 19.iml" filepath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 30 5 19/Scritto PO2 30 5 19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soluzione appelli/Scritto PO2 31 1 20/Scritto PO2 31 1 20.iml" filepath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 31 1 20/Scritto PO2 31 1 20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soluzione appelli/Scritto PO2 4 9 18/Scritto PO2 4 9 18.iml" filepath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 4 9 18/Scritto PO2 4 9 18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soluzione appelli/Scritto PO2 6 9 19/Scritto PO2 6 9 19.iml" filepath="$PROJECT_DIR$/soluzione appelli/Scritto PO2 6 9 19/Scritto PO2 6 9 19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2019/TinyJDK/TinyJDK.iml" filepath="$PROJECT_DIR$/2019/TinyJDK/TinyJDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2019/lezione18-19/lezione18-19.iml" filepath="$PROJECT_DIR$/2019/lezione18-19/lezione18-19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2018/pitagora/pitagora.iml" filepath="$PROJECT_DIR$/2018/pitagora/pitagora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2018/tinylib/tinylib.iml" filepath="$PROJECT_DIR$/2018/tinylib/tinylib.iml" />
+    </modules>
+  </component>
+</project>

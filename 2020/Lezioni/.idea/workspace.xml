@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="7bdf903b-b96d-42fa-955e-fed466cf9554" name="Default Changelist" comment="">
+=======
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> master
+=======
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/factory/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/factory/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/factory/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/factory/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/factory/ShapeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/factory/ShapeFactoryWider.java" afterDir="false" />
+>>>>>>> master
+=======
+      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/SortingTest.java" afterDir="false" />
+>>>>>>> master
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+>>>>>>> master
+=======
       <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FilosofiACena__Francesco.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalPrimitives.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/IteratorTest__Mattia.java" afterDir="false" />
+>>>>>>> master
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/ColoredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/ColoredAnimal.java" afterDir="false" />
@@ -27,6 +52,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+<<<<<<< HEAD
+    <option name="UPDATE_TYPE" value="REBASE" />
+=======
+>>>>>>> master
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -45,11 +74,24 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+<<<<<<< HEAD
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../LabCloud/RMITest1" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+>>>>>>> master
   </component>
   <component name="RecentsManager">
     <key name="MoveInnerDialog.RECENTS_KEY">
@@ -59,7 +101,20 @@
       <recent name="it.unive.dais.po2.myjdk" />
     </key>
   </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <component name="RunManager" selected="Application.TestMap">
+    <configuration name="IteratorTest" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.IteratorTest" />
+      <module name="Lezioni" />
+=======
+  <component name="RunManager" selected="Application.Thread">
+=======
+  <component name="RunManager" selected="Application.ConsumerProducer">
+=======
   <component name="RunManager" selected="Application.SortingTest">
+>>>>>>> master
     <configuration name="ConsumerProducer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.patterns.ConsumerProducer" />
       <module name="Lezioni" />
@@ -76,10 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+>>>>>>> master
     <configuration name="IteratorTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.IteratorTest" />
       <module name="Lezioni" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+>>>>>>> master
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,7 +160,10 @@
     <configuration name="RevTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.RevTest" />
       <module name="Lezioni" />
+<<<<<<< HEAD
+=======
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+>>>>>>> master
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,7 +179,10 @@
     <configuration name="TestList" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.myjdk.TestList" />
       <module name="Lezioni" />
+<<<<<<< HEAD
+=======
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+>>>>>>> master
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,6 +190,8 @@
     <configuration name="TestMap" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.myjdk.TestMap" />
       <module name="Lezioni" />
+<<<<<<< HEAD
+=======
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,6 +201,7 @@
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.ThreadCreationMain" />
       <module name="Lezioni" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+>>>>>>> master
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,13 +210,23 @@
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.zoo.Main" />
       <module name="Lezioni" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+<<<<<<< HEAD
+=======
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+>>>>>>> master
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+    <list>
+      <item itemvalue="Application.TestList" />
+      <item itemvalue="Application.TestMap" />
+      <item itemvalue="Application.IteratorTest" />
+      <item itemvalue="Application.RevTest" />
+=======
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
@@ -167,7 +243,15 @@
       <item itemvalue="Application.RevTest" />
       <item itemvalue="Application.TestList" />
       <item itemvalue="Application.TestMap" />
+<<<<<<< HEAD
+>>>>>>> master
+=======
       <item itemvalue="Application.Thread" />
+<<<<<<< HEAD
+      <item itemvalue="Application.ConsumerProducer" />
+>>>>>>> master
+=======
+>>>>>>> master
       <item itemvalue="Application.Zoo" />
     </list>
     <recent_temporary>
@@ -177,15 +261,49 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
+<<<<<<< HEAD
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7bdf903b-b96d-42fa-955e-fed466cf9554" name="Default Changelist" comment="" />
+=======
     <configuration>C:\Users\spano\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="" />
+>>>>>>> master
       <created>1583492471839</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583492471839</updated>
+<<<<<<< HEAD
+      <workItem from="1584607963836" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584458652904">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1584458652904" />
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1584462897629">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1584462897629" />
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584458651731">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1584458651731" />
+    <state x="307" y="448" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584607497997">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="307" y="448" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1584607497997" />
+=======
     </task>
     <servers />
   </component>
@@ -201,8 +319,21 @@
     <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586530943000">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585062757447" />
+>>>>>>> master
+=======
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585846536786" />
+<<<<<<< HEAD
+>>>>>>> master
+    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584352220605">
+=======
+=======
     <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586530943000" />
+>>>>>>> master
     <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585928632648">
+>>>>>>> master
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585928632648" />
@@ -226,10 +357,58 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="690" y="326" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1584456474325" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1584463824743">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1584463824743" />
+    <state width="1877" height="313" key="GridCell.Tab.0.center" timestamp="1584463824743">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1584463824743" />
+    <state width="1877" height="313" key="GridCell.Tab.0.left" timestamp="1584463824743">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1584463824743" />
+    <state width="1877" height="313" key="GridCell.Tab.0.right" timestamp="1584463824743">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1584463824743" />
+    <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1584463482374">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="386" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1584463482374" />
+    <state width="1877" height="386" key="GridCell.Tab.1.center" timestamp="1584463482374">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="386" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1584463482374" />
+    <state width="1877" height="386" key="GridCell.Tab.1.left" timestamp="1584463482374">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="386" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1584463482374" />
+    <state width="1877" height="386" key="GridCell.Tab.1.right" timestamp="1584463482374">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1877" height="386" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1584463482374" />
+    <state x="160" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1584607964101">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="160" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1584607964101" />
+=======
+=======
+    <state x="609" y="174" key="CommitChangelistDialog2" timestamp="1586270664027">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="609" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1586270664027" />
+>>>>>>> master
+=======
     <state x="609" y="174" key="CommitChangelistDialog2" timestamp="1586877875652">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="609" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1586877875652" />
+>>>>>>> master
     <state x="740" y="334" key="FileChooserDialogImpl" timestamp="1584617247364">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -270,10 +449,18 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="222" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1584616235838" />
+>>>>>>> master
     <state x="664" y="473" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584352964962">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="664" y="473" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1160@0.0.1920.1160" timestamp="1584352964962" />
+<<<<<<< HEAD
+    <state x="267" y="476" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584607946926">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="267" y="476" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1112@0.0.2048.1112" timestamp="1584607946926" />
+=======
+>>>>>>> master
     <state x="536" y="315" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584463463386">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

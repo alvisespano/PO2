@@ -86,8 +86,10 @@ public class FilosofiACena__Francesco {
         final Monitor tavola = Monitor.getInstance(5);
         Collection<Thread> filosofi = new ArrayList<>();
         for (int i = 0; i < nFilosofi; ++i) {
-//            Filosofo filosofo = new Filosofo(i, tavola);
+            //  Filosofo filosofo = new Filosofo(i, tavola);
+
             final int[] posto = new int[] { i };    // trucco dell'array final con 1 solo elemento
+            // final int posto = i;                 // trucco built-in
 
             Thread filosofo = new Thread(() -> {
                 try {
