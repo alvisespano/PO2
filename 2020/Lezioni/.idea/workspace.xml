@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FilosofiACena__Francesco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalPrimitives.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/IteratorTest__Mattia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/ColoredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/ColoredAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalPrimitives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalPrimitives.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -159,12 +154,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.ConsumerProducer" />
-      <item itemvalue="Application.SortingTest" />
       <item itemvalue="Application.Es_SkipIterator" />
       <item itemvalue="Application.IteratorTest" />
       <item itemvalue="Application.ProvaIterator" />
       <item itemvalue="Application.RandomIter" />
       <item itemvalue="Application.RevTest" />
+      <item itemvalue="Application.SortingTest" />
       <item itemvalue="Application.TestList" />
       <item itemvalue="Application.TestMap" />
       <item itemvalue="Application.Thread" />
@@ -202,10 +197,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586530943000" />
-    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585928632648">
+    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587389648968">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585928632648" />
+    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1587389648968" />
     <state x="824" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586273395656">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
