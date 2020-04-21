@@ -9,7 +9,9 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.function.BiFunction;
+import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class FunctionalPrimitives {
 
@@ -27,6 +29,28 @@ public class FunctionalPrimitives {
             acc.add(f.apply(x));
             return acc;
         });
+    }
+
+    public static <A> void filter__imperative(Iterable<A> l, Function<A, Boolean> p) {
+        Iterator<A> it = l.iterator();
+        while (it.hasNext()) {
+            A a = it.next();
+            if (!p.apply(a)) it.remove();
+        }
+    }
+
+    public static <A> List<A> filter__pure(Iterable<A> l, Function<A, Boolean> p) {
+        List<A> r = new ArrayList<>();
+        for (A a : l) {
+            if (p.apply(a)) r.add(a);
+        }
+        return r;
+    }
+
+    public static <A> void iter(Iterable<A> l, Consumer<A> f) {
+        for (A a : l) {
+            f.accept(a);
+        }
     }
 
     public static <A, B> B fold(Iterable<A> l, B zero, BiFunction<A, B, B> f) {
@@ -69,6 +93,11 @@ public class FunctionalPrimitives {
                                                 //    blablabla
     }
 
+    @FunctionalInterface
+    interface TriFunction<A, B, C, R> {
+        R apply(A a, B b, C c);
+    }
+
     public static void main(String[] args) {
 
         g(10);                                  // st #10, sp
@@ -88,7 +117,34 @@ public class FunctionalPrimitives {
         }
         List<Animal> r2 = map(l2, (ColoredAnimal x) -> new Dog(x.getWeight() - 5, x.getColor()));
 
+        iter(l2, (Dog d) -> System.out.println(d));
+        for (Dog d : l2) System.out.println(d);
+        List<?> r = map(l2, (Dog d) -> { System.out.println(d); return null; });
 
+
+        String s = "ciao";
+        boolean b = s.isEmpty();
+        Function<String, Boolean> f = String::isEmpty;
+        Predicate<String> p = String::isEmpty;
+
+        int i = s.indexOf('c');
+        BiFunction<String, Character, Integer> g = String::indexOf;
+
+        int j = s.lastIndexOf('c', 8);
+        TriFunction<String, Character, Integer, Integer> h = String::lastIndexOf;
+
+        {
+            List<String> l = new ArrayList<>();
+            l.add("pippo");
+            l.add("baudo");
+            l.add("pluto");
+            String s2 = String.join(",", l);
+            BiFunction<CharSequence, Iterable<? extends CharSequence>, String> k = String::join;
+        }
+
+        Function<Integer, Integer> id = Function.identity();
+        Function<?, ?> id2 = (x) -> x;  // fun x -> x
+        
     }
 
 }
