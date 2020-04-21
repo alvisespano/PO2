@@ -144,7 +144,7 @@ public class FunctionalPrimitives {
 
         Function<Integer, Integer> id = Function.identity();
         Function<?, ?> id2 = (x) -> x;  // fun x -> x
-        
+
     }
 
 }
