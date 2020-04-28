@@ -1,4 +1,4 @@
-package it.unive.dais.po2.other;
+package esercizi;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -55,11 +55,7 @@ public class PO1 {
 
         private static double visit(@Nullable Room start) {
             if (start == null || start.visited) return 0.;
-            start.visited = true;
-            double r = start.getScore() + visit(start.n) + visit(start.s) + visit(start.e) + visit(start.o);
-            // TODO: testare la tecnica del false in ascesa al posto del reset
-            start.visited = false;
-            return r;
+            return start.getScore() + visit(start.n) + visit(start.s) + visit(start.e) + visit(start.o);
         }
 
     }
@@ -67,7 +63,6 @@ public class PO1 {
     public static void main(String[] args) {
         Dungeon dung1 = new Dungeon(3, 3);
         double score = dung1.maxScore(0, 0);
-
     }
 
 

@@ -3,10 +3,9 @@ package it.unive.dais.po2.zoo;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.function.Function;
 
 public class Main {
-
-    public static void main(String[] args) {
 
         // TODO: provare a mettere a posto in modo che compili
 /*        Dog fido = new Dog(15, "bruno");
@@ -32,7 +31,7 @@ public class Main {
         a.eat(a);   // mangiare se stessi si può fare
 */
 
-    }
+    
 
 }
 

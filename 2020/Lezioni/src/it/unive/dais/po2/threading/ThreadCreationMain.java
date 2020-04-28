@@ -6,6 +6,7 @@ import java.util.Random;
 
 public class ThreadCreationMain {
 
+
     private static void count(String id, long millis, int times) {
         try {
             for (int i = 0; i < times; ++i) {
