@@ -28,7 +28,6 @@
   <component name="ProjectId" id="1ZkgNslMukL7aL0tQ4ayFKBkC74" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -95,6 +94,7 @@
       <workItem from="1586417345500" duration="64000" />
       <workItem from="1586425058348" duration="7687000" />
       <workItem from="1586445882974" duration="4361000" />
+      <workItem from="1587742901500" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="update 04/04/2020 17:58">
       <created>1586015940164</created>
@@ -149,7 +149,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -166,13 +166,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update 04/04/2020 17:58" />

@@ -69,6 +69,9 @@ public class FunctionalPrimitives {
         return it.hasNext() ? fold_recur(it, f.apply(it.next(), zero), f) : zero;
     }
 
+    // =======================================================================
+    // Spiegazione funzionamento dell'assegnamento
+
     public static void f() {                    // function_f:
         int i = 0;                              // li r0, #0
         while (i < 10) {                        // loop:
@@ -93,6 +96,7 @@ public class FunctionalPrimitives {
                                                 //    blablabla
     }
 
+    // =======================================================================
     @FunctionalInterface
     interface TriFunction<A, B, C, R> {
         R apply(A a, B b, C c);
