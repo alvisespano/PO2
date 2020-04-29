@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
       <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/Singleton.java" afterDir="false" />
@@ -36,6 +37,13 @@
       <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/ColoredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/ColoredAnimal.java" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalPrimitives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalPrimitives.java" afterDir="false" />
+>>>>>>> master
+=======
+      <change afterPath="$PROJECT_DIR$/src/esercizi/ScrittoGennaio2020.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/PO1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/esercizi/PO1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ThreadCreationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ThreadCreationMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Main.java" afterDir="false" />
 >>>>>>> master
     </list>
     <option name="SHOW_DIALOG" value="false" />
