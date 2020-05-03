@@ -119,6 +119,9 @@ public class FunctionalPrimitives {
         for (int i = 0; i < 10; ++i) {
             l2.add(new Dog(i, "red"));
         }
+        /* Mappa una lista di Dog
+         * in un'altra lista di Dog
+         */
         List<Animal> r2 = map(l2, (ColoredAnimal x) -> new Dog(x.getWeight() - 5, x.getColor()));
 
         iter(l2, (Dog d) -> System.out.println(d));

@@ -6,16 +6,13 @@ import java.util.Random;
 
 public class ThreadCreationMain {
 
-<<<<<<< HEAD
     /**
      * Metodo count
      * @param id        ID di chi parla (String)
      * @param millis    Tempo di sleep
      * @param times     Volte che deve essere ripetuto il codice
      */
-=======
 
->>>>>>> master
     private static void count(String id, long millis, int times) {
         try {
             for (int i = 0; i < times; ++i) {
