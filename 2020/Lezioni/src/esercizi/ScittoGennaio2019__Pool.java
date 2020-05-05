@@ -46,6 +46,7 @@ public class ScittoGennaio2019__Pool {
         public T get() { return elem; }
 
         @Override
+        @SuppressWarnings("deprecation")
         public void finalize() {
             release();
         }

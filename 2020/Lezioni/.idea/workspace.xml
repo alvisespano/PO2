@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/esercizi/ScittoGennaio2019__Pool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/esercizi/ScrittoGennaio2019.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/esercizi/ScrittoGiugno2019.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lezioni/META-INF/Lezioni.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/esercizi/ScittoGennaio2019__Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/esercizi/ScittoGennaio2019__Pool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
       <recent name="it.unive.dais.po2.myjdk" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SortingTest">
+  <component name="RunManager" selected="Application.IterableTree">
     <configuration name="ConsumerProducer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.patterns.ConsumerProducer" />
       <module name="Lezioni" />
@@ -68,6 +66,14 @@
     </configuration>
     <configuration name="Es_SkipIterator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="esercizi.Es_SkipIterator" />
+      <module name="Lezioni" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IterableTree" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="esercizi.ScrittoGiugno2019" />
       <module name="Lezioni" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
@@ -163,6 +169,7 @@
       <item itemvalue="Application.RandomIter" />
       <item itemvalue="Application.RevTest" />
       <item itemvalue="Application.SortingTest" />
+      <item itemvalue="Application.IterableTree" />
       <item itemvalue="Application.TestList" />
       <item itemvalue="Application.TestMap" />
       <item itemvalue="Application.Thread" />
@@ -188,18 +195,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586530944260">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588689518595">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586530944260" />
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1588604395040">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588689518595" />
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1588688349068">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1588604395040" />
-    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586530943000">
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1588688349068" />
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588689516981">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586530943000" />
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588689516981" />
     <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587389648968">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -232,22 +239,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
-    <state width="1877" height="382" key="GridCell.Tab.0.bottom" timestamp="1586970235435">
+    <state width="1877" height="382" key="GridCell.Tab.0.bottom" timestamp="1588692171702">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235435" />
-    <state width="1877" height="382" key="GridCell.Tab.0.center" timestamp="1586970235435">
+    <state width="1877" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1588692171702" />
+    <state width="1877" height="382" key="GridCell.Tab.0.center" timestamp="1588692171702">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235435" />
-    <state width="1877" height="382" key="GridCell.Tab.0.left" timestamp="1586970235434">
+    <state width="1877" height="382" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1588692171702" />
+    <state width="1877" height="382" key="GridCell.Tab.0.left" timestamp="1588692171702">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235434" />
-    <state width="1877" height="382" key="GridCell.Tab.0.right" timestamp="1586970235435">
+    <state width="1877" height="382" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1588692171702" />
+    <state width="1877" height="382" key="GridCell.Tab.0.right" timestamp="1588692171702">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235435" />
+    <state width="1877" height="382" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1588692171702" />
     <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1584613691250">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
