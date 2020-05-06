@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
       <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/Singleton.java" afterDir="false" />
@@ -44,6 +45,11 @@
       <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/PO1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/esercizi/PO1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ThreadCreationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/threading/ThreadCreationMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Main.java" afterDir="false" />
+>>>>>>> master
+=======
+      <change afterPath="$PROJECT_DIR$/src/esercizi/ScrittoGiugno2019.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/esercizi/ScittoGennaio2019__Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/esercizi/ScittoGennaio2019__Pool.java" afterDir="false" />
 >>>>>>> master
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,9 +105,13 @@
 =======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../LabCloud/RMITest1" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+>>>>>>> master
+=======
+    <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
 >>>>>>> master
   </component>
   <component name="RecentsManager">
@@ -112,6 +122,7 @@
       <recent name="it.unive.dais.po2.myjdk" />
     </key>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -126,6 +137,9 @@
 =======
   <component name="RunManager" selected="Application.SortingTest">
 >>>>>>> master
+=======
+  <component name="RunManager" selected="Application.IterableTree">
+>>>>>>> master
     <configuration name="ConsumerProducer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.patterns.ConsumerProducer" />
       <module name="Lezioni" />
@@ -136,6 +150,17 @@
     </configuration>
     <configuration name="Es_SkipIterator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="esercizi.Es_SkipIterator" />
+      <module name="Lezioni" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
+>>>>>>> master
+=======
+    <configuration name="IterableTree" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="esercizi.ScrittoGiugno2019" />
       <module name="Lezioni" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
@@ -252,6 +277,7 @@
       <item itemvalue="Application.RandomIter" />
       <item itemvalue="Application.RevTest" />
       <item itemvalue="Application.SortingTest" />
+      <item itemvalue="Application.IterableTree" />
       <item itemvalue="Application.TestList" />
       <item itemvalue="Application.TestMap" />
 <<<<<<< HEAD
@@ -319,17 +345,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586530944260">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588689518595">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586530944260" />
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1586874408789">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588689518595" />
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1588688349068">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1586874408789" />
-    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586530943000">
+    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1588688349068" />
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588689516981">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1585062757447" />
@@ -347,6 +374,9 @@
     <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585928632648">
 >>>>>>> master
 =======
+=======
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588689516981" />
+>>>>>>> master
     <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587389648968">
 >>>>>>> master
       <screen x="0" y="0" width="1920" height="1160" />
@@ -364,10 +394,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="764" y="410" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586362503019" />
-    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586874148697">
+    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588604888248">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586874148697" />
+    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588604888248" />
     <state x="690" y="326" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584456474325">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -428,22 +458,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
-    <state width="1877" height="382" key="GridCell.Tab.0.bottom" timestamp="1586970235435">
+    <state width="1877" height="382" key="GridCell.Tab.0.bottom" timestamp="1588692171702">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235435" />
-    <state width="1877" height="382" key="GridCell.Tab.0.center" timestamp="1586970235435">
+    <state width="1877" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1588692171702" />
+    <state width="1877" height="382" key="GridCell.Tab.0.center" timestamp="1588692171702">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235435" />
-    <state width="1877" height="382" key="GridCell.Tab.0.left" timestamp="1586970235434">
+    <state width="1877" height="382" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1588692171702" />
+    <state width="1877" height="382" key="GridCell.Tab.0.left" timestamp="1588692171702">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235434" />
-    <state width="1877" height="382" key="GridCell.Tab.0.right" timestamp="1586970235435">
+    <state width="1877" height="382" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1588692171702" />
+    <state width="1877" height="382" key="GridCell.Tab.0.right" timestamp="1588692171702">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1586970235435" />
+    <state width="1877" height="382" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1588692171702" />
     <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1584613691250">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -460,10 +490,14 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1877" height="386" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1584613691250" />
-    <state x="461" y="222" key="SettingsEditor" timestamp="1584616235838">
+    <state x="461" y="222" key="SettingsEditor" timestamp="1588601343411">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
+<<<<<<< HEAD
     <state x="461" y="222" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1584616235838" />
+>>>>>>> master
+=======
+    <state x="461" y="222" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1588601343411" />
 >>>>>>> master
     <state x="664" y="473" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584352964962">
       <screen x="0" y="0" width="1920" height="1160" />
