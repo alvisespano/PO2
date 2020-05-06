@@ -25,6 +25,7 @@ public class ScrittoGennaio2020 {
             Function<Solid, Double> f = Solid::volume; // (Solid x) -> x.volume()
             Supplier<Double> g = this::volume;         // () -> this.volume()
             return compareBy(Solid::volume, this, s);
+            // return compareBy((x)->x.volume(), this, s);
         }
     }
 
