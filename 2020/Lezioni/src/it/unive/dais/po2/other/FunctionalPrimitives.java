@@ -65,8 +65,18 @@ public class FunctionalPrimitives {
         return fold_recur(l.iterator(), zero, f);
     }
 
+    // fold : list A -> B -> (A * B -> B) -> B
     public static <A, B> B fold_recur(Iterator<A> it, B zero, BiFunction<A, B, B> f) {
-        return it.hasNext() ? fold_recur(it, f.apply(it.next(), zero), f) : zero;
+        // caso ricorsivo
+        if (it.hasNext()) {
+            return fold_recur(it, f.apply(it.next(), zero), f);
+        }
+        // caso base
+        else {
+            return zero;
+        }
+        // equivalente ma in una solo espressione
+        //return it.hasNext() ? fold_recur(it, f.apply(it.next(), zero), f) : zero;
     }
 
     public static void f() {                    // function_f:
@@ -97,6 +107,7 @@ public class FunctionalPrimitives {
     interface TriFunction<A, B, C, R> {
         R apply(A a, B b, C c);
     }
+
 
     public static void main(String[] args) {
 
