@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/ForEachTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/esercizi/Andrei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/esercizi/EsercizioCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/MyIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/MyIterable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalPrimitives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/FunctionalPrimitives.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/esercizi/ScrittoGennaio2020.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/esercizi/ScrittoGennaio2020.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +58,23 @@
       <recent name="it.unive.dais.po2.myjdk" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ForEach">
+  <component name="RunManager" selected="Application.Cache">
+    <configuration name="Andrei" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="esercizi.Andrei" />
+      <module name="Lezioni" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Cache" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="esercizi.EsercizioCache" />
+      <module name="Lezioni" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConsumerProducer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.patterns.ConsumerProducer" />
       <module name="Lezioni" />
@@ -172,6 +190,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.ForEach" />
+      <item itemvalue="Application.Andrei" />
+      <item itemvalue="Application.Cache" />
       <item itemvalue="Application.ConsumerProducer" />
       <item itemvalue="Application.Es_SkipIterator" />
       <item itemvalue="Application.IteratorTest" />
@@ -205,22 +225,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588950621040">
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589294047109">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588950621040" />
+    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1589294047109" />
     <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1588949771412">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1588949771412" />
-    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588950620065">
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589294035319">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1588950620065" />
-    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587389648968">
+    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1589294035319" />
+    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1589273786106">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1587389648968" />
+    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1589273786106" />
     <state x="824" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586273395656">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -249,42 +269,46 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
-    <state width="1877" height="382" key="GridCell.Tab.0.bottom" timestamp="1588950776882">
+    <state width="1877" height="382" key="GridCell.Tab.0.bottom" timestamp="1589298443509">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1588950776882" />
-    <state width="1877" height="382" key="GridCell.Tab.0.center" timestamp="1588950776882">
+    <state width="1877" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1589298443509" />
+    <state width="1877" height="382" key="GridCell.Tab.0.center" timestamp="1589298443509">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1588950776882" />
-    <state width="1877" height="382" key="GridCell.Tab.0.left" timestamp="1588950776881">
+    <state width="1877" height="382" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1589298443509" />
+    <state width="1877" height="382" key="GridCell.Tab.0.left" timestamp="1589298443509">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1588950776881" />
-    <state width="1877" height="382" key="GridCell.Tab.0.right" timestamp="1588950776882">
+    <state width="1877" height="382" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1589298443509" />
+    <state width="1877" height="382" key="GridCell.Tab.0.right" timestamp="1589298443509">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="382" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1588950776882" />
-    <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1588950697903">
+    <state width="1877" height="382" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1589298443509" />
+    <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1589295417814">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1588950697903" />
-    <state width="1877" height="386" key="GridCell.Tab.1.center" timestamp="1588950697903">
+    <state width="1877" height="386" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1589295417814" />
+    <state width="1877" height="386" key="GridCell.Tab.1.center" timestamp="1589295417813">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1588950697903" />
-    <state width="1877" height="386" key="GridCell.Tab.1.left" timestamp="1588950697903">
+    <state width="1877" height="386" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1589295417813" />
+    <state width="1877" height="386" key="GridCell.Tab.1.left" timestamp="1589295417813">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1588950697903" />
-    <state width="1877" height="386" key="GridCell.Tab.1.right" timestamp="1588950697903">
+    <state width="1877" height="386" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1589295417813" />
+    <state width="1877" height="386" key="GridCell.Tab.1.right" timestamp="1589295417814">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1588950697903" />
+    <state width="1877" height="386" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1589295417814" />
     <state x="461" y="222" key="SettingsEditor" timestamp="1588950830994">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="222" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1588950830994" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1589295096358">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1160@0.0.1920.1160" timestamp="1589295096358" />
     <state x="664" y="473" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584352964962">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -305,6 +329,11 @@
           <url>file://$PROJECT_DIR$/src/it/unive/dais/po2/other/ForEachTest.java</url>
           <line>12</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/esercizi/EsercizioCache.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

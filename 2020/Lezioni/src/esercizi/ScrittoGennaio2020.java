@@ -1,12 +1,16 @@
 package esercizi;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class ScrittoGennaio2020 {
 
-    public static class Point {
+        public static class Point {
 
     }
 

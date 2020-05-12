@@ -3,14 +3,21 @@ package it.unive.dais.po2.zoo;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
 import java.util.function.Function;
 
 public class Main {
 
-        // TODO: provare a mettere a posto in modo che compili
-/*        Dog fido = new Dog(15, "bruno");
+    public static void main(String[] args) {
+        Dog fido = new Dog(15, "bruno");
         Dog baldo = new Dog(20, "bianco");
-        Animal jackie = new Dog(2, "nero");
+
+        List<Dog> dogs = new ArrayList<>();
+        dogs.add(fido);
+        dogs.add(baldo);
+
+        // TODO: provare a mettere a posto in modo che compili
+/*        Animal jackie = new Dog(2, "nero");
         Dog pluto = new Animal(50);
         Animal selene = new Cat(4, "grigio");
 
@@ -31,7 +38,7 @@ public class Main {
         a.eat(a);   // mangiare se stessi si può fare
 */
 
-    
+    }
 
 }
 
