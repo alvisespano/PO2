@@ -16,6 +16,30 @@ public class Main {
         dogs.add(fido);
         dogs.add(baldo);
 
+        List<Animal> l3 = new ArrayList<Dog>();
+        l3.add(new Cat(10, "idfif"));
+
+        // wildcards
+
+        List<? extends Animal> l = new ArrayList<>();
+        Animal a1 = l.get(0);
+
+        l.set(0, new Dog(10, "fido"));
+        l.add(new Dog(10, "fido"));
+
+
+        List<? super Dog> l2 = new ArrayList<>();
+        Animal a2 = l2.get(0);
+
+        l2.set(0, new Dog(10, "fido"));
+        l2.set(0, new Animal(10));
+        l2.add(new Dog(10, "fido"));
+
+        Function<Animal, Cat> f1 = (Animal s) -> new Cat(s.weight, "blu");
+        Function<? super Dog, ? extends Animal> f = f1;
+
+
+
         // TODO: provare a mettere a posto in modo che compili
 /*        Animal jackie = new Dog(2, "nero");
         Dog pluto = new Animal(50);

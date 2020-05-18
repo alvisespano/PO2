@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/esercizi/DynamicDispatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/esercizi/EsercizioCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/esercizi/EsercizioCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/SortingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,17 +187,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ForEach" />
       <item itemvalue="Application.Andrei" />
       <item itemvalue="Application.Cache" />
       <item itemvalue="Application.ConsumerProducer" />
       <item itemvalue="Application.Es_SkipIterator" />
+      <item itemvalue="Application.ForEach" />
+      <item itemvalue="Application.IterableTree" />
       <item itemvalue="Application.IteratorTest" />
       <item itemvalue="Application.ProvaIterator" />
       <item itemvalue="Application.RandomIter" />
       <item itemvalue="Application.RevTest" />
       <item itemvalue="Application.SortingTest" />
-      <item itemvalue="Application.IterableTree" />
       <item itemvalue="Application.TestList" />
       <item itemvalue="Application.TestMap" />
       <item itemvalue="Application.Thread" />
@@ -317,6 +319,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="342" y="200" key="new project wizard/0.0.1920.1160@0.0.1920.1160" timestamp="1586513207073" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1589815047859">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1589815047859" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
