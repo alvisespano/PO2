@@ -16,6 +16,7 @@ public class Main {
         dogs.add(fido);
         dogs.add(baldo);
 
+        /*
         List<Animal> l3 = new ArrayList<Dog>();
         l3.add(new Cat(10, "idfif"));
 
@@ -36,7 +37,7 @@ public class Main {
         l2.add(new Dog(10, "fido"));
 
         Function<Animal, Cat> f1 = (Animal s) -> new Cat(s.weight, "blu");
-        Function<? super Dog, ? extends Animal> f = f1;
+        Function<? super Dog, ? extends Animal> f = f1;*/
 
 
 

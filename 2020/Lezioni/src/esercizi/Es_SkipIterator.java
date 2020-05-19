@@ -9,7 +9,23 @@ public class Es_SkipIterator {
     public static class SkipArrayList<T> extends ArrayList<T> {
         @Override
         public Iterator<T> iterator() {
-            Iterator<T> it = super.iterator();
+            // senza usare l'iteratore originale
+            return new Iterator<T>() {
+                private int pos = 0;
+                @Override
+                public boolean hasNext() {
+                    return pos < size();
+                }
+
+                @Override
+                public T next() {
+                    T x = get(pos);
+                    pos += 2;
+                    return x;
+                }
+            };
+            // usando l'iteratore originale
+            /*Iterator<T> it = super.iterator();
             return new Iterator<T>() {
                 @Override
                 public boolean hasNext() {
@@ -22,7 +38,7 @@ public class Es_SkipIterator {
                     if (it.hasNext()) it.next();
                     return x;
                 }
-            };
+            };*/
         }
     }
 
