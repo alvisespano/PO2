@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/esercizi/MapIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/SyncSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/esercizi/camporese/Laureando.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/esercizi/camporese/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/esercizi/camporese/Studente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/esercizi/camporese/main/Es_Camporese.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/esercizi/Es_SkipIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/esercizi/Es_SkipIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/other/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/other/SortingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/patterns/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/zoo/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="esercizi.camporese" />
       <recent name="it.unive.dais.po2.patterns.factory" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -243,14 +243,14 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1589273786106" />
-    <state x="824" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586273395656">
+    <state x="824" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590162792373">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="824" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586273395656" />
-    <state x="753" y="415" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog" timestamp="1586273397042">
+    <state x="824" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1590162792373" />
+    <state x="753" y="415" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog" timestamp="1590162793550">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="753" y="415" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586273397042" />
+    <state x="753" y="415" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1590162793550" />
     <state x="764" y="410" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1586362503019">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -271,22 +271,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
-    <state width="1877" height="317" key="GridCell.Tab.0.bottom" timestamp="1589899946421">
+    <state width="1877" height="317" key="GridCell.Tab.0.bottom" timestamp="1589903406584">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1589899946421" />
-    <state width="1877" height="317" key="GridCell.Tab.0.center" timestamp="1589899946421">
+    <state width="1877" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1589903406584" />
+    <state width="1877" height="317" key="GridCell.Tab.0.center" timestamp="1589903406584">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1589899946421" />
-    <state width="1877" height="317" key="GridCell.Tab.0.left" timestamp="1589899946421">
+    <state width="1877" height="317" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1589903406584" />
+    <state width="1877" height="317" key="GridCell.Tab.0.left" timestamp="1589903406584">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1589899946421" />
-    <state width="1877" height="317" key="GridCell.Tab.0.right" timestamp="1589899946421">
+    <state width="1877" height="317" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1589903406584" />
+    <state width="1877" height="317" key="GridCell.Tab.0.right" timestamp="1589903406584">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1589899946421" />
+    <state width="1877" height="317" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1589903406584" />
     <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1589562871214">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
