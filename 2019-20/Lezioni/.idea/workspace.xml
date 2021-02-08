@@ -64,7 +64,6 @@
     <configuration name="Andrei" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="esercizi.Andrei" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -72,7 +71,6 @@
     <configuration name="ConsumerProducer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.patterns.ConsumerProducer" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -80,7 +78,6 @@
     <configuration name="Es_SkipIterator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="esercizi.Es_SkipIterator" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,7 +85,6 @@
     <configuration name="ForEach" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.ForEachTest" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,7 +92,6 @@
     <configuration name="IterableTree" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="esercizi.ScrittoGiugno2019" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,7 +99,6 @@
     <configuration name="IteratorTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.IteratorTest" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,7 +106,6 @@
     <configuration name="MapIterator" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="esercizi.MapIterator" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,7 +113,6 @@
     <configuration name="ProvaIterator" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="esercizi.ProvaIterator" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,7 +120,6 @@
     <configuration name="RandomIter" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="esercizi.Es_RandomIterator" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,7 +127,6 @@
     <configuration name="RevTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.RevTest" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,7 +134,6 @@
     <configuration name="SortingTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.other.SortingTest" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,7 +141,6 @@
     <configuration name="TestList" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.myjdk.TestList" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,7 +148,6 @@
     <configuration name="TestMap" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.myjdk.TestMap" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,7 +155,6 @@
     <configuration name="Thread" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.ThreadCreationMain" />
       <module name="Lezioni" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,15 +163,8 @@
       <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.zoo.Main" />
       <module name="Lezioni" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
