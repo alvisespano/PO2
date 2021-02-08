@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/esercizi/camporese/Laureando.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/esercizi/camporese/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/esercizi/camporese/Studente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/esercizi/camporese/main/Es_Camporese.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unive/dais/po2/myjdk/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020-21/Lezioni/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2020-21/Lezioni/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +40,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../LabCloud/RMITest1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -192,6 +187,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\spano\AppData\Roaming\Subversion</configuration>
   </component>
@@ -206,106 +202,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589899178943">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="984" y="592" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1612794482898">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="414" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1589899178943" />
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser" timestamp="1589556106120">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="765" y="289" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1589556106120" />
-    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589899177983">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="689" y="363" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1589899177983" />
-    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1589273786106">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="640" y="307" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1589273786106" />
-    <state x="824" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590162792373">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="824" y="505" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1590162792373" />
-    <state x="753" y="415" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog" timestamp="1590162793550">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="753" y="415" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1590162793550" />
-    <state x="764" y="410" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1586362503019">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="764" y="410" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1586362503019" />
-    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589556195363">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="665" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1589556195363" />
-    <state x="690" y="326" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584456474325">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="690" y="326" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1584456474325" />
-    <state x="609" y="174" key="CommitChangelistDialog2" timestamp="1586877875652">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="609" y="174" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1586877875652" />
-    <state x="740" y="334" key="FileChooserDialogImpl" timestamp="1584617247364">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1584617247364" />
-    <state width="1877" height="317" key="GridCell.Tab.0.bottom" timestamp="1589903406584">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1589903406584" />
-    <state width="1877" height="317" key="GridCell.Tab.0.center" timestamp="1589903406584">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1589903406584" />
-    <state width="1877" height="317" key="GridCell.Tab.0.left" timestamp="1589903406584">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1589903406584" />
-    <state width="1877" height="317" key="GridCell.Tab.0.right" timestamp="1589903406584">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1589903406584" />
-    <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1589562871214">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1589562871214" />
-    <state width="1877" height="386" key="GridCell.Tab.1.center" timestamp="1589562871214">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1589562871214" />
-    <state width="1877" height="386" key="GridCell.Tab.1.left" timestamp="1589562871214">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1589562871214" />
-    <state width="1877" height="386" key="GridCell.Tab.1.right" timestamp="1589562871214">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="1877" height="386" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1589562871214" />
-    <state x="461" y="222" key="SettingsEditor" timestamp="1588950830994">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="461" y="222" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1588950830994" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1589295096358">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1160@0.0.1920.1160" timestamp="1589295096358" />
-    <state x="664" y="473" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584352964962">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="664" y="473" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1160@0.0.1920.1160" timestamp="1584352964962" />
-    <state x="536" y="315" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584463463386">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="536" y="315" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1160@0.0.1920.1160" timestamp="1584463463386" />
-    <state x="342" y="200" key="new project wizard" timestamp="1586513207073">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="342" y="200" key="new project wizard/0.0.1920.1160@0.0.1920.1160" timestamp="1586513207073" />
-    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1589815047859">
-      <screen x="0" y="0" width="1920" height="1160" />
-    </state>
-    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160@0.0.1920.1160" timestamp="1589815047859" />
+    <state x="984" y="592" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1400/2560.0.1920.1160@0.0.2560.1400" timestamp="1612794482898" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
