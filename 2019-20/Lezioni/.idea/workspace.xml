@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2020-21/Lezioni/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2020-21/Lezioni/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveInnerDialog.RECENTS_KEY">
@@ -166,12 +165,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.Andrei" />
-      <item itemvalue="Application.MapIterator" />
       <item itemvalue="Application.ConsumerProducer" />
       <item itemvalue="Application.Es_SkipIterator" />
       <item itemvalue="Application.ForEach" />
       <item itemvalue="Application.IterableTree" />
       <item itemvalue="Application.IteratorTest" />
+      <item itemvalue="Application.MapIterator" />
       <item itemvalue="Application.ProvaIterator" />
       <item itemvalue="Application.RandomIter" />
       <item itemvalue="Application.RevTest" />
@@ -202,6 +201,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="781" y="345" key="SettingsEditor" timestamp="1612961212733">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1160@0.0.2560.1400" timestamp="1612961212733" />
     <state x="984" y="592" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1612794482898">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -9,10 +9,21 @@ public class Main {
         }
     }
 
+    public static class Humanoid extends Animal {
+        public void marry(Humanoid d) {}
+    }
+
+    public static class Elf extends Humanoid {
+        private int mana;
+        public int getMana() { return mana; }
+    }
+
+    public static class Dwarf extends Humanoid {
+
+    }
+
     public static class Dog extends Animal {
         public void bark() { }
-
-        public void marry(Dog d) {}
 
         @Override
         public void eat(Animal a) {
@@ -20,17 +31,47 @@ public class Main {
         }
     }
 
-    private static Animal makeAnimal() {
+    public static class Cocker extends Dog {
+        @Override
+        public void eat(Animal a) {
+            this.weight += a.weight / 3;
+        }
+
+    }
+
+    public static class Cat extends Animal {
+        public void meow() {
+            System.out.println("meow");
+        }
+    }
+
+    public static class Siamese extends Cat {
+        @Override
+        public void meow() {
+            System.out.println("maauuuu");
+        }
+    }
+
+    private static Dog makeAnimal() {
         return new Dog();
     }
 
     public static void main(String[] args) {
 
         Animal fido = makeAnimal();
+        Animal dodi = new Dog();
+        dodi = new Cat();
         Dog lilly = new Dog();
         fido.eat(lilly);        // SUBSUMPTION
+        fido.eat(dodi);
 
-        lilly.marry(fido);      // non compila perché fido : Animal
+        Humanoid john = new Humanoid();
+        Humanoid alice = new Humanoid();
+        Elf tara = new Elf();
+
+        john.marry(tara);
+        tara.marry(fido);
+
 
     }
 
