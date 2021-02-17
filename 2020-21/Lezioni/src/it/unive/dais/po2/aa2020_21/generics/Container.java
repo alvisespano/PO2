@@ -50,10 +50,6 @@ public class Container {
         }
     }
 
-    public static int f(int x) {
-        return 7 + 7 + 7 * 7;
-    }
-
     public static class MyGenList<T> {
 
         private final Object[] a;
@@ -80,8 +76,6 @@ public class Container {
 
 
     public static void main(String[] args) {
-
-        int z = f(7);
 
         // monomorfo per int
         {
@@ -134,15 +128,19 @@ public class Container {
             }
         }
 
+        // generics altro esempio
         {
+            // costruzione
             MyGenList<Zoo.Animal> l = new MyGenList<Zoo.Animal>();
+
+            // popolamento
             l.add(new Zoo.Dog());
             l.add(new Zoo.Cat());
             l.add(new Zoo.Cocker());
 
             // lettura
             for (int i = 0; i < l.size(); ++i) {
-                Zoo.Animal n = l.get(i);
+                Zoo.Animal n = l.get(i);    // getto sempre oggetti di tipo Zoo.Animal perché l : MyGenList<Zoo.Animal>
                 System.out.println(n);
             }
         }
