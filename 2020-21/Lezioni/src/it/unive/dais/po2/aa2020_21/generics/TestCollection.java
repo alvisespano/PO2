@@ -1,6 +1,5 @@
 package it.unive.dais.po2.aa2020_21.generics;
 
-import java.io.File;
 import java.util.*;
 
 public class TestCollection {
