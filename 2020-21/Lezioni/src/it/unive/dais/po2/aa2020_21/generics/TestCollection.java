@@ -48,17 +48,17 @@ public class TestCollection {
     }
 
     public static int median(List<Integer> c) {
-//        Collections.sort(c);
+          Collections.sort(c);  // ordiniamo la List<Integer>
           return c.get(c.size() / 2);
     }
 
-    /*public static int median(Collection<Integer> c) {
+    public static int median(Collection<Integer> c) {
         Iterator<Integer> it = c.iterator();
         int r = 0;
         for (int i = 0; i < c.size() / 2; ++i)
             r = it.next();
         return r;
-    }*/
+    }
 
 
     public static void main(String[] args) {
@@ -75,7 +75,7 @@ public class TestCollection {
         HashSet<Integer> c = new HashSet<>();
         populate(c);
         print(c);
-        System.out.println(String.format("avg = %g, median = %d", average(c), median(c)));  // ERROR non è una List
+        System.out.println(String.format("avg = %g, median = %d", average(c), median(c)));  // c non è una List<Integer> quindi chiama l'overload median(Collection<Integer>)
 
 
 
