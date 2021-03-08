@@ -1,43 +1,12 @@
 package it.unive.dais.po2.aa2020_21.tinyjdk;
 
-public class ArrayList<T> implements List<T> {
-    private Object[] a;
-    private int actualSize;
+import org.jetbrains.annotations.NotNull;
+
+public class ArrayList<T> extends AbstractCollection<T> implements List<T> {
 
     public ArrayList() {
         a = new Object[10];
         actualSize = 0;
-    }
-
-
-    @Override
-    public void add(T x) {
-        if (actualSize >= a.length) {
-            Object[] newa = new Object[a.length * 2];
-            for (int i = 0; i < a.length; ++i)
-                newa[i] = a[i];
-            a = newa;
-        }
-        a[actualSize++] = x;
-    }
-
-    @Override
-    public boolean contains(T x) {
-        for (Object o_ : a) {
-            T o = (T) o_;
-            if (o.equals(x)) return true;
-        }
-        return false;
-    }
-
-    @Override
-    public int size() {
-        return actualSize;
-    }
-
-    @Override
-    public void remove(T x) {
-
     }
 
     private static class myStaticIterator<E> implements Iterator<E> {
@@ -79,7 +48,7 @@ public class ArrayList<T> implements List<T> {
     public Iterator<T> iterator() {
         //return new ArrayListIterator<T>(this);        // versione con classe pubblica in un file a sé stante
         //return new myStaticIterator<T>(this);         // versione con classe nested STATICA: equivalente alla versione con classe pubblica su file
-        //return new myIterator();                        // versione con classe nested NON-STATICA (non servono type arguments)
+        //return new myIterator();                      // versione con classe nested NON-STATICA (non servono type arguments)
 
         // versione con classe ANONIMA
         final int zero = 0;                             // esempio di variabile locale usata dalla classe anonima
@@ -110,6 +79,19 @@ public class ArrayList<T> implements List<T> {
     public void set(int index, T x) {
         checkPos(index);
         a[index] = x;
+    }
+
+    @Override
+    public void remove(int index) {
+        // TODO rifattorizzare in maniera elegante e senza ripetizioni la remove(int), la remove(T) e la removeAll(T)
+        for (int j = index; j < actualSize - 1; ++j)
+            a[j] = a[j + 1];
+        --actualSize;
+    }
+
+    @Override
+    public void add(int index, T x) {
+        // TODO da fare per casa
     }
 
     private void checkPos(int index) {
