@@ -1,18 +1,18 @@
 package it.unive.dais.po2.aa2020_21.tinyjdk;
 
-public class IdentitySet<T> extends AbstractCollection<T> implements Set<T> {
+import jdk.jshell.spi.ExecutionControl;
 
-    public IdentitySet() {
-    }
+public class IdentitySet<T> extends AbstractResizableCollection<T> implements Set<T> {
 
 
     @Override
     public void add(T x) {
-        if (!contains(x)) super.add(x);   // TODO risolvere il problema di ricorsione
+        if (!contains(x)) actualAdd(x);
     }
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        // TODO rifattorizzare gli iteratori di ArrayList e spostarli in AbstractResizableCollection
+        throw new RuntimeException();
     }
 }

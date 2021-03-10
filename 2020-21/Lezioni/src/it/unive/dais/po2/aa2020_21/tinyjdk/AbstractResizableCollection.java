@@ -1,12 +1,12 @@
 package it.unive.dais.po2.aa2020_21.tinyjdk;
 
-public abstract class AbstractCollection<T> implements Collection<T> {
+public abstract class AbstractResizableCollection<T> implements Collection<T> {
 
     protected Object[] a;
     protected int actualSize;
 
-    @Override
-    public void add(T x) {
+    // TODO creare una sottoclasse astratta con questa add() basata su array che si ridimensionano e lasciare la add() astratta in questa classe
+    protected void actualAdd(T x) {
         if (actualSize >= a.length) {
             Object[] newa = new Object[a.length * 2];
             for (int i = 0; i < a.length; ++i)
@@ -15,6 +15,7 @@ public abstract class AbstractCollection<T> implements Collection<T> {
         }
         a[actualSize++] = x;
     }
+
 
     @Override
     public boolean contains(T x) {
