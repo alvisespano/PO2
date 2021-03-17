@@ -1,20 +1,31 @@
 package it.unive.dais.po2.aa2020_21.tinyjdk;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class PairMap<K, V> implements Map<K, V> {
     private final ArrayList<Pair<K, V>> a = new ArrayList<>();
 
-    @Override
-    public void put(K key, V value) {
+    @Nullable
+    private Pair<Integer, Pair<K, V>> search(K key) {
         for (int i = 0; i < a.size(); ++i) {
-            K e = a.get(i).first;
+            Pair<K, V> p = a.get(i);
+            K e = p.first;
             if (e.equals(key)) {
-                a.set(i, new Pair<>(e, value));
-                return;
+                return new Pair<>(i, p);
             }
         }
-        a.add(new Pair<>(key, value));
+        return null;
+    }
+
+    @Override
+    public void put(K key, V value) {
+        Pair<Integer, Pair<K, V>> r = search(key);
+        if (r != null) {
+            a.set(r.first, new Pair<>(r.second.first, value));
+        }
+        else
+            a.add(new Pair<>(key, value));
     }
 
     @Override
@@ -30,12 +41,15 @@ public class PairMap<K, V> implements Map<K, V> {
 
     @Override
     public int size() {
-        return 0;   // TODO
+        return a.size();
     }
 
     @Override
     public void remove(K key) {
-        // TODO
+        Pair<Integer, Pair<K, V>> r = search(key);
+        if (r != null) {
+            a.remove(r.first);
+        }
     }
 
     @Override

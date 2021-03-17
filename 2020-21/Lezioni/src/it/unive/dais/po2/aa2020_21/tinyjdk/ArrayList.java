@@ -1,6 +1,6 @@
 package it.unive.dais.po2.aa2020_21.tinyjdk;
 
-public class ArrayList<T> extends AbstractResizableList<T> implements List<T> {
+public class ArrayList<T> extends AbstractResizableList<T> implements List<T> /*, Map<Integer, T>*/ {
 
     public ArrayList() {
         a = new Object[10];
@@ -46,6 +46,21 @@ public class ArrayList<T> extends AbstractResizableList<T> implements List<T> {
             return ArrayList.this.get(pos++);
         }
     }
+
+    /*@Override
+    public void put(Integer key, T value) {
+        set(key, value);
+    }
+
+    @Override
+    public T get(Integer key) throws PairMap.NotFoundException {
+        return null;
+    }
+
+    @Override
+    public void remove(Integer key) {
+
+    }*/
 
     @Override
     public Iterator<T> iterator() {
