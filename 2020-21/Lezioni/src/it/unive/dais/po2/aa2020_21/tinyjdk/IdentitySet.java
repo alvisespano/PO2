@@ -1,9 +1,6 @@
 package it.unive.dais.po2.aa2020_21.tinyjdk;
 
-import jdk.jshell.spi.ExecutionControl;
-
 public class IdentitySet<T> extends AbstractResizableCollection<T> implements Set<T> {
-
 
     @Override
     public void add(T x) {

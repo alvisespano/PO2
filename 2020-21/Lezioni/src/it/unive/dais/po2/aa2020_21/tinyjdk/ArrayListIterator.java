@@ -1,5 +1,6 @@
 package it.unive.dais.po2.aa2020_21.tinyjdk;
 
+@SuppressWarnings("unused")
 public class ArrayListIterator<E> implements Iterator<E> {
 
     private final ArrayList<E> a;

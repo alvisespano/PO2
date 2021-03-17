@@ -5,12 +5,10 @@ public abstract class AbstractResizableCollection<T> implements Collection<T> {
     protected Object[] a;
     protected int actualSize;
 
-    // TODO creare una sottoclasse astratta con questa add() basata su array che si ridimensionano e lasciare la add() astratta in questa classe
     protected void actualAdd(T x) {
         if (actualSize >= a.length) {
             Object[] newa = new Object[a.length * 2];
-            for (int i = 0; i < a.length; ++i)
-                newa[i] = a[i];
+            System.arraycopy(a, 0, newa, 0, a.length);
             a = newa;
         }
         a[actualSize++] = x;
@@ -37,8 +35,7 @@ public abstract class AbstractResizableCollection<T> implements Collection<T> {
         for (int i = 0; i < actualSize; ++i) {
             T o = (T) a[i];
             if (o.equals(x)) {
-                for (int j = i + 1; j < actualSize; ++j)
-                    a[j - 1] = a[j];
+                if (actualSize - (i + 1) >= 0) System.arraycopy(a, i + 1, a, i + 1 - 1, actualSize - (i + 1));
                 --actualSize;
                 break;
             }

@@ -15,9 +15,7 @@ public abstract class AbstractResizableList<T> extends AbstractResizableCollecti
 
     @Override
     public void remove(int index) {
-        // TODO rifattorizzare in maniera elegante e senza ripetizioni la remove(int), la remove(T) e la removeAll(T)
-        for (int j = index; j < actualSize - 1; ++j)
-            a[j] = a[j + 1];
+        if (actualSize - 1 - index >= 0) System.arraycopy(a, index + 1, a, index, actualSize - 1 - index);
         --actualSize;
     }
 

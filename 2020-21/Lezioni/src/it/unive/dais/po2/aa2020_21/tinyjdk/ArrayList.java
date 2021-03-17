@@ -1,6 +1,6 @@
 package it.unive.dais.po2.aa2020_21.tinyjdk;
 
-public class ArrayList<T> extends AbstractResizableList<T> implements List<T> /*, Map<Integer, T>*/ {
+public class ArrayList<T> extends AbstractResizableList<T> implements List<T> {
 
     public ArrayList() {
         a = new Object[10];
@@ -12,6 +12,7 @@ public class ArrayList<T> extends AbstractResizableList<T> implements List<T> /*
         actualAdd(x);
     }
 
+    @SuppressWarnings("unused")
     private static class myStaticIterator<E> implements Iterator<E> {
 
         private final ArrayList<E> a;
@@ -32,6 +33,7 @@ public class ArrayList<T> extends AbstractResizableList<T> implements List<T> /*
         }
     }
 
+    @SuppressWarnings("unused")
     private class myIterator implements Iterator<T> {
 
         private int pos = 0;
@@ -47,20 +49,6 @@ public class ArrayList<T> extends AbstractResizableList<T> implements List<T> /*
         }
     }
 
-    /*@Override
-    public void put(Integer key, T value) {
-        set(key, value);
-    }
-
-    @Override
-    public T get(Integer key) throws PairMap.NotFoundException {
-        return null;
-    }
-
-    @Override
-    public void remove(Integer key) {
-
-    }*/
 
     @Override
     public Iterator<T> iterator() {
@@ -70,7 +58,7 @@ public class ArrayList<T> extends AbstractResizableList<T> implements List<T> /*
 
         // versione con classe ANONIMA
         final int zero = 0;                             // esempio di variabile locale usata dalla classe anonima
-        return new Iterator<T>() {
+        return new Iterator<>() {
             private int pos = zero;     // riferimento ad una variabile nello scope del metodo: la CHIUSURA dell'ambiente consente proprio questo, cioè l'oggetto costruito
                                         // tramite la classe anonima porta con sé un pezzo dello scope in cui è stato definito, a patto che l'accesso alle variabili
                                         // sia solamente in lettura e non le modifichi. Ecco perché devono essere final!

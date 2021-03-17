@@ -29,9 +29,9 @@ public class PairMap<K, V> implements Map<K, V> {
     }
 
     @Override
-    @NotNull    // TODO annotare tutti metodi
+    @NotNull
     public V get(K key) throws NotFoundException {
-        Iterator<Pair<K, V>> it = iterator();
+        Iterator<Pair<K, V>> it = iterator();   // TODO usare search()
         while (it.hasNext()) {
             Pair<K, V> p = it.next();
             if (p.first.equals(key)) return p.second;
