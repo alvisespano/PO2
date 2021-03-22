@@ -1,9 +1,11 @@
 package it.unive.dais.po2.aa2020_21.tinyjdk;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 public interface Map<K, V> extends Iterable<Pair<K, V>> {
-    void put(K key, V value);
-    V get(K key) throws PairMap.NotFoundException;
+    void put(@NotNull K key, @Nullable V value);
+    @Nullable V get(@NotNull K key) throws PairMap.NotFoundException;
     int size();
-    void remove(K key);
-    Iterator<Pair<K, V>> iterator();
+    void remove(@NotNull K key);
 }
