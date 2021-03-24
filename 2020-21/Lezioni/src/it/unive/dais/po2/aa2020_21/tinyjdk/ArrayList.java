@@ -3,7 +3,11 @@ package it.unive.dais.po2.aa2020_21.tinyjdk;
 public class ArrayList<T> extends AbstractResizableList<T> implements List<T> {
 
     public ArrayList() {
-        a = new Object[10];
+        this(0);
+    }
+
+    public ArrayList(int capacity) {
+        a = new Object[capacity];
         actualSize = 0;
     }
 

@@ -57,11 +57,5 @@ public class PairMap<K, V> implements Map<K, V> {
         return a.iterator();
     }
 
-    @Nullable
-    public static class NotFoundException extends Exception {
-        public NotFoundException(Object k) {
-            super(String.format("key = %s", k));
-        }
-    }
 
 }
