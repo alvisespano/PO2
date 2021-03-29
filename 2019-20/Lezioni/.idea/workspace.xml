@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b31aaf0-d5e7-48f6-9f08-402a05824796" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../2020-21/Lezioni/src/it/unive/dais/po2/aa2020_21/generics/TestCollections.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../2020-21/Lezioni/src/it/unive/dais/po2/aa2020_21/tinyjdk/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../2020-21/Lezioni/src/it/unive/dais/po2/aa2020_21/tinyjdk/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2020-21/Lezioni/src/it/unive/dais/po2/aa2020_21/generics/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2020-21/Lezioni/src/it/unive/dais/po2/aa2020_21/generics/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2020-21/Lezioni/src/it/unive/dais/po2/aa2020_21/generics/TestCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2020-21/Lezioni/src/it/unive/dais/po2/aa2020_21/generics/TestCollection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
