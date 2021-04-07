@@ -92,7 +92,7 @@ public class TestFun {
         | x :: xs -> f x :: map f xs
      */
 
-    public static <A, B> List<B> map(Iterable<A> c, Function<A, B> f) {
+    public static <A, B> List<B> map(Iterable<A> c, Function<A, B> f) {   // POLIMORFISMO PARAMETRICO FIRST-CLASS
         List<B> r = new ArrayList<>();
         for(A a : c) r.add(f.apply(a));
         return r;
@@ -100,6 +100,14 @@ public class TestFun {
 
 
     public static void main(String[] args) {
+
+        Collection<String> a1 = new ArrayList<>();
+
+        List<Integer> l1 = TestFun.map(a1, String::length);
+        List<String> l2 = TestFun.map(a1, (s) -> s.concat("ciao"));
+
+
+
         int z = f(10, new DecrementFun());    // istanza di classe passata come argomento e subsunta al tipo Function<Integer, Integer>
 
         TestFun mytestfun = new TestFun();      // istanza di tipo TestFun
@@ -123,7 +131,7 @@ public class TestFun {
 
         int y = f(7, TestFun::increment);                   // reference ad un metodo statico passato come Function<Integer,Integer>
 
-        int z = f(10, new Function<Integer, Integer>() {    // anonymous class
+        int z1 = f(10, new Function<Integer, Integer>() {    // anonymous class
             @Override
             public Integer apply(Integer x) {
                 return x - 1;
