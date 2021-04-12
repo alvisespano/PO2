@@ -85,7 +85,7 @@ public class TestFun {
         }
     }
 
-    /* la map in F#
+    /* la funzione map in F#
     let rec map f l =   // map : ('a -> 'b) -> 'a list -> 'b list
         match l with
         | [] -> []
