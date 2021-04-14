@@ -1,5 +1,7 @@
 package it.unive.dais.po2.aa2020_21.functional;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -7,8 +9,10 @@ import java.util.function.Function;
 
 public class IteratorTest {
 
-    public static <A> Iterator<A> skipIterator(Iterator<A> it, int step) {
-        // TODO per casa
+    @NotNull
+    public static <A> Iterator<A> skipIterator(@NotNull Iterator<A> it, int step) {
+        // TODO da implementare come esercizio: deve comportarsi come l'iteratore di SkipArrayList più in basso
+        throw new RuntimeException("not implemented");
     }
 
     // modo 1.A: rovesciare l'iteratore di input
