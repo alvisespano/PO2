@@ -19,6 +19,7 @@ public class Sorting {
 
         List<Cane> c2 = new ArrayList<>();
         sort(c2);
+        sort(c2, (cane1, cane2) -> cane1.peli - cane2.peli);
 
         List<Girasole> c3 = new ArrayList<>();
         sort(c3, (o1, o2) -> o1.foglie - o2.foglie);
