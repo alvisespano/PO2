@@ -1,7 +1,11 @@
 package it.unive.dais.po2.aa2020_21.others;
 
+import it.unive.dais.po2.aa2020_21.functional.TestFun;
 import it.unive.dais.po2.aa2020_21.generics.Zoo;
+import it.unive.dais.po2.aa2020_21.tinyjdk.Pair;
+
 import java.util.*;
+import java.util.function.Function;
 
 public class Sorting {
 
@@ -19,22 +23,62 @@ public class Sorting {
 
         List<Cane> c2 = new ArrayList<>();
         sort(c2);
-        sort(c2, (cane1, cane2) -> cane1.peli - cane2.peli);
+
+        sort(c2, new Comparator<Cane>() {   // (cane1, cane2) -> { return cane1.peli - cane2.peli; }
+            @Override
+            public int compare(Cane cane1, Cane cane2) {
+                return cane1.peli - cane2.peli;
+            }
+        });
+
+        sort(c2, new Comparator<Animale>() {
+            @Override
+            public int compare(Animale a, Animale b) {
+                return a.peso - b.peso;
+            }
+        });
+
 
         List<Girasole> c3 = new ArrayList<>();
         sort(c3, (o1, o2) -> o1.foglie - o2.foglie);
 
+        Iterator<Number> r = mapIterator(c2.iterator(), new Function<Animale, Integer>() {
+            @Override
+            public Integer apply(Animale a) {
+                return a.peso;
+            }
+        });
+
 
     }
 
-    public static class Pianta {
+    static <A,B> Iterator<B> mapIterator(Iterator<A> it, Function<? super A, ? extends B> f) {
+        return new Iterator<B>() {
+            @Override
+            public boolean hasNext() {
+                return it.hasNext();
+            }
+
+            @Override
+            public B next() {
+                return f.apply(it.next());
+            }
+        };
+    }
+
+
+
+    public static class Creatura {}
+
+
+    public static class Pianta extends Creatura {
         public int foglie;
     }
 
     public static class Girasole extends Pianta {}
 
 
-    public static class Animale implements Comparable<Animale> {
+    public static class Animale extends Creatura implements Comparable<Animale> {
         protected int peso;
         public Animale(int peso) {
             this.peso = peso;
@@ -43,10 +87,21 @@ public class Sorting {
             this.peso += a.peso;
         }
 
+        public Animale mate(Animale a) {
+            return new Animale((this.peso + a.peso) / 2);
+        }
+
         @Override
         public int compareTo(Animale x) {
             return this.peso - x.peso;
         }
+
+        public void m() {}
+        public void m(int x) {}
+        public double m(double y, int x) { return 0.; }
+        public int m(Animale a) { return 1; }
+        public void m(Cane a) {}
+        //public int m(Cane a) {}     // overload invalido
     }
 
     public static class Cane extends Animale {
@@ -55,6 +110,16 @@ public class Sorting {
         public Cane(int peso, int peli) {
             super(peso);
             this.peli = peli;
+        }
+
+        @Override
+        public void eat(Animale a) {
+            this.peso += this.peso / 2;
+        }
+
+        @Override
+        public Cane mate(Animale a) {
+            return new Cane((this.peso + a.peso) / 3, this.peli);
         }
 
         @Override
@@ -68,18 +133,25 @@ public class Sorting {
 
     }
 
+    public static class Dalmata extends Cane {
+        public int chiazze;
 
-    interface __Comparable<T> {
-        int compareTo(T x);
+        public Dalmata(int peso, int peli, int chiazze) {
+            super(peso, peli);
+            this.chiazze = chiazze;
+        }
     }
 
     static <T extends Comparable<? super T>> void sort(List<T> list) {
         Collections.sort(list);
     }
 
-    static <T>                       void sort(List<T> list, Comparator<? super T> c) {
+    static <T>                               void sort(List<T> list, Comparator<? super T> c) {
         Collections.sort(list, c);
     }
+
+
+
 
 
 }
