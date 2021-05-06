@@ -95,8 +95,7 @@ public class IteratorTest {
         }
     }
 
-
-    public static <A, B> Iterator<B> mapIterator(Iterator<A> it, Function<A, B> f) {
+    public static <A, B> Iterator<B> mapIterator(Iterator<A> it, Function<? super A, ? extends B> f) {
 
         return new Iterator<B>() {
             @Override

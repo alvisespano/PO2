@@ -1,11 +1,9 @@
 package it.unive.dais.po2.aa2020_21.others;
 
-import it.unive.dais.po2.aa2020_21.functional.TestFun;
 import it.unive.dais.po2.aa2020_21.generics.Zoo;
-import it.unive.dais.po2.aa2020_21.tinyjdk.Pair;
-
 import java.util.*;
 import java.util.function.Function;
+import static it.unive.dais.po2.aa2020_21.functional.IteratorTest.mapIterator;
 
 public class Sorting {
 
@@ -42,31 +40,27 @@ public class Sorting {
         List<Girasole> c3 = new ArrayList<>();
         sort(c3, (o1, o2) -> o1.foglie - o2.foglie);
 
-        Iterator<Number> r = mapIterator(c2.iterator(), new Function<Animale, Integer>() {
-            @Override
-            public Integer apply(Animale a) {
-                return a.peso;
-            }
-        });
+        Iterator<Number> r = mapIterator(c2.iterator(), Sorting::mymapfun);
 
+        // altri test coi wildcard
+
+        List<? super Cane> u1 = new ArrayList<>();
+        u1.add(new Cane(50, 50));
+        u1.add(new Dalmata(50, 50, 50));
+        Cane ca1 = u1.get(0);
+        Animale ca2 = u1.get(0);
+
+        List<? extends Cane> u2 = new ArrayList<>();
+        u2.add(new Cane(50, 50));
+        u2.add(new Dalmata(50, 50, 50));
+        Cane ca3 = u2.get(0);
+        Animale ca4 = u2.get(0);
 
     }
 
-    static <A,B> Iterator<B> mapIterator(Iterator<A> it, Function<? super A, ? extends B> f) {
-        return new Iterator<B>() {
-            @Override
-            public boolean hasNext() {
-                return it.hasNext();
-            }
-
-            @Override
-            public B next() {
-                return f.apply(it.next());
-            }
-        };
+    private static Integer mymapfun(Animale a) {
+        return a.peso;
     }
-
-
 
     public static class Creatura {}
 
@@ -101,7 +95,7 @@ public class Sorting {
         public double m(double y, int x) { return 0.; }
         public int m(Animale a) { return 1; }
         public void m(Cane a) {}
-        //public int m(Cane a) {}     // overload invalido
+        //public int m(Cane a) {}     // overload invalido perché ambiguo
     }
 
     public static class Cane extends Animale {
