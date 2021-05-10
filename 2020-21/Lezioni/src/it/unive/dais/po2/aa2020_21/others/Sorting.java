@@ -47,12 +47,12 @@ public class Sorting {
         List<? super Cane> u1 = new ArrayList<>();
         u1.add(new Cane(50, 50));
         u1.add(new Dalmata(50, 50, 50));
-        Cane ca1 = u1.get(0);
-        Animale ca2 = u1.get(0);
+        Cane ca1 = u1.get(0);       // non compila
+        Animale ca2 = u1.get(0);    // non compila
 
         List<? extends Cane> u2 = new ArrayList<>();
-        u2.add(new Cane(50, 50));
-        u2.add(new Dalmata(50, 50, 50));
+        u2.add(new Cane(50, 50));                   // non compila
+        u2.add(new Dalmata(50, 50, 50));     // non compila
         Cane ca3 = u2.get(0);
         Animale ca4 = u2.get(0);
 

@@ -28,7 +28,7 @@ public class ThreadPool {
         }
     }
     public static synchronized void m2() {
-        Class<?> c = ThreadPool.class;
+        Class<ThreadPool> c = ThreadPool.class;
         synchronized (c) {
             // blocco
         }
