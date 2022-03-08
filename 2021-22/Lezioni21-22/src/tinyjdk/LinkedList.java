@@ -2,17 +2,28 @@ package tinyjdk;
 
 public class LinkedList<T> implements List<T> {
 
-    private Node<T> head;
+    protected Node<T> head = null, tail = null;
+    protected int len = 0;
 
-    // TODO: farla non statica
-    private static class Node<X> {
+    protected static class Node<X> {
         public X data;
         public Node<X> next;
+        protected Node(X data, Node<X> next) {
+            this.data = data;
+            this.next = next;
+        }
     }
 
     @Override
     public void add(T e) {
-
+        Node<T> n = new Node<>(e, null);
+        if (tail != null) {
+            tail.next = n;
+            tail = n;
+        }
+        else
+            head = tail = n;
+        ++len;
     }
 
     @Override
@@ -27,12 +38,13 @@ public class LinkedList<T> implements List<T> {
 
     @Override
     public void clear() {
-
+        head = tail = null;
+        len = 0;
     }
 
     @Override
     public int size() {
-        return 0;
+        return len;
     }
 
     @Override
@@ -40,14 +52,22 @@ public class LinkedList<T> implements List<T> {
         return null;
     }
 
+    protected Node<T> nodeAt(int pos) {
+        assert (pos < size());
+        Node<T> n = head;
+        for (; pos > 0; --pos)
+            n = n.next;
+        return n;
+    }
+
     @Override
     public T get(int pos) {
-        return null;
+        return nodeAt(pos).data;
     }
 
     @Override
     public void set(int pos, T e) {
-
+        nodeAt(pos).data = e;
     }
 
     @Override
