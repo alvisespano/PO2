@@ -8,6 +8,7 @@ public class LinkedList<T> implements List<T> {
     protected static class Node<X> {
         public X data;
         public Node<X> next;
+
         protected Node(X data, Node<X> next) {
             this.data = data;
             this.next = next;
@@ -26,14 +27,24 @@ public class LinkedList<T> implements List<T> {
         ++len;
     }
 
+    // TODO: da testare
     @Override
     public void remove(T e) throws NotFoundException {
-
-    }
-
-    @Override
-    public boolean contains(T e) {
-        return false;
+        Node<T> prev = null, n = head;
+        while (n != null) {
+            if (n.data.equals(e)) {
+                if (prev != null)
+                    prev.next = n.next;
+                else
+                    head = n.next;
+                if (n.next == null)
+                    tail = prev;
+                return;
+            }
+            prev = n;
+            n = n.next;
+        }
+        throw new NotFoundException();
     }
 
     @Override
@@ -49,7 +60,21 @@ public class LinkedList<T> implements List<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new Iterator<T>() {
+            private Node<T> n = head;
+
+            @Override
+            public boolean hasNext() {
+                return n.next != null;
+            }
+
+            @Override
+            public T next() {
+                T r = n.data;
+                n = n.next;
+                return r;
+            }
+        };
     }
 
     protected Node<T> nodeAt(int pos) {
@@ -72,6 +97,13 @@ public class LinkedList<T> implements List<T> {
 
     @Override
     public int indexOf(T e) throws NotFoundException {
-        return 0;
+        Node<T> n = head;
+        for (int pos = 0; n != null; ++pos) {
+            if (n.data.equals(e)) {
+                return pos;
+            }
+            n = n.next;
+        }
+        throw new NotFoundException();
     }
 }

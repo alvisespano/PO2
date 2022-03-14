@@ -40,7 +40,7 @@ public class ArrayList<T> implements List<T> {
         --actualLen;
     }
 
-    @Override
+/*    @Override
     public boolean contains(T e) {
         try {
             indexOf(e);
@@ -48,7 +48,7 @@ public class ArrayList<T> implements List<T> {
         } catch (NotFoundException ex) {
             return false;
         }
-    }
+    }*/
 
     @Override
     public void clear() {
