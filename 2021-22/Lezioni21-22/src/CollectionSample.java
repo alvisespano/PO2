@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Collections {
+public class CollectionSample {
 
     public static class RandomSequence implements Iterable<Integer> {
 

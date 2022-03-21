@@ -16,6 +16,8 @@ public class SimpleSortedSet<T extends Comparable<? super T>> implements SortedS
         }
     }
 
+    // TODO: implementare questi metodi
+
     @Override
     public void remove(T e) throws NotFoundException {
 
@@ -33,11 +35,11 @@ public class SimpleSortedSet<T extends Comparable<? super T>> implements SortedS
 
     @Override
     public int size() {
-        return 0;
+        return l.size();
     }
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        throw new RuntimeException("not implemented");
     }
 }
