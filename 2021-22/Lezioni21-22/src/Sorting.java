@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Sorting {
 
@@ -14,7 +11,7 @@ public class Sorting {
 
         @Override
         public int compareTo(Humanoid o) {
-            return -(health - o.health);
+            return health - o.health;
         }
 
         @Override
@@ -32,26 +29,90 @@ public class Sorting {
         }
 
         @Override
+        public int compareTo(Humanoid o) {
+            if (o instanceof Elf) {
+                Elf e = (Elf) o;
+                return mana - e.mana;
+            }
+            return super.compareTo(o);
+        }
+
+        @Override
         public String toString() {
             return String.format("Elf[health=%d;mana=%d]", health, mana);
         }
 
     }
 
+    public static class Creature {
+    }
+
+    public static class Animal extends Creature {
+        protected int weight;
+
+        public Animal(int w) {
+            weight = w;
+        }
+
+        public void eat(Animal a) {
+        }
+
+        public Animal spawn() {
+            return new Animal(weight / 3);
+        }
+    }
+
+    public static class Dog extends Animal {
+        private int tail;
+
+        public Dog(int w, int tail) {
+            super(w);
+            this.tail = tail;
+        }
+
+        public void bark() {
+        }
+
+        @Override
+        public void eat(Animal a) {
+        }
+
+        @Override
+        public Dog spawn() {
+            return new Dog(weight / 2, 1);
+        }
+    }
 
     public static void main(String[] args) {
         Random rand = new Random();
-        List<Elf> l = new ArrayList<>();
-        for (int i = 0; i < 10; ++i) {
-            //if (rand.nextBoolean())
-            //    l.add(new Elf(rand.nextInt(100), rand.nextInt(50)));
-            //else
-                l.add(new Humanoid(rand.nextInt(100)));
+        {
+            List<Dog> a = new ArrayList<>();
+            for (int i = 0; i < 10; ++i)
+                a.add(new Dog(i * 10, i));
+
+
+            Collections.sort(a, (Animal o1, Animal o2) -> o1.weight - o2.weight);
+            Collections.sort(a, new Comparator<Animal>() {
+                @Override
+                public int compare(Animal o1, Animal o2) {
+                    return o1.weight - o2.weight;
+                }
+            });
         }
 
-        System.out.println(l);
-        sort(l);
-        System.out.println(l);
+        {
+            List<Elf> l = new ArrayList<>();
+            for (int i = 0; i < 10; ++i) {
+//            if (rand.nextBoolean())
+                l.add(new Elf(rand.nextInt(100), rand.nextInt(50)));
+                //          else
+                //            l.add(new Humanoid(rand.nextInt(100)));
+            }
+
+            System.out.println(l);
+            sort(l);
+            System.out.println(l);
+        }
     }
 
     public static <T extends Comparable<? super T>> void sort(List<T> l) {
