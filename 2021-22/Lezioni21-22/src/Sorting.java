@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.function.Function;
 
 public class Sorting {
 
@@ -83,6 +84,13 @@ public class Sorting {
         }
     }
 
+    static class MyComparator implements Comparator<Animal> {
+        @Override
+        public int compare(Animal o1, Animal o2) {
+            return o1.weight - o2.weight;
+        }
+    }
+
     public static void main(String[] args) {
         Random rand = new Random();
         {
@@ -90,14 +98,17 @@ public class Sorting {
             for (int i = 0; i < 10; ++i)
                 a.add(new Dog(i * 10, i));
 
-
-            Collections.sort(a, (Animal o1, Animal o2) -> o1.weight - o2.weight);
-            Collections.sort(a, new Comparator<Animal>() {
+            // non-anonymous class
+            sort(a, new MyComparator());
+            // anonymous class
+            sort(a, new Comparator<Animal>() {
                 @Override
                 public int compare(Animal o1, Animal o2) {
                     return o1.weight - o2.weight;
                 }
             });
+            // lambda che si converte in una anonymous class
+            sort(a, (o1, o2) -> o1.weight - o2.weight);
         }
 
         {
@@ -117,5 +128,9 @@ public class Sorting {
 
     public static <T extends Comparable<? super T>> void sort(List<T> l) {
         Collections.sort(l);
+    }
+
+    public static <T> void sort(List<T> l, Comparator<? super T> c) {
+        Collections.sort(l, c);
     }
 }
