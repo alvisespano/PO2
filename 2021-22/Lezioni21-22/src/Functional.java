@@ -10,11 +10,15 @@ public class Functional {
     }
 
     public interface Consumer<T> {
-        void apply(T x);
+        void accept(T x);
     }
 
     public interface Supplier<T> {
-        T apply();
+        T get();
+    }
+
+    public interface Runnable {
+        void run();
     }
 
     public static <A, B> Collection<B> map(Collection<A> c, Function<A, B> f) {
@@ -26,13 +30,13 @@ public class Functional {
 
     public static <T> void foreach(Collection<T> c, Consumer<T> f) {
         for (T x : c)
-            f.apply(x);
+            f.accept(x);
     }
 
     public static <T> Collection<T> generate(int len, Supplier<T> f) {
         Collection<T> r = new ArrayList<>();
         for (; len > 0; --len)
-            r.add(f.apply());
+            r.add(f.get());
         return r;
     }
 
@@ -60,7 +64,7 @@ public class Functional {
         Collection<Integer> g2 = generate(10, () -> rand.nextInt(100));
         Collection<Integer> g3 = generate(10, new Supplier<Integer>() {
             @Override
-            public Integer apply() {
+            public Integer get() {
                 return rand.nextInt(100);
             }
         });
@@ -68,6 +72,15 @@ public class Functional {
         System.out.println(g2);
         System.out.println(g3);
         System.out.println(g4);
+
+        // runnable
+        Runnable run1 = () -> System.out.println("ciao");
+        Runnable run2 = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("ciao");
+            }
+        };
     }
 
     static class MySupplier implements Supplier<Integer> {
@@ -79,7 +92,7 @@ public class Functional {
         }
 
         @Override
-        public Integer apply() {
+        public Integer get() {
             return rand.nextInt(100);
         }
     }
