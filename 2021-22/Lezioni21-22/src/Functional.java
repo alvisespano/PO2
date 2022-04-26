@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
+import java.util.function.BiFunction;
 
 public class Functional {
 
@@ -20,6 +18,23 @@ public class Functional {
     public interface Runnable {
         void run();
     }
+
+
+
+
+
+    public static <T> T sum(Iterator<T> it, BiFunction<T, T, T> f) {
+        T z = it.next();
+        while (it.hasNext()) {
+            z = f.apply(z, it.next());
+        }
+        return z;
+    }
+
+
+
+
+
 
     public static <A, B> Collection<B> map(Collection<A> c, Function<A, B> f) {
         Collection<B> r = new ArrayList<>();
