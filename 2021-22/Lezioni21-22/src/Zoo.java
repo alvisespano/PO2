@@ -1,14 +1,14 @@
-public class Recap {
+public class Zoo {
 
     private int x;
-    private static float y = Recap.z;
+    private static float y = Zoo.z;
     public static float z;
 
     protected void m() {
         this.x = 8;
     }
     public static void n() {
-        Recap.y = 8;
+        Zoo.y = 8;
     }
 
     private class Boo {}

@@ -50,9 +50,9 @@ public class Generics {
     public static void main(String[] args) {
         FloatPair p1 = new FloatPair(23.11f, 67.69f);
         Pair<Float, Float> p2 = new Pair<>(23.11f, 67.69f);
-        Pair<String, Recap.Dog> p3 = new Pair<>("ciao", new Recap.Dog(10));
+        Pair<String, Zoo.Dog> p3 = new Pair<>("ciao", new Zoo.Dog(10));
         Pair<Pair<Integer, Integer>, Pair<Integer, Integer>> p4 = new Pair<>(new Pair<>(1, 2), new Pair<>(5, 6));
-        Pair<String, Recap.Dog> p5 = new Pair<>("ciao", new Recap.Labrador(10));
+        Pair<String, Zoo.Dog> p5 = new Pair<>("ciao", new Zoo.Labrador(10));
 
     }
 

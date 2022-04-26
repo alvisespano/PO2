@@ -19,10 +19,6 @@ public class Functional {
         void run();
     }
 
-
-
-
-
     public static <T> T sum(Iterator<T> it, BiFunction<T, T, T> f) {
         T z = it.next();
         while (it.hasNext()) {
@@ -30,9 +26,6 @@ public class Functional {
         }
         return z;
     }
-
-
-
 
 
 
