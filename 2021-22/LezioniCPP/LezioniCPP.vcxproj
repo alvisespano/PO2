@@ -141,8 +141,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Classes.cpp" />
+    <ClCompile Include="pairs.ixx" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sums.ixx" />
+    <ClCompile Include="zoo.ixx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

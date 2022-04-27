@@ -18,7 +18,13 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes.cpp">
+    <ClCompile Include="pairs.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zoo.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sums.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
