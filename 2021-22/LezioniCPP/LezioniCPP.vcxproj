@@ -143,8 +143,8 @@
   <ItemGroup>
     <ClCompile Include="pairs.ixx" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="smart_ptr.ixx" />
     <ClCompile Include="sums.ixx" />
-    <ClCompile Include="vector_test.ixx" />
     <ClCompile Include="zoo.ixx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
