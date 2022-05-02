@@ -27,5 +27,8 @@
     <ClCompile Include="sums.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vector_test.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
