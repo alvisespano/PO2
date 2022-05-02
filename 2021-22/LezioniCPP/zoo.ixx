@@ -26,6 +26,8 @@ namespace zoo
 	class dog : public animal
 	{
 	public:
+		explicit dog(int w) : animal(w) {}
+
 		void eat(const animal* a) override
 		{
 			weight() = a->weight() * 2;
@@ -35,6 +37,8 @@ namespace zoo
 	class cat : public animal
 	{
 	public:
+		explicit cat(int w) : animal(w) {}
+
 		void eat(const animal* a) override
 		{
 			weight() = a->weight() / 3;
@@ -44,6 +48,8 @@ namespace zoo
 	class labrador : public dog
 	{
 	public:
+		explicit labrador(int w) : dog(w) {}
+
 		void eat(const animal* a) override
 		{
 			weight() = a->weight() * 2;
@@ -53,7 +59,7 @@ namespace zoo
 	export void test()
 	{
 		animal fido(50);
-		animal* pluto = new animal(40);
+		animal* pluto = new dog(40);
 
 		fido.eat(pluto);
 		pluto->eat(&fido);
