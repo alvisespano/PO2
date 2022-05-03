@@ -24,11 +24,6 @@ export namespace pairs
 	{
 		template <typename C, typename D> friend class mypair;	// necessario per il conversion copy constructor
 
-	public:
-		// main constructor: inizializza i campi privati first e second copiando gli argomenti a e b; ovvero invoca i copy constructor di A e B
-		mypair(const A& a, const B& b) : first(a), second(b)
-		{}
-
 	private:
 		A first;
 		B second;
@@ -72,7 +67,9 @@ export namespace pairs
 		// default constructor: chiama i default constructor dei campi privati, quindi deve esistere un default construtor per i tipi A e B
 		mypair() : first(), second() {}
 
-		
+		// main constructor: inizializza i campi privati first e second copiando gli argomenti a e b; ovvero invoca i copy constructor di A e B
+		mypair(const A& a, const B& b) : first(a), second(b)
+		{}
 
 		// copy constructor: invoca i copy constructor di A e B
 		mypair(const mypair<A, B>& p) : first(p.first), second(p.second)
