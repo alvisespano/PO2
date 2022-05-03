@@ -10,7 +10,7 @@ class smart_ptr
 {
 private:
 	T* pt;
-	size_t len;
+	bool is_array;
 
 //	typedef unsigned int counter_t;
 	using counter_t = unsigned int;
@@ -21,7 +21,7 @@ private:
 	{
 		if (--(*cnt) == 0)
 		{
-			if (len == 1) delete pt;
+			if (is_array) delete pt;
 			else delete[] pt;
 			delete cnt;
 		}
@@ -31,13 +31,13 @@ public:
 	// typedef T value_type;
 	using value_type = T;
 
-	smart_ptr(const T*& pt_, size_t len_ = 1) : pt(pt_), cnt(new int(1)), len(len_) {}
+	smart_ptr(T* pt_, bool is_array_ = false) : pt(pt_), cnt(new unsigned int(1)), is_array(is_array_) {}
 
-	smart_ptr(size_t len_) : pt(new T[len_]), cnt(new int(1)), len(len_) {}
+	smart_ptr(size_t len) : smart_ptr(new T[len], len > 1) {}
 
-	smart_ptr(const smart_ptr<T>& p) : pt(p.pt), cnt(p.cnt)
+	smart_ptr(const smart_ptr<T>& p) : pt(p.pt), cnt(p.cnt), is_array(p.is_array)
 	{
-		++*cnt;
+		++(*cnt);
 	}
 
 	~smart_ptr()
@@ -100,7 +100,7 @@ public:
 template <typename Pointer>
 void swap(Pointer& p1, Pointer& p2)
 {
-	Pointer::value_type& tmp = *p1;
+	typename Pointer::value_type& tmp = *p1;
 	*p1 = *p2;
 	*p2 = tmp;
 }
@@ -114,7 +114,7 @@ void f(smart_ptr<int> p)
 void test_smart_ptr()
 {
 	int* a = new int[100];
-	smart_ptr<int> a2(new int[100], 100);
+	smart_ptr<int> a2(new int[100], true);
 	smart_ptr<double> x(600);
 
 	string* s = new string("ciao");
