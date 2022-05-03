@@ -114,22 +114,22 @@ export namespace pairs
 		}
 
 		///////////////////////////////////////////////////////////
-		// operatori aritmetici binari implementati in vari modi: direttamente, usando le funzioni di utility e con le macro
+		// operatori aritmetici implementati in vari modi: direttamente, usando le funzioni di utility e con le macro
 		//
 
-		// somma in-place implemetato direttamente: richiede l'esistenza dell'operator+() per A e B
+		// somma implemetata direttamente: richiede l'esistenza dell'operator+() per A e B
 		mypair<A, B> operator+(const mypair<A, B>& p) const
 		{
 			return mypair<A, B>(first + p.first, second + p.second);
 		}
 
-		// sottrazione in-place usando op_bin(): è sufficiente passare le 2 operazioni di sottrazione binaria come argomenti
+		// sottrazione usando op_bin(): è sufficiente passare le 2 operazioni di sottrazione binaria come argomenti
 		mypair<A, B> operator-(const mypair<A, B>& p) const
 		{
 			return op_bin(p, std::minus<A>(), std::minus<B>()); // passiamo DUE VOLTE l'operazione di sottrazione perché occorre passare quella per A e quella per B
 		}
 
-		// operator* e operator/ implementati usando la macro
+		// operator*() e operator/() implementati usando la macro
 		OP_BIN(*)
 		OP_BIN(/ )
 
@@ -138,20 +138,20 @@ export namespace pairs
 		// operatori aritmetici in-place implementati in vari modi: direttamente, usando le funzioni di utility e con le macro
 		//
 
-		// somma usando op_assign(): è sufficiente passare l'operazione di somma binaria come argomento
+		// somma in-place usando op_assign(): è sufficiente passare l'operazione di somma binaria come argomento
 		mypair<A, B>& operator+=(const mypair<A, B>& p)
 		{
 			return op_assign(p, std::plus<mypair<A, B>>());
 		}
 
-		// sottrazione implementata direttamente: richiede solamente l'esistenza dell'operator=() e dell'operator-()
+		// sottrazione in-place implementata direttamente: richiede solamente l'esistenza dell'operator=() e dell'operator-()
 		// questa implementazione non menziona i campi ed è praticamente uguale a quello che fa global_op_assign(), con la differenza che quest'ultima lo fa in modo generale per qualunque operatore binario
 		mypair<A, B>& operator-=(const mypair<A, B>& p)
 		{
 			return *this = *this - p;
 		}
 
-		// operator* e operator/ definiti usando la macro
+		// operator*=() e operator/=() definiti usando la macro
 		OP_ASSIGN(*)
 		OP_ASSIGN(/)
 
