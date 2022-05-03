@@ -64,6 +64,10 @@ export namespace pairs
 
 
 	public:
+		///////////////////////////////////////////////////////////
+		// costruttori
+		// 
+
 		// default constructor: chiama i default constructor dei campi privati, quindi deve esistere un default construtor per i tipi A e B
 		mypair() : first(), second() {}
 
@@ -80,7 +84,11 @@ export namespace pairs
 		mypair(const mypair<C, D>& p) : first(p.first), second(p.second)
 		{}
 
-		// assignment operator: richiede che sia definito operator=() per A e B
+		///////////////////////////////////////////////////////////
+		// operatori principali
+		// 
+
+		// assegnamento: richiede che sia definito operator=() per A e B
 		mypair<A, B>& operator=(const mypair<A, B>& p)
 		{
 			first = p.first;
@@ -105,32 +113,38 @@ export namespace pairs
 			return *this;
 		}
 
-		// seguono gli operatori aritmetici in-place e non implementati in vari modi: direttamente, usando le funzioni di utility e con le macro
+		///////////////////////////////////////////////////////////
+		// operatori aritmetici binari implementati in vari modi: direttamente, usando le funzioni di utility e con le macro
 		//
 
-		// operator+: richiede l'esistenza dell'operator+() per A e B
+		// somma in-place implemetato direttamente: richiede l'esistenza dell'operator+() per A e B
 		mypair<A, B> operator+(const mypair<A, B>& p) const
 		{
 			return mypair<A, B>(first + p.first, second + p.second);
 		}
 
-		// operator-: usando op_bin() è sufficiente passare le 2 operazioni di sottrazione binaria come argomenti
+		// sottrazione in-place usando op_bin(): è sufficiente passare le 2 operazioni di sottrazione binaria come argomenti
 		mypair<A, B> operator-(const mypair<A, B>& p) const
 		{
 			return op_bin(p, std::minus<A>(), std::minus<B>()); // passiamo DUE VOLTE l'operazione di sottrazione perché occorre passare quella per A e quella per B
 		}
 
-		// operator* e operator/ definiti usando la macro
+		// operator* e operator/ implementati usando la macro
 		OP_BIN(*)
-		OP_BIN(/)
+		OP_BIN(/ )
 
-		// operator+: usando op_assign() è sufficiente passare l'operazione di somma binaria come argomento
+
+		///////////////////////////////////////////////////////////
+		// operatori aritmetici in-place implementati in vari modi: direttamente, usando le funzioni di utility e con le macro
+		//
+
+		// somma usando op_assign(): è sufficiente passare l'operazione di somma binaria come argomento
 		mypair<A, B>& operator+=(const mypair<A, B>& p)
 		{
 			return op_assign(p, std::plus<mypair<A, B>>());
 		}
 
-		// operator-: richiede solamente l'esistenza dell'operator=() e dell'operator-()
+		// sottrazione implementata direttamente: richiede solamente l'esistenza dell'operator=() e dell'operator-()
 		// questa implementazione non menziona i campi ed è praticamente uguale a quello che fa global_op_assign(), con la differenza che quest'ultima lo fa in modo generale per qualunque operatore binario
 		mypair<A, B>& operator-=(const mypair<A, B>& p)
 		{
@@ -141,8 +155,11 @@ export namespace pairs
 		OP_ASSIGN(*)
 		OP_ASSIGN(/)
 
-		// TODO STUDENTI: implementare altri operatori aritmetici che hanno senso
 
+
+
+
+		///////////////////////////////////////////////////////////
 		// metodi di accesso read/write ai campi
 		//
 
