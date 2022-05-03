@@ -17,7 +17,7 @@ public:
 
 	smart_ptr(const smart_ptr<T>& p) : pt(p.pt), cnt(p.cnt)
 	{
-		++(*cnt);
+		++*cnt;
 	}
 
 	~smart_ptr()
@@ -31,3 +31,9 @@ public:
 
 
 };
+
+
+void test_smart_ptr()
+{
+
+}
