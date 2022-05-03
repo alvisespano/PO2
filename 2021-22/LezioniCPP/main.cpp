@@ -4,7 +4,7 @@ import pairs;
 import sums;
 import zoo;
 
-// per C++20 ALMENO una definizione di gianni() deve esistere PRIMA della funzione templatizzata che la usa (questo progetto compila in C++20)
+// da C++11 ALMENO una definizione di gianni() deve esistere PRIMA della funzione templatizzata che la usa (questo progetto compila in C++20)
 // in C++ vanilla poteva non esisterne neanche una
 int gianni(int x) { return x + 1; }
 
@@ -12,7 +12,7 @@ int gianni(int x) { return x + 1; }
 template <class Gigi>
 Gigi f(const Gigi& gigi)
 {
-	return gianni(gigi);	// da C++20 i template sono type-checkati e una funzione di nome gianni deve esistere ALMENO di un tipo
+	return gianni(gigi);	// da C++11 i template sono type-checkati e una funzione di nome gianni deve esistere ALMENO di un tipo
 }
 
 
