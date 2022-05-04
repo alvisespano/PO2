@@ -9,10 +9,11 @@ import zoo;
 int gianni(int x) { return x + 1; }
 
 
-template <class Gigi>
+template <typename Gigi>
 Gigi f(const Gigi& gigi)
 {
-	return gianni(gigi);	// da C++11 i template sono type-checkati e una funzione di nome gianni deve esistere ALMENO di un tipo
+	return gianni(gigi);	// da C++11 i template sono type-checkati e una funzione gianni() deve esistere ALMENO di un tipo
+							// ma nemmeno C++20 può sapere con quale template argument verrà usata f() e quindi 
 }
 
 
