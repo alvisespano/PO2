@@ -27,7 +27,7 @@ void increment_all(Container& v)
 }
 
 template <class Container>
-void print_all(Container& v)
+void print_all(const Container& v)
 {
 	cout << typeid(Container).name() << "[";
 	for (typename Container::const_iterator it = v.begin(); it != v.end(); ++it)	// usiamo il const_iterator perché non dobbiamo modificare gli elementi del container
@@ -73,3 +73,4 @@ export void test_iterators()
 						// pertanto la chiamata compila perché sia unsigned int che double* supportano il pre-incremento
 	print_all(l2);
 }
+
