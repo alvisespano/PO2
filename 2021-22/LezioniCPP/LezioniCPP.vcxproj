@@ -141,7 +141,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="member_types.ixx" />
+    <ClCompile Include="ident.ixx" />
+    <ClCompile Include="iterators.ixx" />
     <ClCompile Include="pairs.ixx" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="smart_ptr.ixx" />

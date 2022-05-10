@@ -30,7 +30,10 @@
     <ClCompile Include="smart_ptr.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="member_types.ixx">
+    <ClCompile Include="iterators.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ident.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

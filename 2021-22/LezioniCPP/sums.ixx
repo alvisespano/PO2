@@ -11,7 +11,7 @@ using namespace std;
 
 export namespace sums
 {
-	template <typename InputIterator, typename BinaryFunction>
+	template <class InputIterator, typename BinaryFunction>
 	iterator_traits<InputIterator>::value_type sum(InputIterator first, InputIterator last, BinaryFunction f)
 	{
 		typename iterator_traits<InputIterator>::value_type z = *first++;
@@ -22,7 +22,7 @@ export namespace sums
 		return z;
 	}
 
-	template <typename InputIterator>
+	template <class InputIterator>
 	auto sum(InputIterator first, InputIterator last) -> decltype(*first)
 	{
 		decltype(*first) z = *first++;

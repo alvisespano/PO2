@@ -1,19 +1,19 @@
 export module smart_ptr;
 
 import <string>;
+import <vector>;
 
-using std::string;
+using namespace std;
 
 export
-template <typename T>
+template <class T>
 class smart_ptr
 {
 private:
 	T* pt;
 	bool is_array;
 
-//	typedef unsigned int counter_t;
-	using counter_t = unsigned int;
+	using counter_t = unsigned int; //	equivalente a scrivere: typedef unsigned int counter_t;
 
 	counter_t* cnt;
 
@@ -28,8 +28,7 @@ private:
 	}
 
 public:
-	// typedef T value_type;
-	using value_type = T;
+	using value_type = T;		// equivalente a scrivere: typedef T value_type
 
 	smart_ptr(T* pt_, bool is_array_ = false) : pt(pt_), cnt(new unsigned int(1)), is_array(is_array_) {}
 
@@ -85,48 +84,40 @@ public:
 	}
 
 	// TODO STUDENTI: implementare operatori +, ++, +=, -, --, -=
-
-};
-
-class foo
-{
-public:
-	smart_ptr<int> pt;
-
-	foo(smart_ptr<int> pt_) : pt(pt_) {}
+	// attenzione: postare il pointer interno quando si incrementa/decrementa/ecc non è sufficiente, altrimenti la delete verrà invocata su un indirizzo sbagliato
+	// consiglio1: l'aritmetica dei puntatori ha senso supportarla solamente quando is_array è true
+	// consiglio2: tenere una copia del pointer ORIGINALE passato al costruttore che poi useremo per la delete; e spostare in avanti/indietro l'altro
 };
 
 
-template <typename Pointer>
-void swap(Pointer& p1, Pointer& p2)
+// questa funzione templatizzata swappa cose qualunque, a patto che siano de-referenziabili e che il tipo del valore puntato sia assegnabile
+template <class Pointer>
+void swap_any_pointer(Pointer& p1, Pointer& p2)
 {
-	typename Pointer::value_type& tmp = *p1;
+	typename Pointer::value_type& tmp = *p1;	// richiede anche l'esistenza di un member type di nome value_type che indichi il tipo del valore puntato
 	*p1 = *p2;
 	*p2 = tmp;
 }
 
-
-void f(smart_ptr<int> p)
-{
-	foo oo(p);
-}
-
-void test_smart_ptr()
+export void test_smart_ptr()
 {
 	int* a = new int[100];
-	smart_ptr<int> a2(new int[100], true);
-	smart_ptr<double> x(600);
+	smart_ptr<int> a2(a, true);	// ora l'array puntato da a è di proprietà dello smart_ptr, quindi non servirà fare 'delete[] a'
+	smart_ptr<double> b(600);	// utilizza il costruttore che costruisce più di un istanza dello heap
+	b[2] = a[3];				// supportano l'operatore di subscript
 
-	string* s = new string("ciao");
-	smart_ptr<string> s2 = new string("ciao");
+	string* s1 = new string("ciao");
+	smart_ptr<string> s2 = s1;
+	s2 = s1;    // questo assegnamento converte automaticamente il right value di tipo string* in un temporary object di tipo smart_ptr<string>
+	s2 = s2;	// supporta anche l'assegnamento di sé stesso
 
-	s2 = s2;
+	smart_ptr<vector<double>> v1(new vector<double>(10, 1.));
+	smart_ptr<vector<double>> v2(new vector<double>(20, 2.));
+	swap_any_pointer(v1, v2);
 
-	f(a2);
-	// ...
+	int u = 3, w = 4;
+	//swap_any_pointer(&u, &w);	// NON COMPILA perché int* non ha un member type di nome value_type come richiesto dalla funzione templatizzata
 
-	delete[] a;
-	delete s;
 }
 
 

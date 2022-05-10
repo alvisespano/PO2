@@ -3,13 +3,14 @@ export module pairs;
 import <string>;
 import <functional>;
 
+// questo namespace ha lo stesso nome del modulo: in C++20 i moduli NON SONO NAMESPACE, quindi i namespace possono essere definiti e posso avere lo stesso nome dei moduli
 export namespace pairs
 {
 
 	// utility generale per definire operatori aritmetici di assegnamento in-place (es: +=, -= ecc) tramite una funzione di ordine superiore
 	// questa funzione non è specifica per mypair ma può definire operatori aritmetici in-place dato un operatore binario qualunque
 	// in altre parole, essa non ha bisogno di sapere com'è fatta la classe su cui opera: gli è sufficiente conoscere l'operatore artimetico binario e necessita dell'esistenza dell'assegnamento
-	template <typename This, typename Op>
+	template <class This, typename Op>
 	inline This& gen_op_assign(This* this_, const This& x, const Op& op)
 	{
 		return *this_ = op(*this_, x);	// richiede sia definito definito operator=()
@@ -19,10 +20,11 @@ export namespace pairs
 	// classe templatizzata mypair
 	//
 
-	template <typename A, typename B>
+	export
+	template <class A, typename B>
 	class mypair
 	{
-		template <typename C, typename D> friend class mypair;	// necessario per il conversion copy constructor
+		template <class C, typename D> friend class mypair;	// necessario per il conversion copy constructor
 
 	private:
 		A first;
@@ -30,14 +32,14 @@ export namespace pairs
 
 		// metodo privato di utility per definire operatori aritmetici tramite funzioni di ordine superiore
 		// occorre passare i due operatori per i tipi A e B come argomento
-		template <typename Op1, typename Op2>
+		template <class Op1, typename Op2>
 		inline mypair<A, B> op_bin(const mypair<A, B>& x, const Op1& op_first, const Op2& op_second) const
 		{
 			return mypair<A, B>(op_first(first, x.first), op_second(second, x.second));
 		}
 
 		// metodo privato di utility per definire operatori aritmetici con assegnamento in-place stubbando poly_op_assign() con this come primo argomento
-		template <typename Op>
+		template <class Op>
 		inline mypair<A, B>& op_assign(const mypair<A, B>& x, const Op& op)
 		{
 			return gen_op_assign(this, x, op);
@@ -80,7 +82,7 @@ export namespace pairs
 		{}
 
 		// conversion copy constructor: richiede l'esistenza di un costruttore di A tramite un argomento di tipo C, e di B tramite un argomento di tipo D
-		template <typename C, typename D>
+		template <class C, typename D>
 		mypair(const mypair<C, D>& p) : first(p.first), second(p.second)
 		{}
 
@@ -156,9 +158,6 @@ export namespace pairs
 		OP_ASSIGN(/)
 
 
-
-
-
 		///////////////////////////////////////////////////////////
 		// metodi di accesso read/write ai campi
 		//
@@ -188,6 +187,9 @@ export namespace pairs
 
 	using std::string;
 
+	// questa funzione viene esportata quindi gli altri moduli la vedranno; viene chiamata solamente test() e non test_pairs() perché è dentro il namespace pairs
+	// perciò coloro che la chiameranno da altri moduli dovranno chiamarla pairs::test()
+	// ATTENZIONE: i moduli non creano namespace automaticamente
 	export void test()
 	{
 		mypair<int, int> p1(4, 5);
