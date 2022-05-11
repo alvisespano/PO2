@@ -84,9 +84,9 @@ public:
 	}
 
 	// TODO STUDENTI: implementare operatori +, ++, +=, -, --, -=
-	// attenzione: postare il pointer interno quando si incrementa/decrementa/ecc non è sufficiente, altrimenti la delete verrà invocata su un indirizzo sbagliato
-	// consiglio1: l'aritmetica dei puntatori ha senso supportarla solamente quando is_array è true
-	// consiglio2: tenere una copia del pointer ORIGINALE passato al costruttore che poi useremo per la delete; e spostare in avanti/indietro l'altro
+	// ATTENZIONE: spostare il pointer interno quando si incrementa/decrementa/ecc non è sufficiente, altrimenti la delete verrà invocata su un indirizzo sbagliato.
+	// consiglio1: l'aritmetica dei puntatori ha senso supportarla solamente quando is_array è true.
+	// consiglio2: tenere una copia del pointer ORIGINALE passato al costruttore che poi useremo per la delete; e spostare in avanti/indietro una copia messa in un altro campo.
 };
 
 
