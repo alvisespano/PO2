@@ -46,11 +46,41 @@ ostream& operator<<(ostream& os, const mypair<A, B>& p)
 	return os << "(" << p.fst() << ", " << p.snd() << ")";
 }
 
-// ridefinisce l'operatore GLOBALE di streaming per double*
-ostream& operator<<(ostream& os, const double*& p)
+
+// ridefinisce l'operatore GLOBALE di streaming per il tipo double* stampando sia l'indirizzo che il double puntato
+// ATTENZIONE: la sintassi col 'const&' DOPO il tipo è una sintassi alternativa: scrivere 'const MioTipo&' e 'MioTipo const&' è esattamente EQUIVALENTE ed indica un const-reference di tipo MioTipo.
+//   C++ supporta dal vanilla sia la sintassi PREFISSA con il const PRIMA del tipo, sia quella SUFFISSA con il const DOPO il tipo.
+//   Nel nostro caso però MioTipo è un pointer a double e qui emerge un problema sottile: il const PREFISSO si riferisce al tipo PUNTATO, non al puntatore; ma come posso specificare che voglio prendere il PUNTATOTORE per const-reference?
+//   In altre parole, voglio un const-reference ad un puntatore che punta ad un const double: per farlo devo mescolare la sintassi prefissa con quella suffissa e scrivere 'const double* const&'.
+//   Il motivo per cui voglio che sia il puntatore sia il puntato siano const è perché sto ridefinendo l'operator<< GLOBALE per i double*, quindi devo riprodurre la firma ESATTA originale per assicurarmi di non fare un overload per sbaglio.
+//   La firma esatta originale è:
+//	     ostream& operator<<(ostream& os, double* p)
+// 
+//   Quanti e quali altri modi di scrivere il tipo del parametro p esistono e sono equivalenti ad un semplice pointer a double per valore?
+//       double* const&				prendo per const-reference (suffisso) un pointer ad un double non-const
+//       const double* const&		prendo per const-reference (suffisso) un pointer ad un double const (prefisso)
+//       double* const              prendo per copia un pointer const (suffisso) ad un double non-const
+//       const double* const        prendo per copia un pointer const (suffisso) ad un double const (prefisso)
+//       double*                    prendo per copia un pointer non-const ad un double non-const
+//       const double*              prendo per copia un pointer non-const ad un double const (prefisso)
+// 
+//   E ora facciamoci la domanda inversa: quali tipi sono invece diversi e farebbero un overload anziché uno shadowing?
+//       const double*&				prendo per reference un pointer non-const ad un double const (prefisso)
+//       double*&					prendo per reference un pointer non-const ad un double non-const
+//   
+//   Per essere equivalenti alla firma originale (double*) non importa se il double è const oppure no, quello che importa è che il pointer sia const se lo prendiamo per reference, perché se non è una copia non deve essere modificabile.
+//   Il significato di tutto questo è: prendere un argomento per valore (cioè per copia) è compatibile, dal punto di vista dei tipi del compilatore, con il prendere per const-reference.
+//   Non perché sia la stessa cosa (perché sappiamo che sono cose diverse) ma perché dal punto di vista della soundness è uguale: un argomento passato per copia garantisce la non modificabilità dell'originale, esattamente come lo garantisce il prenderlo per const-reference.
+//   
+//   Nel nostro caso usiamo il tipo più sicuro tra quelli equivalenti a double*, cioè const double* const&
+//
+// ESPERIMENTO: provate a cambiare il tipo del parametro p in const double*& ad esempio, e lanciate il programma di nuovo: vedrete che il printing dei double* sarà quello originale e non quello definito da noi, perché quella qui sotto diventa un overload, non uno shadowing di quella globale.
+ostream& operator<<(ostream& os, const double* const& p)
 {
-	os << "&" << static_cast<const void*>(p);			// casta a constvoid* per stampare l'indirizzo numerico (senza cast sarebbe una RICORSIONE!!!!)
-	if (p != nullptr) os << "[" << *p << "]";			// se non è nullo printa anche il dereference
+	os << "&" << static_cast<const void*>(p);			// castiamo a const void* per stampare l'indirizzo numerico invocando l'operator<< sui void* definito globalmente dalla standard library
+														// lo static_cast non ha il potere di rimuovere un const, quindi non si può castare a void* semplicemente
+														// ATTENZIONE: senza cast diventerebbe una chiamata RICORSIVA all'operator<< che noi stessi stiamo definendo
+	if (p != nullptr) os << "[" << *p << "]";			// se il pointer non è nullo printa anche il dereference
 	return os;
 }
 
@@ -65,7 +95,7 @@ export void test_iterators()
 	print_all(l1);			// questa chiamata genera una istanza di print_all() per list<string>
 	//increment_all(l1);	// NON COMPILA: questa chiamata genera una istanza di increment_all() per list<string>, ma il pre-incremento non esiste per string
 
-	double arr[] = {11.23, 35.53};
+	double arr[] = { 11.23, 35.53 };
 	list<mypair<unsigned int, double*>> l2{ {1u, arr}, {2u, arr}, {3u, arr} };
 	print_all(l2);		// questa genera una istanza della print_all() per list<mypair<unsigned int, double*>>
 						// essa compila perché abbiamo definito l'operator<< per mypair, altrimenti non compilerebbe
