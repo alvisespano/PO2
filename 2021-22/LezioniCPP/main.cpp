@@ -12,7 +12,7 @@ int main()
 {
 	try
 	{
-		test_iterators();
+		sums::test();
 		return 0;
 	}
 	catch (exception& e)
