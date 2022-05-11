@@ -48,15 +48,15 @@ ostream& operator<<(ostream& os, const mypair<A, B>& p)
 
 
 // ridefinisce l'operatore GLOBALE di streaming per il tipo double* stampando sia l'indirizzo che il double puntato
-// ATTENZIONE: la sintassi col 'const&' DOPO il tipo è una sintassi alternativa: scrivere 'const MioTipo&' e 'MioTipo const&' è esattamente EQUIVALENTE ed indica un const-reference di tipo MioTipo.
+// ATTENZIONE: la sintassi SUFFISSA con il 'const&' DOPO il tipo è una sintassi alternativa: scrivere 'const MioTipo&' e 'MioTipo const&' è esattamente EQUIVALENTE ed indica un const-reference di tipo MioTipo.
 //   C++ supporta dal vanilla sia la sintassi PREFISSA con il const PRIMA del tipo, sia quella SUFFISSA con il const DOPO il tipo.
-//   Nel nostro caso però MioTipo è un pointer a double e qui emerge un problema sottile: il const PREFISSO si riferisce al tipo PUNTATO, non al puntatore; ma come posso specificare che voglio prendere il PUNTATOTORE per const-reference?
-//   In altre parole, voglio un const-reference ad un puntatore che punta ad un const double: per farlo devo mescolare la sintassi prefissa con quella suffissa e scrivere 'const double* const&'.
-//   Il motivo per cui voglio che sia il puntatore sia il puntato siano const è perché sto ridefinendo l'operator<< GLOBALE per i double*, quindi devo riprodurre la firma ESATTA originale per assicurarmi di non fare un overload per sbaglio.
-//   La firma esatta originale è:
+//   Nel nostro caso però MioTipo è un POINTER e qui emerge un problema sottile: quando il const è PREFISSO esso si riferisce al tipo PUNTATO (cioè double), ma come posso specificare che voglio il PUNTATORE per const?
+//   In altre parole, voglio prendere per const-reference un puntatore che punta ad un const double: per farlo devo mescolare la sintassi prefissa con quella suffissa e scrivere 'const double* const&'.
+//   Il motivo per cui voglio questo è perché voglio ridefinire l'operator<< GLOBALE per i double*, quindi devo riprodurre la firma ESATTA originale per assicurarmi che sia una shadowing e non un overload.
+//   La firma esatta dell'operator<< originale definito dalla standard library è:
 //	     ostream& operator<<(ostream& os, double* p)
 // 
-//   Quanti e quali altri modi di scrivere il tipo del parametro p esistono e sono equivalenti ad un semplice pointer a double per valore?
+//   Quanti e quali altri modi esistono di scrivere una firma compatibile a quella originale? Tutti i seguenti sono COMPATIBILI quindi sono considerati shadowing:
 //       double* const&				prendo per const-reference (suffisso) un pointer ad un double non-const
 //       const double* const&		prendo per const-reference (suffisso) un pointer ad un double const (prefisso)
 //       double* const              prendo per copia un pointer const (suffisso) ad un double non-const
@@ -64,13 +64,14 @@ ostream& operator<<(ostream& os, const mypair<A, B>& p)
 //       double*                    prendo per copia un pointer non-const ad un double non-const
 //       const double*              prendo per copia un pointer non-const ad un double const (prefisso)
 // 
-//   E ora facciamoci la domanda inversa: quali tipi sono invece diversi e farebbero un overload anziché uno shadowing?
+//   E quali tipi invece sono NON compatibili e sono considerati overload anziché uno shadowing dal compilatore?
 //       const double*&				prendo per reference un pointer non-const ad un double const (prefisso)
 //       double*&					prendo per reference un pointer non-const ad un double non-const
 //   
-//   Per essere equivalenti alla firma originale (double*) non importa se il double è const oppure no, quello che importa è che il pointer sia const se lo prendiamo per reference, perché se non è una copia non deve essere modificabile.
+//   Per essere compatibili con la firma originale (double*) non importa se il double è const oppure no, quello che importa è che il pointer sia const SE lo prendiamo per reference, poiché se non è una copia esso allora non deve essere modificabile.
 //   Il significato di tutto questo è: prendere un argomento per valore (cioè per copia) è compatibile, dal punto di vista dei tipi del compilatore, con il prendere per const-reference.
-//   Non perché sia la stessa cosa (perché sappiamo che sono cose diverse) ma perché dal punto di vista della soundness è uguale: un argomento passato per copia garantisce la non modificabilità dell'originale, esattamente come lo garantisce il prenderlo per const-reference.
+//   Non perché siano equivalenti (perché sappiamo che sono cose diverse) ma perché dal punto di vista della const-correctness imposta dal compilatore sono compatibili.
+//   Il punto è che un argomento passato per copia garantisce la NON MODIFICABILITA' dell'oggetto passato dal chiamante, esattamente come lo garantisce il passarlo per const-reference.
 //   
 //   Nel nostro caso usiamo il tipo più sicuro tra quelli equivalenti a double*, cioè const double* const&
 //
