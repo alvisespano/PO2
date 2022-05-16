@@ -24,13 +24,12 @@ export namespace sums
 
 
 	template <class InputIterator>
-	auto sum(InputIterator first, InputIterator last) -> remove_reference<decltype(* first)>::type
+	auto sum(InputIterator first, InputIterator last) -> remove_reference<decltype(*first)>::type
 	{
 		auto z = *first++;
 		for (; first != last; ++first)
 		{
 			z += *first;
-
 		}
 		return z;
 	}
@@ -44,7 +43,6 @@ export namespace sums
 		double arr[5] = { 1.1, 2.2, 3.3, 4.4 };
 
 
-		cout << "sum vector = " << sum(v.begin(), v.end()) << endl;
 		cout << "sum vector = " << sum(v.begin(), v.end()) << endl;
 		cout << "sum array = " << sum(arr, arr + size(arr)) << endl;
 		cout << "sum con lambda = " << sum(v.begin(), v.end(), [](const auto& a, const auto& b) { return a + b; }) << endl;
