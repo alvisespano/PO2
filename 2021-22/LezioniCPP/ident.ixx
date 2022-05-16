@@ -21,7 +21,7 @@ export int test_ident()
 
 	// ogni singola chiamata ad una funzione templatizzata genera una nuova istanza della funzione in cui viene sostituito il template parameter con il tipo
 	//   concreto usato in quel caso; la funzione viene poi compilata con i tipo completo.
-	int x = dual_ident(3);	// questa invocazione genera una istanza della funzione dual_ident() con int come template argument
+	[[maybe_unused]] int x = dual_ident(3);	// questa invocazione genera una istanza della funzione dual_ident() con int come template argument
 							// tale istanza compila perché esiste una definizione di ident() che prende e ritorna int
 
 	//char* s = dual_ident("ciao");	// questa invocazione genera una istanza della funzione dual_ident() con char* come template argument
