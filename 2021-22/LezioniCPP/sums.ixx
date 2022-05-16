@@ -7,31 +7,13 @@ import <format>;
 import <type_traits>;
 import <iostream>;
 import <iterator>;
-
-
-template <class T>
-struct my_remove_reference;
-
-template <class T>
-struct my_remove_reference<T&>
-{
-	using type = T;
-};
-
-template <class T>
-struct my_remove_reference<T&&>
-{
-	using type = T;
-};
-
-template <class T>
-using my_remove_reference_t = typename my_remove_reference<T>::type;
-
+import <concepts>;
 
 
 export namespace sums
 {
-	template <class InputIterator, typename BinaryFunction>
+	// sum con operazione di somma binaria passata come argomento
+	template <class InputIterator, class BinaryFunction>
 	std::iterator_traits<InputIterator>::value_type sum(InputIterator first, InputIterator last, BinaryFunction f)
 	{
 		typename std::iterator_traits<InputIterator>::value_type z = *first++;
@@ -42,18 +24,30 @@ export namespace sums
 		return z;
 	}
 
-
+	// sum che richiede l'operatore += implementata tramite template classici
 	template <class InputIterator>
-	auto sum(InputIterator first, InputIterator last) -> my_remove_reference_t<decltype(*first)>
+	auto sum(InputIterator first, InputIterator last) -> std::remove_reference_t<decltype(*first)>
 	{
-		static_assert(std::is_same_v<my_remove_reference_t<decltype(*first)>, std::remove_reference_t<decltype(*first)>>);
 		auto z = *first++;
-		static_assert(std::is_same_v<my_remove_reference_t<decltype(*first)>, decltype(z)>);
+		static_assert(std::is_same_v<std::remove_reference_t<decltype(*first)>, decltype(z)>);
 		while (first != last)
 		{
 			z += *first++;
 		}
 		return z;
+	}
+
+	// sum con concept
+	//
+
+	template <class T>
+	concept MyAddable = requires (T x, T y) { x += y; };
+
+	template <std::input_iterator I>
+		requires MyAddable<typename std::iterator_traits<I>::value_type>
+	auto sum_with_concepts(I first, I last)
+	{
+		return sum(first, last);
 	}
 
 
@@ -65,9 +59,13 @@ export namespace sums
 
 		double arr[5] = { 1.1, 2.2, 3.3, 4.4 };
 
+		std::cout << "sum con lambda = " << sum(v.begin(), v.end(), [](const auto& a, const auto& b) { return a + b; }) << std::endl;
+
 		std::cout << "sum vector = " << sum(v.begin(), v.end()) << std::endl;
 		std::cout << "sum array = " << sum(arr, arr + std::size(arr)) << std::endl;
-		std::cout << "sum con lambda = " << sum(v.begin(), v.end(), [](const auto& a, const auto& b) { return a + b; }) << std::endl;
+
+		std::cout << "sum_with_concepts vector = " << sum_with_concepts(v.begin(), v.end()) << std::endl;
+		std::cout << "sum_with_concepts array = " << sum_with_concepts(arr, arr + std::size(arr)) << std::endl;
 	}
 
 }
