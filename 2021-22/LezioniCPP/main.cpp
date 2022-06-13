@@ -5,6 +5,7 @@ import pairs;
 import sums;
 import zoo;
 import iterators;
+import <vector>;
 
 using namespace std;
 
