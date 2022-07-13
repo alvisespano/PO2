@@ -66,13 +66,12 @@ public class Es2 {
         protected int fib(int n) {
             if (n < 2) return 1;    // non è necessario fare caching anche dei 2 casi base
             else {
-                Integer x = cache.get(n);
-                if (x != null) return x;
-                else {
-                    int r = fib(n - 1) + fib(n - 2);    // questa è una ricorsione in dynamic dispatch
+                Integer r = cache.get(n);
+                if (r == null) {
+                    r = fib(n - 1) + fib(n - 2);    // questa è una ricorsione in dynamic dispatch
                     cache.put(n, r);
-                    return r;
                 }
+                return r;
             }
         }
     }
@@ -82,6 +81,7 @@ public class Es2 {
 
         // inizializziamo questa cache statica; poi passiamo al supercostruttore sempre questo campo
         // così tutte le istanze useranno sempre la stessa hashmap senza saperlo
+        @NotNull
         private final static Map<Integer, Integer> globalCache = new HashMap<>();
 
         public GlobalCachedFiboSequence(int max) {
