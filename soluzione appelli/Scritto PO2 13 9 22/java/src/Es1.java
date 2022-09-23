@@ -1,8 +1,12 @@
-// Questo sorgente contiene le soluzioni dell'esame scritto di PO2 del 13/9/2022 per ciò che riguarda il quesito 1, ovvero l'esercizio in Java.
-// Il quesito 2 riguardante C++ è in una solution per Visual Studio a parte.
+// Questo sorgente contiene le soluzioni dell'esame scritto di PO2 del 13/9/2022 per ciò che riguarda il quesito 1,
+// ovvero l'esercizio in Java.
+// Il quesito 2 riguardante C++ è in una Solution per Visual Studio a parte.
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 
 public class Es1 {
@@ -38,7 +42,7 @@ public class Es1 {
 
         // test equality
         System.out.print("equality: ");
-        System.out.println(t1.equals(t2) + ", " + t1.left.equals(t2.right));
+        System.out.println(t1.equals(t2) + ", " + (t1.left != null ? t1.left.equals(t2.right) : ""));
 
         // test iterator
         System.out.print("iterator: ");
@@ -68,7 +72,8 @@ public class Es1 {
             if (right != null) right.parent = this;
         }
 
-        // i seguenti pseudo-costruttori aiutano a costruire alberi in modo più succinto e controllato rispetto all'innestamento dei costruttore
+        // i seguenti pseudo-costruttori aiutano a costruire alberi in modo più succinto e controllato rispetto
+        // all'innestamento dei costruttori
 
         // solo ramo sinistro
         public static <T> TreeNode<T> l(@NotNull T data, @NotNull TreeNode<T> left) {
@@ -101,10 +106,9 @@ public class Es1 {
             return false;
         }
 
-        // questo metodo ausiliaro non serve, basterebbe usare questo metodo del JDK: https://docs.oracle.com/javase/8/docs/api/java/util/Objects.html#equals-java.lang.Object-java.lang.Object-
-        private static <T> boolean areEqual(@Nullable Object a, @Nullable Object b) {
+        private static boolean areEqual(@Nullable Object a, @Nullable Object b) {
             return a == b || (a != null && a.equals(b));
-            //return Objects.equals(a, b);
+            //return Objects.equals(a, b);        // alternativamente si può usare questo metodo del JDK
         }
 
         // 1.e
@@ -112,14 +116,34 @@ public class Es1 {
         @Override
         @NotNull
         public String toString() {
-            return String.format("%s%s%s", data, left != null ? String.format("(%s)", left) : "", right != null ? String.format("[%s]", right) : "");
+            return String.format("%s%s%s", data, left != null ? String.format("(%s)", left) : "", right != null ?
+                String.format("[%s]", right) : "");
         }
 
         // 1.a
 
         @Override
         public Iterator<T> iterator() {
-            return new Iterator<T>() {
+            return iterator_easy();  // stub ad una delle due implementazione; cambiare lo stub per testare l'altra
+        }
+
+
+        // questo è l'implementazione facile, suggerita pubblicamente dal docente in classe duranto l'appello del 13/9/22
+        private Iterator<T> iterator_easy() {
+            Collection<T> r = new ArrayList<>();
+            dfs(r);
+            return r.iterator();
+        }
+
+        private void dfs(Collection<T> c) {
+            c.add(data);
+            if (left != null) left.dfs(c);
+            if (right != null) right.dfs(c);
+        }
+
+        // questo è l'implementazione ottimizzata, che attraversa l'albero senza liste d'appoggio
+        private Iterator<T> iterator_opt() {
+            return new Iterator<>() {
                 @Nullable
                 private TreeNode<T> current = TreeNode.this;
 
@@ -154,5 +178,7 @@ public class Es1 {
                 }
             };
         }
+
     }
+
 }

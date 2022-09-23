@@ -2,11 +2,16 @@
 // Questo sorgente contiene le soluzioni dell'esame scritto di PO2 del 1/7/2022 per ciò che riguarda il quesito 2, ovvero l'esercizio di C++.
 // Il quesito 1 riguardante Java è in un progetto IntelliJ a parte, non qui.
 // Il codice qui esposto è C++14. 
-// ATTENZIONE: il codice qui fornito è ricco di dettagli e complessità, allo scopo di fornire materiale di studio.
+// ATTENZIONE: il codice qui fornito è ricco di dettagli e complessità, allo scopo di fornire materiale di studio. La versione richiesta all'esame è molto più semplice.
 
 #include <iostream>
 #include <iterator>
 #include <cstddef>
+#include <vector>
+
+using std::vector;
+
+#define EASY_ITERATOR	// commentare questa macro per compilare la versione ottimizzata degli iteratori
 
 template <class T>
 class tree_node
@@ -15,28 +20,9 @@ public:
 	T data;
 	tree_node<T>* left, * right;
 
-private:
-	tree_node<T>* parent;
-
 	static bool are_equal(const tree_node<T>* a, const tree_node<T>* b)
 	{
 		return a == b || (a != nullptr && b != nullptr && *a == *b);
-	}
-
-	static tree_node<T>* get_next_node(const tree_node<T>* n) {
-		if (n->left != nullptr)
-			return n->left;
-		else if (n->right != nullptr)
-			return n->right;
-		else {
-			while (n->parent != nullptr) {
-				const tree_node<T>* last = n;
-				n = n->parent;
-				if (n->right != nullptr && n->right != last)
-					return n->right;
-			}
-			return nullptr;
-		}
 	}
 
 public:
@@ -60,10 +46,14 @@ public:
 		}
 	}
 
-	tree_node(const T& v, tree_node<T>* l, tree_node<T>* r) : data(v), left(l), right(r), parent(nullptr)
+	tree_node(const T& v, tree_node<T>* l, tree_node<T>* r) : data(v), left(l), right(r)
 	{
+#		ifdef EASY_ITERATOR
+		prepopulate();
+#		else
 		if (left != nullptr) left->parent = this;
 		if (right != nullptr) right->parent = this;
+#		endif
 	}
 
 	// 2.b
@@ -75,6 +65,87 @@ public:
 
 	// 2.a
 
+	using value_type = T;
+
+
+	// implementazione facile degli iteratori, suggerita pubblicamente dal docente durante l'appello del 13/9/22
+	//
+
+#	ifdef EASY_ITERATOR		
+
+	using const_iterator = typename vector<T>::const_iterator;
+	using iterator = typename vector<T>::iterator;
+
+private:
+	// per motivi di semplicità ogni nodo ha un campo di tipo vector che viene popolato al volo per essere iterator
+	// si faccia attenzione ad un particolare: per poter ritornare begin() ed end() dello stesso vector, bisogna conservarlo come membro del nodo
+	vector<T> children;
+
+	void dfs(vector<T>& v)
+	{
+		// perché non popoliamo direttamente il campo children? il motivo è molto sottile: ogni nodo ha un suo campo children, ma noi non vogliamo che ogni nodo popoli il proprio vector; noi vogliamo
+		//   che quando decidiamo di popolare il campo di children di un certo nodo, allora viene popolato il vector di QUEL nodo
+		// ogni nodo quindi ha un suo campo children che viene popolato con i SUOI sottorami: tutto ciò è uno spreco di spazio, certo, però permette di fare iteratori a partire da QUALUNQUE nodo
+		//   in maniera semplice e immutabile		
+		v.push_back(data);
+		if (left != nullptr) left->dfs(v);
+		if (right != nullptr) right->dfs(v);
+	}
+
+	// questa viene chiamata dal costruttore: ogni nodo prepopola il proprio campo children
+	void prepopulate()
+	{
+		dfs(children);
+	}
+
+public:
+
+	const_iterator begin() const
+	{
+		return children.begin();
+	}
+
+	const_iterator end() const
+	{
+		return children.end();
+	}
+
+	iterator begin()
+	{
+		return children.begin();
+	}
+
+	iterator end()
+	{
+		return children.end();
+	}
+
+
+	// implementazione ottimizzata degli iteratori
+	//
+
+#	else
+
+private:
+	tree_node<T>* parent;
+
+	static tree_node<T>* get_next_node(const tree_node<T>* n) {
+		if (n->left != nullptr)
+			return n->left;
+		else if (n->right != nullptr)
+			return n->right;
+		else {
+			while (n->parent != nullptr) {
+				const tree_node<T>* last = n;
+				n = n->parent;
+				if (n->right != nullptr && n->right != last)
+					return n->right;
+			}
+			return nullptr;
+		}
+	}
+
+public:
 	// iteratore non-const
 	class my_iterator
 	{
@@ -189,6 +260,8 @@ public:
 		return iterator(nullptr);
 	}
 
+#	endif
+
 };
 
 // 2.c
@@ -238,8 +311,9 @@ int main()
 {
 	auto t1 =
 		shared_ptr<tree_node<int>>(		// usiamo gli shared_ptr per non doverci ricordare di fare delete
+			// con i pseudo-costruttori globali è comodissimo costruire un albero, basta innestare le chiamate
 			lr(1,						
-				lr(2,					// con le funzioni globali è comodissimo costruire un albero
+				lr(2,					
 					v(3),
 					v(4)),
 				r(5,
@@ -250,8 +324,8 @@ int main()
 	auto t2 =
 		shared_ptr<tree_node<int>>(
 			lr(1,
-				r(5,
-					lr(6,				// il sottoalbero destro è uguale al sinistro
+				r(5,					// il sottoalbero destro di t2 è uguale al sinistro di t1 e viceversa
+					lr(6,				
 						v(7),
 						v(8))),
 				lr(2,
