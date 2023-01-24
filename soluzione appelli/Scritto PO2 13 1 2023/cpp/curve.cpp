@@ -74,22 +74,22 @@ public:
 			return pair<real, real>(x, c.f(x));
 		}
 
-		iterator operator++()
+		iterator& operator++()	// il pre-incremento modifica sè stesso e non ritorna una copia
 		{
 			x += c.get_dx();
-			return iterator(*this);
+			return *this;
 		}
 
-		iterator operator++(int)
+		iterator operator++(int)	// il post-incremento fa una copia, modifica sé stesso e ritorna la copia
 		{
-			auto r = *this;
+			auto r(*this);
 			x += c.get_dx();
 			return r;
 		}
 
 		bool operator!=(const iterator& it) const
 		{
-			return x < it.x;	// scorretto ma funziona
+			return fabs(x - it.x) > c.get_dx();	// non si confrontano mai i float direttamente con l'operatore di uguaglianza o disuguaglianza
 		}
 	};
 
@@ -117,6 +117,8 @@ ostream& operator<<(ostream& os, const curve& c)
 	for (curve::iterator it = c.begin(); it != c.end(); ++it)
 	{
 		const pair<real, real>& p = *it;
+		auto it2 = it++;
+		auto it3 = ++it;
 		const real& x = p.first, & y = p.second;
 		os << "\tf(" << x << ") = " << y << endl;
 	}
