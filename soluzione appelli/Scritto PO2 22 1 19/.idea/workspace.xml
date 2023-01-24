@@ -7,11 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7ca24f7-d71c-4fa0-857b-ba8f8f95e7aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../2019/TinyJDK/src/collections/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2019/TinyJDK/src/collections/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2019/TinyJDK/src/misc/AbstractErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2019/TinyJDK/src/misc/AbstractErrors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scritto PO2 13 1 2023/Appello_13_1_2023/Es1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scritto PO2 13 9 22/java/src/Es1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scritto PO2 13 9 22/java/src/Es1.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,31 +18,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Es1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Es2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,12 +44,16 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectId" id="2KESpZHmLaElJ2gfvzzkKLOT13b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -103,14 +80,15 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552485375372" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/shc-pc/Documents/GitHub/PO2/soluzione appelli/Scritto PO2 22 1 19"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="Es2.AutoPool" />
@@ -118,18 +96,6 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Es2">
     <configuration name="Es1" type="Application" factoryName="Application">
@@ -158,6 +124,7 @@
       <item itemvalue="Application.Es2" />
     </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -208,9 +175,9 @@
     <entry file="file://$PROJECT_DIR$/Scritto PO2 22 1 19.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Runnable.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/Random.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/javafx.base/javafx/util/Pair.java" />
+    <entry file="jar://$PROJECT_DIR$/../../../../../../../Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Runnable.java" />
+    <entry file="jar://$PROJECT_DIR$/../../../../../../../Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/Random.java" />
+    <entry file="jar://$PROJECT_DIR$/../../../../../../../Program Files/Java/jdk-9.0.4/lib/src.zip!/javafx.base/javafx/util/Pair.java" />
     <entry file="file://$PROJECT_DIR$/src/MainEquals.java" />
     <entry file="file://$PROJECT_DIR$/src/Function.java" />
     <entry file="file://$PROJECT_DIR$/src/Es2.java">

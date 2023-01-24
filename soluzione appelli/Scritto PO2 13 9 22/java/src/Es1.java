@@ -8,6 +8,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.concurrent.BlockingQueue;
 
 public class Es1 {
 
@@ -100,6 +101,8 @@ public class Es1 {
         @Override
         public boolean equals(@Nullable Object o) {
             if (o instanceof TreeNode) {
+                BlockingQueue<Integer> b;
+
                 TreeNode<T> t = (TreeNode<T>) o;
                 return areEqual(data, t.data) && areEqual(left, t.left) && areEqual(right, t.right);
             }
