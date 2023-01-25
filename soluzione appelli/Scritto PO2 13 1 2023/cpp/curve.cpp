@@ -50,7 +50,8 @@ public:
 		const unary_fun& F = primitive();
 		for (real x = a; x <= b; x += dx)
 		{
-			r += F(x);
+			\
+				r += F(x);
 		}
 		return r;
 	}
@@ -117,8 +118,6 @@ ostream& operator<<(ostream& os, const curve& c)
 	for (curve::iterator it = c.begin(); it != c.end(); ++it)
 	{
 		const pair<real, real>& p = *it;
-		auto it2 = it++;
-		auto it3 = ++it;
 		const real& x = p.first, & y = p.second;
 		os << "\tf(" << x << ") = " << y << endl;
 	}
