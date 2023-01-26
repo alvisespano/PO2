@@ -29,30 +29,27 @@ public:
 
 	curve derivative() const
 	{
-		return curve(a, b, [=](const real& x) {
-			real dx = get_dx(), dy = f(x + dx) - f(x);
+		return curve(a, b, [&, dx = get_dx()](const real& x) {	// anche la capture [=] sarebbe stata sufficiente
+			const real dy = f(x + dx) - f(x);
 			return dy / dx;
 			});
 	}
 
 	curve primitive() const
 	{
-		return curve(a, b, [=](const real& x) {
-			real dx = get_dx(), y = f(x);
+		return curve(a, b, [&, dx = get_dx()](const real& x) {	// oppure la [&]
+			const real y = f(x);
 			return y * dx;
 			});
 	}
 
 	real integral() const
 	{
-		real dx = get_dx();
-		real r = 0.;
+		const real dx = get_dx();
 		const unary_fun& F = primitive();
+		real r = 0.;
 		for (real x = a; x <= b; x += dx)
-		{
-			\
-				r += F(x);
-		}
+			r += F(x);
 		return r;
 	}
 
