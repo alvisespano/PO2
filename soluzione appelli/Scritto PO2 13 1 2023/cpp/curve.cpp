@@ -81,7 +81,7 @@ public:
 		iterator operator++(int)	// il post-incremento fa una copia, modifica sé stesso e ritorna la copia
 		{
 			auto r(*this);
-			x += c.get_dx();
+			++(*this);
 			return r;
 		}
 
