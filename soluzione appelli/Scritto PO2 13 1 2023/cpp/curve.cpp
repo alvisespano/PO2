@@ -45,12 +45,13 @@ public:
 
 	real integral() const
 	{
-		const real dx = get_dx();
 		const unary_fun& F = primitive();
-		real r = 0.;
-		for (real x = a; x <= b; x += dx)
-			r += F(x);
-		return r;
+		return F(b) - F(a);
+		//const real dx = get_dx();
+		//real r = 0.;
+		//for (real x = a; x <= b; x += dx)
+		//	r += F(x);
+		//return r;
 	}
 
 	real operator()(const real& x) const
@@ -87,7 +88,7 @@ public:
 
 		bool operator!=(const iterator& it) const
 		{
-			return fabs(x - it.x) > c.get_dx();	// non si confrontano mai i float direttamente con l'operatore di uguaglianza o disuguaglianza
+			return fabs(x - it.x) >= c.get_dx();	// non si confrontano mai i float direttamente con l'operatore di uguaglianza o disuguaglianza
 		}
 	};
 
