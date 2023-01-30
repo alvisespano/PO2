@@ -47,11 +47,6 @@ public:
 	{
 		const unary_fun& F = primitive();
 		return F(b) - F(a);
-		//const real dx = get_dx();
-		//real r = 0.;
-		//for (real x = a; x <= b; x += dx)
-		//	r += F(x);
-		//return r;
 	}
 
 	real operator()(const real& x) const
