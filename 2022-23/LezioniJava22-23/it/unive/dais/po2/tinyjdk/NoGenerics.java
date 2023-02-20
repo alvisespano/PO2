@@ -1,4 +1,6 @@
-public class Generics {
+package it.unive.dais.po2.tinyjdk;
+
+public class NoGenerics {
 
     // JDK 1.0 (1994)
 
@@ -82,7 +84,15 @@ public class Generics {
 
 
     public static void main(String[] args) {
+        List c = new ArrayList();
+        c.add("ciao");
+        c.add(8);
+        c.add(new Zoo.Dog(20, "Red"));
 
+        for (int i = 0; i < c.size(); ++i) {
+            String s = (String) c.get(i);
+
+        }
 
     }
 
