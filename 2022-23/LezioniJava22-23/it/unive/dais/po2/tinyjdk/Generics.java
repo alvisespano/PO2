@@ -22,17 +22,16 @@ public class Generics {
 
     public interface List<T> extends Collection<T> {
         T get(int index);
-
         void set(int index, T x);
     }
 
     public static class ArrayList<T> implements List<T> {
 
-        private T[] a;
+        private Object[] a;
         private int sz;
 
         public ArrayList(int capacity) {
-            a = new T[capacity];
+            a = new Object[capacity];
             sz = 0;
         }
 
@@ -48,8 +47,8 @@ public class Generics {
         @Override
         public void add(T x) {
             if (sz >= a.length) {
-                T[] old = a;
-                a = new T[old.length * 2];
+                Object[] old = a;
+                a = new Object[old.length * 2];
                 for (int i = 0; i < old.length; ++i)
                     a[i] = old[i];
             }
@@ -66,15 +65,62 @@ public class Generics {
             return false;
         }
 
+        private class MyIterator implements Iterator<T> {
+            private int pos = 0;
+
+            @Override
+            public boolean hasNext() {
+                return pos < size();
+            }
+
+            @Override
+            public T next() {
+                return get(pos++);
+            }
+        }
+
+        private static class MyStaticIterator<E> implements Iterator<E> {
+            private int pos = 0;
+            private ArrayList<E> l;
+
+            public MyStaticIterator(ArrayList<E> l) {
+                this.l = l;
+            }
+
+            @Override
+            public boolean hasNext() {
+                return pos < l.size();
+            }
+
+            @Override
+            public E next() {
+                return l.get(pos++);
+            }
+        }
+
         @Override
         public Iterator<T> iterator() {
-            return null;
+            //return new MyIterator();
+            return new MyStaticIterator<>(this);
+            // TODO usare una anonymous class
         }
+
+//        public static void main() {
+//            List<Integer> l = new ArrayList<Integer>();
+//            Iterator<Integer> it = l.iterator();
+//            while (it.hasNext()) {
+//                Integer n = it.next();
+//                System.out.println(n);
+//            }
+//        }
+
+
+
 
 
         @Override
         public T get(int index) {
-            return a[index];
+            return (T) a[index];
         }
 
         @Override
