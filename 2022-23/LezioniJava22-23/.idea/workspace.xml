@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33e4d7d5-2cce-4942-885d-8ed0c13d8afa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Collection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Iterable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Set.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Generics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/NoGenerics.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/nogenerics/NoGenerics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/BasicQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/HashSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/NotImplementedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Collection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/List.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>

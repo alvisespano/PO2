@@ -3,6 +3,8 @@ package it.unive.dais.po2.tinyjdk;
 public interface Collection<T> extends Iterable<T> {
     int size();
 
+    default boolean isEmpty() { return size() == 0; }
+
     void add(T x);
 
     void remove(T x);
