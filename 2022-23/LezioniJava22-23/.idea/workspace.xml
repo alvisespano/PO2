@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33e4d7d5-2cce-4942-885d-8ed0c13d8afa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Generics.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Generics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Iterable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Set.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Generics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/NoGenerics.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/nogenerics/NoGenerics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -39,6 +46,12 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\shc-pc\Documents\GitHub\PO2\2022-23\LezioniJava22-23\src" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="it.unive.dais.po2.tinyjdk" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="it.unive.dais.po2.tinyjdk" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

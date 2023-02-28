@@ -1,4 +1,4 @@
-package it.unive.dais.po2.tinyjdk;
+package it.unive.dais.po2.tinyjdk.nogenerics;
 
 public class NoGenerics {
 
