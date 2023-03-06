@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33e4d7d5-2cce-4942-885d-8ed0c13d8afa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/BasicQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/HashSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/NotImplementedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/HashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/PairMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/BasicQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/BasicQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +43,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="it.unive.dais.po2.tinyjdk" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\shc-pc\Documents\GitHub\PO2\2022-23\LezioniJava22-23\src" />
     </key>

@@ -102,4 +102,9 @@ public class ArrayList<T> implements List<T> {
     public void set(int index, T x) {
         a[index] = x;
     }
+
+    @Override
+    public void removeAt(int index) {
+        // TODO per casa
+    }
 }
