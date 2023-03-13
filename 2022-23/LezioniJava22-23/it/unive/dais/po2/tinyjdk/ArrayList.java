@@ -32,8 +32,37 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public void remove(T x) {
+        // TODO per chi vuole implementarla
+    }
+
+    // versione in C della removeIf()
+    /*void C_removeIf(int* a, size_t len, bool(*p)(int))
+    {
+        for (int i = 0; i < len; ++i) {
+            int x = a[i];
+            if (p(x)) {
+                removeAt(i);
+            }
+        }
+    }*/
+
+    public static void main(String[] args) {
+        List<Integer> c = new ArrayList<>();
+        c.add(78);
+        c.add(-456);
+        c.add(7);
+        c.add(4);
+        c.add(7834);
+        c.removeIf(new Predicate<Integer>() {
+            @Override
+            public Boolean apply(Integer x) {
+                return x < 0;
+            }
+        });
 
     }
+
+
 
     @Override
     public boolean contains(T x) {

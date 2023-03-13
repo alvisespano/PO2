@@ -4,8 +4,8 @@ import jdk.incubator.vector.VectorOperators;
 
 public class NodeBinaryTree<T> implements BinaryTree<T> {
 
-    private T data;
-    private BinaryTree<T> l, r;
+    private final T data;
+    private final BinaryTree<T> l, r;
 
     public NodeBinaryTree(T data, BinaryTree<T> l, BinaryTree<T> r) {
         this.data = data;
@@ -26,7 +26,8 @@ public class NodeBinaryTree<T> implements BinaryTree<T> {
     }
 
     public static void main(String[] args) {
-        NodeBinaryTree<Integer> root= new NodeBinaryTree<>(1,
+        // TODO provare a riscrivere questo albero usando L() e R()
+        NodeBinaryTree<Integer> root = new NodeBinaryTree<>(1,
                 new NodeBinaryTree<>(8,
                         new NodeBinaryTree<>(9),
                         new NodeBinaryTree<>(11,

@@ -18,6 +18,7 @@ public class BasicQueue<T> implements Queue<T> {
         throw new NotImplementedException();
     }
 
+
     @Override
     public boolean contains(T x) {
         return false;
