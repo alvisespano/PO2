@@ -1,5 +1,7 @@
 package it.unive.dais.po2.tinyjdk;
 
+import java.util.function.BiFunction;
+
 public class ArrayList<T> implements List<T> {
 
     private Object[] a;
@@ -46,6 +48,13 @@ public class ArrayList<T> implements List<T> {
         }
     }*/
 
+    private static class MyPredicate implements Predicate<Integer> {
+        @Override
+        public Boolean apply(Integer x) {
+            return x % 3 == 0;
+        }
+    }
+
     public static void main(String[] args) {
         List<Integer> c = new ArrayList<>();
         c.add(78);
@@ -53,21 +62,45 @@ public class ArrayList<T> implements List<T> {
         c.add(7);
         c.add(4);
         c.add(7834);
+
         c.removeIf(new Predicate<Integer>() {
             @Override
             public Boolean apply(Integer x) {
                 return x < 0;
             }
         });
-
+        c.removeIf(new MyPredicate());
+        c.removeIf(x -> x > 80);
     }
 
+    // esempi di method reference
+    public int f(int x) { return x; }
+    public static boolean g(int x, float y) { return true; }
+
+    public static void main2(String[] args) {
+        BiFunction<ArrayList<Integer>, Integer, Integer> f1 = ArrayList::f;
+        Function<Integer, Integer> f2 = new ArrayList<>()::f;
+        BiFunction<Integer, Float, Boolean> g1 = ArrayList::g;
+        BiFunction<Integer, Float, Boolean> g2 = (x, y) -> g(x, y);
+    }
 
 
     @Override
     public boolean contains(T x) {
+        //return contains(x::equals);   // method reference equivalente alla lambda qua sotto
+        return contains((T y) -> x.equals(y));
+    }
+
+    @Override
+    public boolean contains(Predicate<T> p) {
+        Iterator<T> it = iterator();
+        while (it.hasNext()) {
+            if (p.apply(it.next()))
+                return true;
+        }
         return false;
     }
+
 
     private class MyIterator implements Iterator<T> {
         private int pos = 0;

@@ -10,4 +10,5 @@ public interface Collection<T> extends Iterable<T> {
     void remove(T x);
 
     boolean contains(T x);
+    boolean contains(Predicate<T> p);
 }
