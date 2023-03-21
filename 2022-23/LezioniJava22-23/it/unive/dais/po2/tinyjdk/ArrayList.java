@@ -1,6 +1,8 @@
 package it.unive.dais.po2.tinyjdk;
 
 import java.util.function.BiFunction;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class ArrayList<T> implements List<T> {
 
@@ -50,7 +52,7 @@ public class ArrayList<T> implements List<T> {
 
     private static class MyPredicate implements Predicate<Integer> {
         @Override
-        public Boolean apply(Integer x) {
+        public boolean test(Integer x) {
             return x % 3 == 0;
         }
     }
@@ -65,10 +67,13 @@ public class ArrayList<T> implements List<T> {
 
         c.removeIf(new Predicate<Integer>() {
             @Override
-            public Boolean apply(Integer x) {
+            public boolean test(Integer x) {
                 return x < 0;
             }
         });
+
+        Function<Integer, Boolean> y = x -> x > 80;
+
         c.removeIf(new MyPredicate());
         c.removeIf(x -> x > 80);
     }
@@ -95,7 +100,7 @@ public class ArrayList<T> implements List<T> {
     public boolean contains(Predicate<T> p) {
         Iterator<T> it = iterator();
         while (it.hasNext()) {
-            if (p.apply(it.next()))
+            if (p.test(it.next()))
                 return true;
         }
         return false;

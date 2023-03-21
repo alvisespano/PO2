@@ -1,5 +1,7 @@
 package it.unive.dais.po2.tinyjdk;
 
+import java.util.function.Predicate;
+
 public interface Collection<T> extends Iterable<T> {
     int size();
 

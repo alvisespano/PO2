@@ -1,5 +1,7 @@
 package it.unive.dais.po2.tinyjdk;
 
+import java.util.function.Predicate;
+
 public class HashSet<T> implements Set<T> {
     private List<T> l = new ArrayList<>();
 
@@ -31,6 +33,12 @@ public class HashSet<T> implements Set<T> {
                 return true;
         }
         return false;
+    }
+
+    @Override
+    public boolean contains(Predicate<T> p) {
+       // TODO per casa
+       return false;
     }
 
     @Override
