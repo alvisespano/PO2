@@ -1,7 +1,5 @@
 package it.unive.dais.po2.tinyjdk;
 
-import jdk.incubator.vector.VectorOperators;
-
 public class NodeBinaryTree<T> implements BinaryTree<T> {
 
     private final T data;

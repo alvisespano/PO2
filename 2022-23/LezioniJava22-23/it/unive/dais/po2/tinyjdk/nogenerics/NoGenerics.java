@@ -1,5 +1,7 @@
 package it.unive.dais.po2.tinyjdk.nogenerics;
 
+import it.unive.dais.po2.Zoo;
+
 public class NoGenerics {
 
     // JDK 1.0 (1994)

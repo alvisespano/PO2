@@ -112,11 +112,6 @@ public class Lambdas {
     }
 
     public static <T> T sum(Collection<T> c, T zero, BiFunction<T, T, T> f) {
-        /*T z = zero;
-        for (T x : c) {
-            z = f.apply(z, x);
-        }
-        return z;*/
         return foldLeft(c, zero, f);
     }
 
