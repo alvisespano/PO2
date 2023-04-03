@@ -34,14 +34,12 @@ public class Sample {
         public void run() {
             loop();
         }
-
     }
 
     public static void main(String[] args) {
         Thread t1 = new MyThread();
         t1.start();
 
-        
         new Thread(Sample::loop).start();
         new MyThread().start();
         new MyThread().start();
