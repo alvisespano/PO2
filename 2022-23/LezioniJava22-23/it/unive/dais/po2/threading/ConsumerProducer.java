@@ -3,6 +3,7 @@ package it.unive.dais.po2.threading;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.function.Supplier;
 
 public class ConsumerProducer {
 
@@ -14,14 +15,15 @@ public class ConsumerProducer {
             Random rnd = new Random();
             while (true) {
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(10);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 int n = rnd.nextInt(100);
                 synchronized (l) {
                     l.add(n);
-                    System.out.printf("produced %d\n", n);
+                    l.notify();
+                    System.out.printf("#%d: produced %d\n", Thread.currentThread().getId(), n);
                 }
             }
         }
@@ -32,27 +34,48 @@ public class ConsumerProducer {
         public void run() {
             while (true) {
                 synchronized (l) {
-                    if (!l.isEmpty()) {
-                        int n = l.remove(0);
-                        System.out.printf("consumed %d\n", n);
+                    if (l.isEmpty()) {
+                        try {
+                            l.wait();
+                        } catch (InterruptedException e) {
+                        }
                     }
+                    int n = l.remove(0);
+                    System.out.printf("#%d: consumed %d\n", Thread.currentThread().getId(), n);
                 }
             }
         }
     }
 
-    public static void main(String[] args) {
-        Producer p = new Producer();
-        Consumer c = new Consumer();
-        p.start();
-        c.start();
-
-        try {
-            p.join();
-            c.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+    private static
+    void populate(int n, List<Thread> p, Supplier<? extends Thread> f) {
+        for (int i = 0; i < n; ++i) {
+            Thread t = f.get();
+            p.add(t);
+            t.start();
         }
+
+    }
+
+    public static void main(String[] args) {
+        List<Thread> p = new ArrayList<>();
+        Supplier<Producer> u = Producer::new;
+        populate(10, p, u);
+        populate(20, p, new Supplier<>() {
+            @Override
+            public Thread get() {
+                return new Consumer();
+            }
+        });
+
+        for (Thread t : p) {
+            try {
+                t.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 
 
