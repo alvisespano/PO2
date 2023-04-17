@@ -76,12 +76,15 @@ public class Sorting {
         Collections.sort(l2, (Shape o1, Shape o2) -> (int) (o1.perimeter() - o2.perimeter()));
     }
 
-//    static <T extends Comparable<? super T>> void sort(List<T> l)
+    //static <T extends Comparable<? super T>> void sort(List<T> l)
 
-    static <T> void sort(List<T> l, Comparator<? super T> cmp) {
-        Collections.sort(l, cmp);
-    }
+    //static <T> void sort(List<T> l, Comparator<? super T> cmp) {
+    //    Collections.sort(l, cmp);
+    //}
 
     // void qsort(void* a, size_t len, int(*f)(void*, void*))
+
+
+
 
 }
