@@ -12,7 +12,7 @@ export namespace zoo
 		int weight_;
 
 	public:
-		explicit animal(int w) : weight_(w) {}
+		animal(int w) : weight_(w) {}
 		virtual ~animal() {}
 
 		animal(const animal& a) : weight_(a.weight_) {}
@@ -25,6 +25,34 @@ export namespace zoo
 		const int& weight() const { return weight_; }
 		int& weight() { return weight_; }
 	};
+
+	class dog : public animal
+	{
+	protected:
+		bool has_pedigree;
+
+	public:
+		dog(int w, bool has_ped) : animal(w), has_pedigree(has_ped) {}
+
+	};
+
+	animal f(animal a) { return a;  }
+
+	void main()
+	{
+		animal a(4);
+		animal* b(new animal(4));
+
+		animal c(a);
+		animal d(f(c));
+
+		animal u(a);
+		animal& w = a;
+		f(5);
+	}
+
+
+
 
 	class dog : public animal
 	{

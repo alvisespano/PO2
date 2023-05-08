@@ -66,14 +66,5 @@ public class Wildcards {
 
     }
 
-    public static class Animale {
-        public Animale accoppia(Animale a) {}
-    }
-
-    public static class Gatto extends Animale {
-
-        @Override
-        public Gatto accoppia(Object a) { /* implementazione diversa */ }
-    }
 
 }
