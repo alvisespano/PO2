@@ -13,6 +13,15 @@ public class Es3 {
             this.n = n;
         }
 
+        private static int fact(int n) {
+            return n < 2 ? 1 : n * fact(n - 1);
+        }
+
+        @Override
+        public void run() {
+            result = fact(n);
+        }
+
         public int getResult() {
             return result;
         }
@@ -23,7 +32,9 @@ public class Es3 {
     public static Collection<FactThread> multiFact(Collection<Integer> ns) {
         Collection<FactThread> r = new ArrayList<>();
         for (int n : ns) {
-            r.add(new FactThread(n));
+            FactThread t = new FactThread(n);
+            t.start();
+            r.add(t);
         }
         return r;
     }
