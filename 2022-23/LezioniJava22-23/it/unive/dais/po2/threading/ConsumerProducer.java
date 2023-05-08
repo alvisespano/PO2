@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 
 public class ConsumerProducer {
 
-    private static List<Integer> l = new ArrayList<>();
+    private static final List<Integer> l = new ArrayList<>();
 
     public static class Producer extends Thread {
         @Override

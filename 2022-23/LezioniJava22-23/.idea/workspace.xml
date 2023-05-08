@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e4d7d5-2cce-4942-885d-8ed0c13d8afa" name="Changes" comment="" />
+    <list default="true" id="33e4d7d5-2cce-4942-885d-8ed0c13d8afa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/misc/Wildcards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/misc/Zoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/lambdas/Lambdas.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/misc/HIgherOrderFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/lambdas/Wildcards.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/sorting/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/misc/Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/threading/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/threading/Threads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/nogenerics/NoGenerics.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/nogenerics/NoGenerics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LezioniJava22-23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LezioniJava22-23/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,13 +50,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../LabCloud/RMITest1" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="it.unive.dais.po2.tinyjdk" />
@@ -72,8 +84,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.Sample" />
+    <configuration name="Threads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.unive.dais.po2.threading.Threads" />
       <module name="LezioniJava22-23" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +100,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ConsumerProducer" />
-        <item itemvalue="Application.Sample" />
+        <item itemvalue="Application.Threads" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +133,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/it/unive/dais/po2/Zoo.java</url>
+          <url>file://$PROJECT_DIR$/it/unive/dais/po2/misc/Zoo.java</url>
           <line>33</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

@@ -1,6 +1,4 @@
-package it.unive.dais.po2.lambdas;
-
-import it.unive.dais.po2.tinyjdk.Pair;
+package it.unive.dais.po2.misc;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,7 +6,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.*;
 
-public class Lambdas {
+public class HIgherOrderFunctions {
+
+    // non serve riscrivere queste interfacce funzionali, ma le riportiamo per facilitare la consultazione
 
     /*interface Function<A, B> {
         B apply(A x);

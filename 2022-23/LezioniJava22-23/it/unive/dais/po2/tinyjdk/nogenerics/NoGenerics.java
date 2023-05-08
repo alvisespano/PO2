@@ -1,6 +1,8 @@
 package it.unive.dais.po2.tinyjdk.nogenerics;
 
-import it.unive.dais.po2.Zoo;
+import it.unive.dais.po2.misc.Zoo;
+
+// in questo file mostriamo come si faceva una volta, prima che Java 5 introducesse i generics
 
 public class NoGenerics {
 

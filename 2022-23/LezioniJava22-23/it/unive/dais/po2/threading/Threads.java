@@ -2,11 +2,9 @@ package it.unive.dais.po2.threading;
 
 import java.util.Random;
 
-public class Sample {
+public class Threads {
 
-    private static Random rnd = new Random();
-
-    Object myMutex = new Object();
+    private static final Random rnd = new Random();
 
     private static int rand(int a, int b) {
         synchronized (rnd) {
@@ -22,11 +20,9 @@ public class Sample {
                 } catch (InterruptedException e) {}
 
                 System.out.println("ciao sono ");
-                System.out.println("il thread #"
-                        + Thread.currentThread().getId());
+                System.out.println("il thread #" + Thread.currentThread().getId());
             }
         }
-
     }
 
     public static class MyThread extends Thread {
@@ -40,7 +36,7 @@ public class Sample {
         Thread t1 = new MyThread();
         t1.start();
 
-        new Thread(Sample::loop).start();
+        new Thread(Threads::loop).start();
         new MyThread().start();
         new MyThread().start();
         new MyThread().start();
