@@ -99,7 +99,7 @@ void swap_any_pointer(Pointer& p1, Pointer& p2)
 	*p2 = tmp;
 }
 
-export void test_smart_ptr()
+export void test()
 {
 	int* a = new int[100];
 	smart_ptr<int> a2(a, true);	// ora l'array puntato da a è di proprietà dello smart_ptr, quindi non servirà fare 'delete[] a'

@@ -3,7 +3,6 @@
 
 import pairs;
 import sums;
-import zoo;
 import iterators;
 import <vector>;
 
@@ -13,7 +12,7 @@ int main()
 {
 	try
 	{
-		sums::test();
+		sums::test();	// chiamare il test che si preferisce
 		return 0;
 	}
 	catch (exception& e)

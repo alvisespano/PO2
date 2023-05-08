@@ -21,9 +21,6 @@
     <ClCompile Include="pairs.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="zoo.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="sums.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,12 +31,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ident.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="preprocessor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="gp.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -141,15 +141,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gp.ixx" />
     <ClCompile Include="ident.ixx" />
     <ClCompile Include="iterators.ixx" />
     <ClCompile Include="pairs.ixx" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="preprocessor.cpp" />
     <ClCompile Include="smart_ptr.ixx" />
     <ClCompile Include="sums.ixx" />
-    <ClCompile Include="zoo.ixx" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pizza.h" />

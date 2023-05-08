@@ -2,7 +2,6 @@
 
 import pairs;
 import sums;
-import zoo;
 
 // da C++11 ALMENO una definizione di ident() deve esistere PRIMA della funzione templatizzata che la usa (questo progetto compila in C++20)
 // in C++ vanilla poteva non esisterne neanche una
