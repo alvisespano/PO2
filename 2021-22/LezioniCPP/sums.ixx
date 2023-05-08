@@ -14,7 +14,9 @@ export namespace sums
 {
 	// sum con operazione di somma binaria passata come argomento
 	template <class InputIterator, class BinaryFunction>
-	std::iterator_traits<InputIterator>::value_type sum(InputIterator first, InputIterator last, BinaryFunction f)
+	std::iterator_traits<InputIterator>::value_type sum(InputIterator first, 
+													    InputIterator last,
+													    BinaryFunction f)
 	{
 		typename std::iterator_traits<InputIterator>::value_type z = *first++;
 		while (first != last)
