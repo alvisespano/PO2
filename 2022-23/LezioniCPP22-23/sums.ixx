@@ -3,6 +3,7 @@ export module sums;
 import <string>;
 import <vector>;
 import <functional>;
+import <iostream>;
 
 export namespace sums {
 
@@ -38,9 +39,9 @@ export namespace sums {
 		return r;
 	}
 
-	// in C++14 e superiore è possibile usare auto
+	// in C++11 è possibile usare auto
 	template <class InputIterator>
-	auto sum_cxx14(InputIterator first, InputIterator last) -> decltype(*first)
+	auto sum_cxx11(InputIterator first, InputIterator last) 
 	{
 		auto r(*first);
 		while (first != last)
@@ -50,29 +51,79 @@ export namespace sums {
 		return r;
 	}
 
+	// questa versione della sum ha 3 parametri: il terzo parametro è una funzione, il cui tipo è templatizzato, e 
+	template <class InputIterator, class BinFun>
+	auto sum(InputIterator first, InputIterator last, BinFun f)
+	{
+		auto r(*first);
+		while (first != last)
+		{
+			r = f(r, *first++);	// f deve supportare la sintassi di CHIAMATA A FUNZIONE con 2 argomenti 
+		}
+		return r;
+	}
+
+	// questa classe definisce un overload dell'operator(), quindi permette alle sue istanze di supportare la sintassi della chiamata a funzione
+	class my_binary_function_object
+	{
+	private:
+		double k;
+
+	public:
+		explicit my_binary_function_object(double k_) : k(k_) {}
+
+		// questo è l'operatore che permette alle istanze di questa classe di essere usate COME SE FOSSERO UNA FUNZIONE che prende 2 argomenti di tipo e ritorna un int
+		double operator()(double a, double b) const 
+		{ 
+			return a + b + k; 
+		}
+
+		// questo metodo statico non serve a niente, se non a mostrare un piccolo test di questa classe per capire come funziona
+		static void test()
+		{
+			my_binary_function_object f(7.1);	// costruisci un oggetto invocando l'unico costruttore che c'è
+			double x = f(11.23, 35.0);			// la variabile f può essere usata COME SE FOSSE UNA FUNZIONE, cioè applicando 2 argomenti alla sua destra tra parentesi tonde
+		}
+	};
+
+	int my_global_binary_function(char a, char b) { return a + b; }
 
 	export void test()
 	{
-		std::vector<int> v1{ 1, 2, 3 };
-		int x = sum(v1);
-		std::vector<int> v2{ 234, 456,4567, 7 };
-		int y = sum(v2);
-		std::vector<double> v3{ 0.0 };
-		double z = sum(v3);
+		std::vector<int> v1 { 1, 2, 3, -4, 5 };
+		std::vector<double> v2 { 56.67, 0.0, 4.5, 98.2134 };
+		char a[4] { 11, 24, 123, -23 };
 
+		// alcuni test delle funzioni sum
+		{
+			int x = sum(v1);
+			double y = sum(v2);
+		}
+		
 		// con gli iteratori
-
-		int n = sum(v1.begin(), v1.end());
-		double n2 = sum(v3.begin(), v3.end());
-
+		{
+			int x = sum(v1.begin(), v1.end());
+			double y = sum(v2.begin(), v2.end());
+		}
+		
 		// con i pointer
-		char a[10];
-		char m = sum(a, a + 10);
+		{
+			char x = sum(a, a + 10);
 
-		double b[5];
-		double p = sum_cxx14(b, b + 5);
+			double b[5];
+			double y = sum(b, b + 5);
+		}
 
-		std::function<int(int)> f = [=](int x) { return x + 1; };
+		// testiamo ora la versione della sum che prende 3 argomenti, di cui il terzo deve supportare la sintassi di chiamata a funzione
+		// ci sono varie espressioni possibili che supportano la sintassi di chiamata funzione e che sono quindi compatibili con la sum in questione
+		{
+			int x = sum(v1.begin(), v1.end(), [](int a, int b) { return a + b; });	// una lambda binaria che la fa somma degli argomenti di tipo int
+			int y = sum(v2.begin(), v2.end(), my_binary_function_object(8.67));		// una istanza di un oggetto che supporta la sintassi di chiamata con 2 argomenti
+			int z = sum(a, a + 10, my_global_binary_function);						// un puntatore ad una funzione globale
+		}
+
+		// 
+		//std::function<int(int)> f = [=](int x) { return x + 1; };
 		
 	}
 
