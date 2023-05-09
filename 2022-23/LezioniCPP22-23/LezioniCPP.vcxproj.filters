@@ -27,6 +27,9 @@
     <ClCompile Include="sums.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lambdas.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pizza.h">

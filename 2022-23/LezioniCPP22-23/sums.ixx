@@ -63,7 +63,7 @@ export namespace sums {
 		return r;
 	}
 
-	// questa classe definisce un overload dell'operator(), quindi permette alle sue istanze di supportare la sintassi della chiamata a funzione
+	// questa classe definisce un overload di operator(), quindi permette alle sue istanze di supportare la sintassi della chiamata a funzione
 	class my_binary_function_object
 	{
 	private:
@@ -75,7 +75,7 @@ export namespace sums {
 		// questo è l'operatore che permette alle istanze di questa classe di essere usate COME SE FOSSERO UNA FUNZIONE che prende 2 argomenti di tipo e ritorna un int
 		double operator()(double a, double b) const 
 		{ 
-			return a + b + k; 
+			return a + b + k; // somma i 2 argomenti e il campo
 		}
 
 		// questo metodo statico non serve a niente, se non a mostrare un piccolo test di questa classe per capire come funziona
@@ -109,7 +109,6 @@ export namespace sums {
 		// con i pointer
 		{
 			char x = sum(a, a + 10);
-
 			double b[5];
 			double y = sum(b, b + 5);
 		}
@@ -122,8 +121,6 @@ export namespace sums {
 			int z = sum(a, a + 10, my_global_binary_function);						// un puntatore ad una funzione globale
 		}
 
-		// 
-		//std::function<int(int)> f = [=](int x) { return x + 1; };
 		
 	}
 

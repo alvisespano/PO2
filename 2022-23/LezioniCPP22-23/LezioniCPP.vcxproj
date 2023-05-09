@@ -141,6 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lambdas.ixx" />
     <ClCompile Include="sums.ixx" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="macros.ixx" />
