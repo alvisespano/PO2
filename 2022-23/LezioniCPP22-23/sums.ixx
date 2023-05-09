@@ -2,6 +2,7 @@ export module sums;
 
 import <string>;
 import <vector>;
+import <functional>;
 
 export namespace sums {
 
@@ -71,6 +72,8 @@ export namespace sums {
 		double b[5];
 		double p = sum_cxx14(b, b + 5);
 
+		std::function<int(int)> f = [=](int x) { return x + 1; };
+		
 	}
 
 }
