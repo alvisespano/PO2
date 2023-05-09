@@ -6,6 +6,8 @@ import <string>;
 export namespace zoo
 {
 
+
+
 	export class animal
 	{
 	protected:
@@ -17,7 +19,14 @@ export namespace zoo
 
 		animal(const animal& a) : weight_(a.weight_) {}
 
-		virtual void eat(const animal* a)
+		animal& operator=(const animal& a)
+		{
+			weight_ = a.weight_;
+			return *this;
+		}
+
+		// void eat(const animal* a, animal* this)
+		void eat(const animal* a) 
 		{
 			weight_ += a->weight_;
 		}
@@ -39,7 +48,8 @@ export namespace zoo
 			delete[] a;
 		}
 
-		void eat(const animal* a) override
+		// void eat(const animal* a, dog* this)
+		void eat(const animal* a)
 		{
 			weight() = a->weight() * 2;
 		}
@@ -50,7 +60,7 @@ export namespace zoo
 	public:
 		explicit cat(int w) : animal(w) {}
 
-		void eat(const animal* a) override
+		void eat(const animal* a) 
 		{
 			weight() = a->weight() / 3;
 		}
@@ -67,6 +77,47 @@ export namespace zoo
 		}
 	};
 
+
+	void f()
+	{
+		{
+			animal a(60);
+			dog b(10);
+			a = b;
+			animal c = b;
+			c.eat(&c);
+		}
+
+		{
+			animal* a = new animal(60);
+			dog* b = new dog(10);
+			a = b;
+			animal* c = b;
+			c->eat(c);
+
+			delete a;
+			delete c;
+		}
+
+		{
+			animal a(60);
+			dog b(10);
+			animal& c = b;
+			c.eat(&c);
+		}
+	}
+
+
+	void self_cannibal(animal* a)
+	{
+		a->eat(a);
+	}
+
+	template <class A>
+	void self_cannibal2(A* a)
+	{
+		a->eat(a);
+	}
 
 	export void test()
 	{	

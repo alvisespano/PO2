@@ -2,6 +2,7 @@ export module sums;
 
 import <string>;
 import <vector>;
+import <iostream>;
 
 export namespace sums {
 
@@ -49,10 +50,49 @@ export namespace sums {
 		return r;
 	}
 
+	struct S 
+	{
+		int k;
+
+		S(int k_) : k(k_) {}
+
+		void operator()(const int& x)
+		{
+			std::cout << x;
+		}
+
+		int operator()(int a, int b) { return a + b; }
+	};
+
+	void test()
+	{
+		S x;
+		x(6);
+	}
+
+
+	template <class InputIterator, class BinFun>
+	auto sum(InputIterator first, InputIterator last, BinFun f)
+	{
+		auto r(*first);
+		while (first != last)
+		{
+			r = f(r, *first++);
+		}
+		return r;
+	}
+
+	int global_plus(int a, int b) { return a + b; }
 
 	export void test()
 	{
 		std::vector<int> v1{ 1, 2, 3 };
+
+		int w = sum(v1.begin(), v1.end(), [](int a, int b) { return a + b; });
+		int v = sum(v1.begin(), v1.end(), global_plus);
+		int z = sum(v1.begin(), v1.end(), S(8));
+
+
 		int x = sum(v1);
 		std::vector<int> v2{ 234, 456,4567, 7 };
 		int y = sum(v2);
