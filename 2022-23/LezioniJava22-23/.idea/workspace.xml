@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33e4d7d5-2cce-4942-885d-8ed0c13d8afa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/it/unive/dais/po2/misc/Wildcards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/misc/Zoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/lambdas/Lambdas.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/misc/HIgherOrderFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/lambdas/Wildcards.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/sorting/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/misc/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/threading/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/threading/Threads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/nogenerics/NoGenerics.java" beforeDir="false" afterPath="$PROJECT_DIR$/it/unive/dais/po2/tinyjdk/nogenerics/NoGenerics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LezioniJava22-23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LezioniJava22-23/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +45,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/shc-pc/Documents/GitHub/PO2/soluzione appelli/Scritto PO2 13 1 2023/java"
   }
 }]]></component>
   <component name="RecentsManager">

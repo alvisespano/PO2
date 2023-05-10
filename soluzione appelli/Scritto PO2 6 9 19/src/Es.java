@@ -37,11 +37,10 @@ public class Es {
 
         // 1.c.ii
         public Iterator<Line> lineIterator() {
-            Iterator<Point> it = points.iterator();
-            final Point[] last = new Point[1];  // questo trucco serve a mettere il final sull'array e non sugli elementi, così da poter essere modificato da dentro la anonymous class
-            assert it.hasNext();                // si assicura che non iteriamo su una lista vuota (in realtà ha almeno 3 elementi)
-            last[0] = it.next();
             return new Iterator<>() {
+                private final Iterator<Point> it = points.iterator();
+                private Point last = it.next();     // ci sono sempre almeno 3 punti, non può fallire questa next()
+
                 @Override
                 public boolean hasNext() {
                     return it.hasNext();
@@ -50,8 +49,8 @@ public class Es {
                 @Override
                 public Line next() {
                     Point p = it.next();
-                    Line r = new Line(last[0], p);
-                    last[0] = p;
+                    Line r = new Line(last, p);
+                    last = p;
                     return r;
                 }
             };
