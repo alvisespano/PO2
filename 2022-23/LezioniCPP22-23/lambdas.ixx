@@ -30,7 +30,7 @@ export void test()
 		auto f1 = [=](int x) { return x + v[0] + k; };	// v e k sono catturate per COPIA nella chiusura della lambda
 		auto f2 = [&](int x) { return x + v[0] + k; };	// v e k sono catturate per REFERENCE nella chiusura della lambda
 		auto f3 = [=, &v](int x) { return x + v[0] + k; };	// tutto per copia (cioè solo k, nel nostro caso) eccetto v per reference
-		auto f4 = [&, v](int x) { return x + v[0] + k; };	// tutto per reference (cioè solo v, nel nostro caso) eccetto k per copia
+		auto f4 = [&, k](int x) { return x + v[0] + k; };	// tutto per reference (cioè solo v, nel nostro caso) eccetto k per copia
 		auto f5 = [a=v, b=k](int x) { return x + a[0] + b; };	// tutto per copia con rebinding dei nomi: v si chiama a e k si chiama b
 		auto f6 = [&a=v, b=k](int x) { return x + a[0] + b; };	// v si chiama a ed è per reference; k si chiama b ed è per copia
 	}
