@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.*;
 
-public class HIgherOrderFunctions {
+public class HigherOrderFunctions {
 
     // non serve riscrivere queste interfacce funzionali, ma le riportiamo per facilitare la consultazione
 
