@@ -30,6 +30,9 @@
     <ClCompile Include="lambdas.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="smart_ptr.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pizza.h">

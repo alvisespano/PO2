@@ -142,6 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="lambdas.ixx" />
+    <ClCompile Include="smart_ptr.ixx" />
     <ClCompile Include="sums.ixx" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="macros.ixx" />

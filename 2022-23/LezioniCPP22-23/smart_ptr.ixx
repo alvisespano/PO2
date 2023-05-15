@@ -6,8 +6,8 @@ template <class T>
 class smart_ptr
 {
 private:
-	T const* pt;
-	diffptr_t offset;
+	T* pt;
+	ptrdiff_t offset;
 	size_t* cnt;
 
 	void dec()
@@ -21,7 +21,7 @@ private:
 	}
 
 public:
-	smart_ptr(T* p) : pt(p), offset(0), cnt(new int(1)) {}
+	smart_ptr(T* p) : pt(p), offset(0), cnt(new size_t(1)) {}
 
 	smart_ptr(const smart_ptr<T>& p) : pt(p.pt), cnt(p.cnt), offset(p.offset)
 	{
@@ -41,8 +41,8 @@ public:
 			++(*p.cnt);
 			this->pt = p.pt;
 			this->cnt = p.cnt;
-
 		}
+		return *this;
 	}
 
 	T& operator*()
@@ -75,7 +75,7 @@ public:
 		return pt;
 	}
 
-	smart_ptr<T> operator+(diffptr_t d)
+	smart_ptr<T> operator+(ptrdiff_t d)
 	{
 		return smart_ptr<T>(pt + d);
 	}
@@ -98,7 +98,7 @@ export void test()
 
 	smart_ptr<int> a(new int(23));
 	C c(a);
-	smatr_ptr<int> b = c.get();
+	smart_ptr<int> b = c.get();
 
 	smart_ptr<int> d(new int(436745));
 	d = a;
