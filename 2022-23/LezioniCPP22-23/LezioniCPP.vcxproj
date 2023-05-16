@@ -141,7 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="lambdas.ixx" />
+    <ClCompile Include="some_lambdas.ixx" />
     <ClCompile Include="smart_ptr.ixx" />
     <ClCompile Include="sums.ixx" />
     <ClCompile Include="main.cpp" />

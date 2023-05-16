@@ -27,7 +27,7 @@
     <ClCompile Include="sums.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lambdas.ixx">
+    <ClCompile Include="some_lambdas.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="smart_ptr.ixx">
