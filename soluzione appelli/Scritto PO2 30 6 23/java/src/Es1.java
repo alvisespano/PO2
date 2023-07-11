@@ -1,7 +1,7 @@
 import java.util.Iterator;
 import java.util.function.Function;
 
-public class Main {
+public class Es1 {
 
     // 1.a
     public static class Pair<A, B> {
@@ -35,7 +35,7 @@ public class Main {
                 private X x = a;
                 @Override
                 public boolean hasNext() {
-                    return x.compareTo(b) < 0;
+                    return x.compareTo(b) <= 0;
                 }
 
                 @Override
