@@ -25,6 +25,7 @@ public class Main {
 
                 public Future(Supplier<B> f) {
                     t = new Thread(() -> { r = f.get(); });
+                    t.start();
                 }
 
                 @Override
