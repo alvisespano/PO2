@@ -39,7 +39,7 @@ namespace cpp03 {
     }
 
     // 2.c.ii
-    // no, non possono coesistere, perché sarebbero overload ambigui. Per questo motivo ho dovuto metterli in un namespace a parte.
+    // no, non possono coesistere, perché sarebbero overload ambigui. Infatti ho dovuto metterli in un sotto-namespace a parte per far compilare questo sorgente.
 
     // 2.c.iii
     // bisogna usare i function object, cioè oggetti per cui è definito l'operatore di applicazione operator()
