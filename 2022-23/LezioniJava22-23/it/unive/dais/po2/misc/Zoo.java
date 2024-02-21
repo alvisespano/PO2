@@ -1,8 +1,6 @@
 package it.unive.dais.po2.misc;
 
 public class Zoo {
-
-
     public static class Animal {
         protected int weight;
 

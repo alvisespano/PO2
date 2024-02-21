@@ -1,22 +1,27 @@
 export module smart_ptr;
 
 import <cstddef>;
+import <cassert>;
+import <type_traits>;
 
-template <class T>
+template <class Ty, size_t Len = (std::is_array_v<Ty> ? std::extent_v<Ty, 0> : 1)>
 class smart_ptr
 {
 private:
+	using T = std::remove_extent_t<Ty>;
+
 	T* pt;
 	ptrdiff_t offset;
 	size_t* cnt;
-	bool is_array;
+
+	using self = smart_ptr<T, Len>;
 
 	void dec()
 	{
 		--(*cnt);
 		if (*cnt == 0)
 		{
-			if (is_array) delete[] pt;
+			if constexpr (Len >= 1) delete[] pt;
 			else delete pt;
 			delete cnt;
 		}
@@ -27,18 +32,16 @@ private:
 		++(*cnt);
 	}
 
-	smart_ptr(T* pt_, ptrdiff_t offset_, size_t* cnt_, bool is_array_)
-		: pt(pt_), offset(offset_), cnt(cnt_), is_array(is_array_) {
+	smart_ptr(T* pt_, ptrdiff_t offset_, size_t* cnt_)
+		: pt(pt_), offset(offset_), cnt(cnt_) {
 		inc();
 	}
 
 public:
-	smart_ptr(T* p, bool is_array_) 
-		: pt(p), offset(0), cnt(new size_t(1)), is_array(is_array_) {}
+	explicit smart_ptr(T* p) 
+		: pt(p), offset(0), cnt(new size_t(1)) {}
 
-	explicit smart_ptr(T* p) : smart_ptr<T>(p, false) {}
-
-	smart_ptr(const smart_ptr<T>& p) 
+	smart_ptr(const self& p) 
 		: pt(p.pt), cnt(p.cnt), offset(p.offset)
 	{
 		inc();
@@ -49,7 +52,7 @@ public:
 		dec();
 	}
 
-	smart_ptr<T>& operator=(const smart_ptr<T>& p)
+	self& operator=(const self& p)
 	{
 		if (pt != p.pt)
 		{
@@ -57,7 +60,6 @@ public:
 			pt = p.pt;
 			cnt = p.cnt;
 			offset = p.offset;
-			is_array = p.is_array;
 			inc();
 		}
 		return *this;
@@ -65,7 +67,7 @@ public:
 
 	T& operator*()
 	{
-		return pt[offset];
+		return const_cast<T&>(*std::as_const(*this));
 	}
 
 	const T& operator*() const
@@ -73,84 +75,85 @@ public:
 		return pt[offset];
 	}
 
-	bool operator==(const smart_ptr<T>& p) const
+	bool operator==(const self& p) const
 	{
 		return pt == p.pt && offset == p.offset;
 	}
 
-	bool operator!=(const smart_ptr<T>& p) const
+	bool operator!=(const self& p) const
 	{
 		return !(*this == p);
 	}
 
 	operator T*()
 	{
-		return pt + offset;
+		return const_cast<T*>(std::as_const(*this).operator const T*());
 	}
 
-	operator const T* () const
+	operator const T*() const
 	{
 		return pt + offset;
 	}
 
-	smart_ptr<T> operator+(ptrdiff_t d) const
+	self operator+(ptrdiff_t d) const
 	{
 		return smart_ptr<T>(pt, offset + d, cnt, is_array);
 	}
 
-	smart_ptr<T> operator-(ptrdiff_t d) const
+	self operator-(ptrdiff_t d) const
 	{
 		return *this + (-d);
 	}
 
-	smart_ptr<T>& operator+=(ptrdiff_t d)
+	self& operator+=(ptrdiff_t d)
 	{
 		offset += d;
 		return *this;
 	}
 
-	smart_ptr<T>& operator-=(ptrdiff_t d)
+	self& operator-=(ptrdiff_t d)
 	{
 		return *this += -d;
 	}
 
-	smart_ptr<T>& operator++()
+	self& operator++()
 	{
 		return *this += 1;
 	}
 
-	smart_ptr<T> operator++(int)
+	self operator++(int)
 	{
-		smart_ptr<T> r(*this);
+		self r(*this);
 		++(*this);
 		return r;
 	}
 
-	smart_ptr<T>& operator--()
+	self& operator--()
 	{
 		return *this -= 1;
 	}
 
-	smart_ptr<T> operator--(int)
+	self operator--(int)
 	{
-		smart_ptr<T> r(*this);
+		self r(*this);
 		--(*this);
 		return r;
 	}
 
-	T& operator[](size_t i)
+	T& operator[](int i)
 	{
-		return pt[offset + i];
+		return const_cast<T&>(std::as_const(*this)[i]);
 	}
 
-	const T& operator[](size_t i) const
+	const T& operator[](int i) const
 	{
+		assert(offset + i < Len && offset + i >= 0);
 		return pt[offset + i];
 	}
 
 	T* operator->()
 	{
-		return pt + offset;
+		return const_cast<T*>(std::as_const(*this).operator->());
 	}
 
 	const T* operator->() const
@@ -185,17 +188,9 @@ struct S {
 
 export void test()
 {
-	int* a = new int[10];
-	demo(a);
 
-	smart_ptr<int> b(new int(23));
-	demo(b);
+	smart_ptr<int> a(new int(1));
 
-	S* s1 = new S[10];
-	int n1 = s1->a + 1;
-	smart_ptr<S> s2(s1, true);
-	S s3(s2[4]);
-	s3 = s3;
-
+	smart_ptr<int[]> a(new int[20]);
 
 }
