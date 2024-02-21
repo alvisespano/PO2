@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class Es1 {
 
@@ -12,7 +12,7 @@ public class Es1 {
     // 2.b
     public static class SimplePool<T> implements Pool<T> {
 
-        private final BlockingQueue<T> q = new LinkedBlockingDeque<>();
+        private final BlockingQueue<T> q = new LinkedBlockingQueue<>();
 
         @Override
         public T acquire() throws InterruptedException {
@@ -29,13 +29,14 @@ public class Es1 {
 
     public interface Resource<T> {
         T get();
-        void release();
+        void autorelease();
     }
 
     public static class AutoPool<T> implements Pool<Resource<T>> {
 
-        private final BlockingQueue<T> q = new LinkedBlockingDeque<>();
+        private final BlockingQueue<T> q = new LinkedBlockingQueue<>();
 
+        // questo metodo non è richiesto dall'interfaccia AutoPool, però è utile perché serve a popolare la pool, come accade nel main
         public void add(T x) {
             q.add(x);
         }
@@ -51,7 +52,7 @@ public class Es1 {
                 }
 
                 @Override
-                public void release() {
+                public void autorelease() {
                     System.out.printf("released: %s%n", r);
                     add(r);
                 }
@@ -59,14 +60,14 @@ public class Es1 {
                 @SuppressWarnings("deprecation")
                 @Override
                 protected void finalize() {
-                    release();
+                    autorelease();
                 }
             };
         }
 
         @Override
         public void release(Resource<T> x) {
-            x.release();
+            x.autorelease();
         }
     }
 
@@ -74,7 +75,7 @@ public class Es1 {
         AutoPool<Integer> pool = new AutoPool<>();
         Random rnd = new Random();
         for (int i = 0; i < 5; ++i) {
-            pool.add(i);
+            pool.add(i);    // popolo la pool con alcuni oggetti
         }
 
         try {

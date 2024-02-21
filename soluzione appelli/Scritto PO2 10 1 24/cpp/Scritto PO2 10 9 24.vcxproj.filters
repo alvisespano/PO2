@@ -15,28 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Es2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="zoo.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="macros.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sums.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="some_lambdas.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="smart_ptr.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="pizza.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
