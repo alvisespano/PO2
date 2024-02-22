@@ -32,7 +32,7 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return sz == 0;
     }
 
     @Override
@@ -42,22 +42,39 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public int size() {
-        return 0;
+        return sz;
     }
 
+    private static class MyIterator implements Iterator<T> {
+        private int pos = 0;
+        @Override
+        public boolean hasNext() {
+            return pos < size();
+        }
+        @Override
+        public T next() {
+            return get(pos++);
+        }
+    }
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new MyIterator();
     }
-
     @Override
     public T get(int i) {
-        return (T) a[i];
+        if (i < sz)
+            return (T) a[i];
+        throw new RuntimeException(String.format("ArrayList.get(): index %d out of bounds %d", i, sz));
     }
 
     @Override
     public T set(int i, T x) {
-        return null;
+        if (i < sz) {
+            T old = get(i);
+            a[i] = x;
+            return old;
+        }
+        throw new RuntimeException(String.format("ArrayList.set(): index %d out of bounds %d", i, sz));
     }
 
     @Override
