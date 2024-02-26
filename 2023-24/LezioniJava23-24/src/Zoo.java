@@ -33,13 +33,9 @@ public class Zoo {
 
     public static void main(String[] args)
     {
-        Dog fido = new Dog(30, false);
-        Dog gigio = fido;
+        Dog fido = new Dog(50, false);
         Animal pluto = new Dog(40, true);
         pluto.eat(fido);
-
-        pluto = gigio;
-        pluto.eat(gigio);
     }
 
 }

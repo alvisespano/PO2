@@ -6,7 +6,7 @@ public class ArrayList<T> implements List<T> {
 
     public ArrayList() {
         this.a = new Object[10];
-        sz = 0;
+        this.sz = 0;
     }
 
     @Override
@@ -44,9 +44,28 @@ public class ArrayList<T> implements List<T> {
     public int size() {
         return sz;
     }
-
-    private static class MyIterator implements Iterator<T> {
+    // static nested iterator
+    private static class StaticMyIterator<T> implements Iterator<T> {
         private int pos = 0;
+        private ArrayList<T> enclosing;
+
+        public StaticMyIterator(ArrayList<T> a) {
+            this.enclosing = a;
+        }
+        @Override
+        public boolean hasNext() {
+            return this.pos < enclosing.size();
+        }
+        @Override
+        public T next() {
+            return enclosing.get(pos++);
+        }
+    }
+
+    // non-static nested iterator
+    private class MyIterator implements Iterator<T> {
+        private int pos = 0;
+
         @Override
         public boolean hasNext() {
             return pos < size();
@@ -56,10 +75,22 @@ public class ArrayList<T> implements List<T> {
             return get(pos++);
         }
     }
+
     @Override
     public Iterator<T> iterator() {
-        return new MyIterator();
+        return new Iterator<T>() {
+            @Override
+            public boolean hasNext() {
+                return false;
+            }
+
+            @Override
+            public T next() {
+                return null;
+            }
+        };
     }
+
     @Override
     public T get(int i) {
         if (i < sz)
