@@ -27,6 +27,12 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public boolean contains(T x) {
+        Iterator<T> it = iterator();
+        while (it.hasNext()) {
+            T o = it.next();
+            if (o.equals(x))
+                return true;
+        }
         return false;
     }
 
@@ -37,7 +43,14 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public void remove(T x) {
-
+        for (int i = 0; i < size(); ++i) {
+            T o = get(i);
+            if (o.equals(x)) {
+                for (int j = i ; j < size() - 1; ++j)
+                    set(j, get(j + 1));
+                --sz;
+            }
+        }
     }
 
     @Override
@@ -78,15 +91,17 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public Iterator<T> iterator() {
+        // anonymous class interator
         return new Iterator<T>() {
+            private int pos = 0;
             @Override
             public boolean hasNext() {
-                return false;
+                return pos < size();
             }
 
             @Override
             public T next() {
-                return null;
+                return get(pos++);
             }
         };
     }
@@ -110,11 +125,12 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public void add(int i, T x) {
-
+        // TODO per casa
     }
 
     @Override
     public T remove(int i) {
+        // TODO per casa
         return null;
     }
 }
