@@ -2,7 +2,7 @@ package tinyjdk;
 
 public class LinkedList<T> implements List<T> {
 
-    private class Node {
+    protected class Node {
         public T data;
         public Node next;
         public Node(T data, Node next) {
@@ -10,8 +10,8 @@ public class LinkedList<T> implements List<T> {
             this.next = next;
         }
     }
-    private Node head;
-    private int sz;
+    protected Node head;
+    protected int sz;
     public LinkedList() {
         this.head = null;
         sz = 0;
@@ -39,18 +39,29 @@ public class LinkedList<T> implements List<T> {
     }
 
     @Override
-    public boolean contains(T x) {
-        return false;
-    }
-
-    @Override
     public boolean isEmpty() {
         return head == null;
     }
 
+    // TODO da sistemare
     @Override
     public void remove(T x) {
-
+        Node n = head;
+        if (n != null) {
+            if (n.data.equals(x)) {
+                head = n.next;
+                --sz;
+            }
+            else {
+                while (n.next != null) {
+                    if (n.next.data.equals(x)) {
+                        n.next = n.next.next;
+                        --sz;
+                        return;
+                    }
+                }
+            }
+        }
     }
 
     @Override
@@ -60,26 +71,51 @@ public class LinkedList<T> implements List<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new Iterator<T>() {
+            private Node n = head;
+            @Override
+            public boolean hasNext() {
+                return n != null;
+            }
+            @Override
+            public T next() {
+                T r = n.data;
+                n = n.next;
+                return r;
+            }
+        };
+    }
+
+    protected Node getNode(int i) {
+        if (i < 0 || i >= size())
+            throw new RuntimeException(String.format("LinkedList.get(): index %d is out of bound (size = %d)", i, size()));
+        Node n = head;
+        for (; i > 0; --i)
+            n = n.next;
+        return n;
     }
 
     @Override
     public T get(int i) {
-        return null;
+        return getNode(i).data;
     }
 
     @Override
     public T set(int i, T x) {
-        return null;
+        Node n = getNode(i);
+        T old = n.data;
+        n.data = x;
+        return old;
     }
 
     @Override
     public void add(int i, T x) {
-
+        // TODO per casa
     }
 
     @Override
     public T remove(int i) {
+        // TODO per casa
         return null;
     }
 }

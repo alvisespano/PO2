@@ -26,17 +26,6 @@ public class ArrayList<T> implements List<T> {
     }
 
     @Override
-    public boolean contains(T x) {
-        Iterator<T> it = iterator();
-        while (it.hasNext()) {
-            T o = it.next();
-            if (o.equals(x))
-                return true;
-        }
-        return false;
-    }
-
-    @Override
     public boolean isEmpty() {
         return sz == 0;
     }
