@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e4d7d5-2cce-4942-885d-8ed0c13d8afa" name="Changes" comment="" />
+    <list default="true" id="33e4d7d5-2cce-4942-885d-8ed0c13d8afa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../2023-24/LezioniJava23-24/src/tinyjdk/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2023-24/LezioniJava23-24/src/tinyjdk/LinkedList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,13 +42,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/shc-pc/Documents/GitHub/PO2/soluzione appelli/Scritto PO2 13 1 2023/java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/shc-pc/Documents/GitHub/PO2/2022-23/LezioniJava22-23"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="it.unive.dais.po2.tinyjdk" />
