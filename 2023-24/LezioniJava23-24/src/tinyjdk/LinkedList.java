@@ -43,23 +43,15 @@ public class LinkedList<T> implements List<T> {
         return head == null;
     }
 
-    // TODO da sistemare
     @Override
     public void remove(T x) {
-        Node n = head;
-        if (n != null) {
+        for (Node prev = null, n = head; n != null; prev = n, n = n.next) {
             if (n.data.equals(x)) {
-                head = n.next;
-                --sz;
-            }
-            else {
-                while (n.next != null) {
-                    if (n.next.data.equals(x)) {
-                        n.next = n.next.next;
-                        --sz;
-                        return;
-                    }
-                }
+                if (prev != null)
+                    prev.next = n.next;
+                else
+                    head = n.next;
+                return;
             }
         }
     }
@@ -71,7 +63,7 @@ public class LinkedList<T> implements List<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new Iterator<T>() {
+        return new Iterator<>() {
             private Node n = head;
             @Override
             public boolean hasNext() {
@@ -88,7 +80,7 @@ public class LinkedList<T> implements List<T> {
 
     protected Node getNode(int i) {
         if (i < 0 || i >= size())
-            throw new RuntimeException(String.format("LinkedList.get(): index %d is out of bound (size = %d)", i, size()));
+            throw new RuntimeException(String.format("index %d is out of bound (size = %d)", i, size()));
         Node n = head;
         for (; i > 0; --i)
             n = n.next;
