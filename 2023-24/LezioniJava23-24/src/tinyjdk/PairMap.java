@@ -21,36 +21,15 @@ public class PairMap<K, V> implements Map<K, V> {
 
     @Override
     public Iterator<Pair<K, V>> iterator() {
-        return new Iterator<>() {
-            private int pos = l.size() - 1;
-            private Set<K> history = new HashSet<>();
-            @Override
-            public boolean hasNext() {
-                return false;
+        Set<K> history = new HashSet<>();
+        List<Pair<K, V>> r = new ArrayList<>();
+        for (int i = l.size() - 1; i >= 0; --i) {
+            Pair<K, V> p = l.get(i);
+            if (!history.contains(p.first)) {
+                history.add(p.first);
+                r.add(p);
             }
-            @Override
-            public Pair<K, V> next() {
-                Pair<K, V> r = l.get(pos--);
-                K k = r.first;
-                if (history.contains(k)) {
-                    if (hasNext()) return next();
-                }
-                else {
-                    history.add(k);
-                    return r;
-                }
-            }
-        };
-    }
-    public static void main(String[] args) {
-        Map<Integer, String> m = new PairMap<>();
-        m.put(5, "ciao");
-        m.put(678, "ciccio");
-        m.put(24, "franco");
-        m.put(98, "pippo");
-        m.put(5, "baudo");
-        for (Pair<Integer, String> p : m) {
-
         }
+        return r.iterator();
     }
 }
