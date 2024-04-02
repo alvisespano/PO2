@@ -2,6 +2,7 @@ package functional;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 import java.util.function.*;
 
@@ -23,21 +24,40 @@ void main(){
 */
 
 public class HigherOrderFunctions {
-
-    public static <A, B> Collection<B> map(Collection<A> c, Function<A, B> f) {
-        Collection<B> r = new ArrayList<>();
+    public static <A, B> List<B> map(Iterable<A> c, Function<A, B> f) {
+        List<B> r = new ArrayList<>();
         for (A x : c) {
             B b = f.apply(x);
             r.add(b);
         }
         return r;
     }
+    public static <T> void forEach(Iterable<T> c, Consumer<T> f) {
+        for (T x : c)
+            f.accept(x);
+    }
+    public static <T> List<T> filter(Iterable<T> c, Predicate<T> f) {
+        List<T> r = new ArrayList<>();
+        for (T x : c) {
+            if (f.test(x))
+                r.add(x);
+        }
+        return r;
+    }
+    public static <T> void filter__impure(Iterable<T> c, Function<T, Boolean> f) {
+        Iterator<T> it = c.iterator();
+        while (it.hasNext()) {
+            if (!f.apply(it.next()))
+                it.remove();
+        }
 
-    public static void main2(String[] args) {
+    }
+
+    public static void main(String[] args) {
         List<Integer> l = List.of(1, 2, -3, 4);
 
+        // map
         Collection<Boolean> r0 = map(l, x -> x > 0);
-
         Collection<Integer> r1 = map(l, x -> x + 1);
         Collection<Integer> r2 = map(l, new Function<Integer, Integer>() {
             @Override
@@ -45,26 +65,15 @@ public class HigherOrderFunctions {
                 return x + 1;
             }
         });
-    }
 
-    public static <T> void forEach(Collection<T> c, Consumer<T> f) {
-        for (T x : c) {
-            f.accept(x);
-        }
-    }
-
-    public static void main(String[] args) {
-        List<Integer> l = List.of(1, 2, 3, 4);
-
-        forEach(l, x -> { x = x + 1; });
+        // forEach
+        forEach(l, x -> System.out.println(x));
         forEach(l, new Consumer<Integer>() {
             @Override
             public void accept(Integer x) {
-                if (x > 5)
-                    x = x + 1;
+                System.out.print(x);
             }
         });
-
         forEach(l, x -> System.out.println(x));
         forEach(l, new Consumer<Integer>() {
             @Override
@@ -73,7 +82,15 @@ public class HigherOrderFunctions {
             }
         });
 
+        // filter
+        Collection<Integer> c1 = filter(l, x -> x > 2);
+
+        // filter__impure
+        filter(l, x -> x > 2);
     }
+
+
+
 
 
 }
