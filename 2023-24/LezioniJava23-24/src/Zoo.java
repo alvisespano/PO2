@@ -3,6 +3,8 @@ public class Zoo {
     public static class Animal {
         protected int weight;
 
+        public int getWeight() { return weight; }
+
         public Animal(int w) {
             this.weight = w;
         }
@@ -29,7 +31,17 @@ public class Zoo {
         }
     }
 
-    // SUBSUMPTION
+    public static class Cat extends Animal {
+
+        public Cat(int w) {
+            super(w);
+        }
+
+        @Override
+        public void eat(Animal a) {
+            this.weight += a.weight / 2;
+        }
+    }
 
     public static void main(String[] args)
     {

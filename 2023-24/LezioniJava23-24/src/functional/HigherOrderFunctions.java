@@ -24,14 +24,20 @@ void main(){
 */
 
 public class HigherOrderFunctions {
-    public static <A, B> List<B> map(Iterable<A> c, Function<A, B> f) {
+
+    interface PippoFunction<A, B> {
+        B ciccio(A x);
+    }
+
+    public static <A, B> List<B> map(Iterable<A> c, PippoFunction<A, B> f) {
         List<B> r = new ArrayList<>();
         for (A x : c) {
-            B b = f.apply(x);
+            B b = f.ciccio(x);
             r.add(b);
         }
         return r;
     }
+
     public static <T> void forEach(Iterable<T> c, Consumer<T> f) {
         for (T x : c)
             f.accept(x);
@@ -50,18 +56,16 @@ public class HigherOrderFunctions {
             if (!f.apply(it.next()))
                 it.remove();
         }
-
     }
 
     public static void main(String[] args) {
         List<Integer> l = List.of(1, 2, -3, 4);
 
         // map
-        Collection<Boolean> r0 = map(l, x -> x > 0);
         Collection<Integer> r1 = map(l, x -> x + 1);
-        Collection<Integer> r2 = map(l, new Function<Integer, Integer>() {
+        Collection<Integer> r2 = map(l, new PippoFunction<Integer, Integer>() {
             @Override
-            public Integer apply(Integer x) {
+            public Integer ciccio(Integer x) {
                 return x + 1;
             }
         });
@@ -87,10 +91,18 @@ public class HigherOrderFunctions {
 
         // filter__impure
         filter(l, x -> x > 2);
+
+        //
+/*        List<Zoo.Dog> dogs = new ArrayList<>();
+
+        Function<Zoo.Dog, Zoo.Cat> f = (d) -> new Zoo.Cat(d.getWeight());
+        PippoFunction<Zoo.Dog, Zoo.Cat> g = (d) -> new Zoo.Cat(d.getWeight());
+
+        // questa non compila giustamente
+        //List<Zoo.Cat> cats = map(dogs, f);
+
+        List<Zoo.Cat> cats2 = map(dogs, g);*/
+
     }
-
-
-
-
 
 }
