@@ -1,4 +1,4 @@
-package functional;
+package misc;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -93,15 +93,15 @@ public class HigherOrderFunctions {
         filter(l, x -> x > 2);
 
         //
-/*        List<Zoo.Dog> dogs = new ArrayList<>();
+/*        List<misc.Zoo.Dog> dogs = new ArrayList<>();
 
-        Function<Zoo.Dog, Zoo.Cat> f = (d) -> new Zoo.Cat(d.getWeight());
-        PippoFunction<Zoo.Dog, Zoo.Cat> g = (d) -> new Zoo.Cat(d.getWeight());
+        Function<misc.Zoo.Dog, misc.Zoo.Cat> f = (d) -> new misc.Zoo.Cat(d.getWeight());
+        PippoFunction<misc.Zoo.Dog, misc.Zoo.Cat> g = (d) -> new misc.Zoo.Cat(d.getWeight());
 
         // questa non compila giustamente
-        //List<Zoo.Cat> cats = map(dogs, f);
+        //List<misc.Zoo.Cat> cats = map(dogs, f);
 
-        List<Zoo.Cat> cats2 = map(dogs, g);*/
+        List<misc.Zoo.Cat> cats2 = map(dogs, g);*/
 
     }
 

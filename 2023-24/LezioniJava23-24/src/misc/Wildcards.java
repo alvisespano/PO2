@@ -1,12 +1,10 @@
-package wildcards;
-
-import functional.HigherOrderFunctions;
+package misc;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
-public class Misc {
+public class Wildcards {
 
     public static <A, B> List<B> map(Iterable<A> c,
                                      Function<? super A, ? extends B> f) {

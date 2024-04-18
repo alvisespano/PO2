@@ -1,3 +1,5 @@
+package misc;
+
 public class Zoo {
 
     public static class Animal {

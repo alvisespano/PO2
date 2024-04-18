@@ -1,4 +1,6 @@
-public class Misc1 {
+package misc;
+
+public class InterfacesVsAbstractClasses {
 
     public interface I {
         void a();

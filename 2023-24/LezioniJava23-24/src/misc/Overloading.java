@@ -1,4 +1,4 @@
-package wildcards;
+package misc;
 
 import java.util.List;
 

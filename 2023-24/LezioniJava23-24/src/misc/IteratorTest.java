@@ -1,9 +1,10 @@
+package misc;
+
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-public class ProveJDK1 {
+public class IteratorTest {
 
     public static void main(String[] args) {
 
