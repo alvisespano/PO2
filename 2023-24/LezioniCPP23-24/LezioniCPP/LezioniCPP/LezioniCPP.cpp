@@ -54,6 +54,10 @@ void main() {
 	dog* fufi = new dog(3, 100., true);
 	animal* a6 = fufi;
 	a6->eat(a2);
+
+	animal pippo(fido);
+	pippo.eat(a2);
+
 }
 
 
