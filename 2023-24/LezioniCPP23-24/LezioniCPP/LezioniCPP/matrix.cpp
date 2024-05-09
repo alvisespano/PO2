@@ -1,4 +1,5 @@
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -11,15 +12,25 @@ private:
 
 public:
 	matrix() : v() {}
-	matrix(const matrix<T>& m) : v(m.v) {}
+	matrix(const matrix<T>& m) : cols(m.cols), v(m.v) {}
 	
-	
-//	matrix(size_t rows, size_t _cols) : cols(_cols), v(rows* cols) {}
+	template <class S>
+	matrix(const matrix<S>& m) : cols(m.cols), v(m.get_rows() * m.get_cols()) 
+	{
+		for (int i = 0; i < v.size(); ++i)
+			v[i] = m.v[i];
+	}
+
 	matrix(size_t rows, size_t _cols, const T& x = T())
 		: cols(_cols), v(rows* cols, x) {}
 
 	
 	explicit matrix(size_t dim) : matrix(dim, dim) {}
+
+	operator const vector<T>&() const
+	{
+		return v;
+	}
 
 	matrix<T>& operator=(const matrix<T>& m)
 	{
@@ -40,24 +51,27 @@ public:
 
 	size_t get_cols() const { return cols; }
 	size_t get_rows() const { return v.size() / cols; }
-
 }; 
+
+template <class C>
+ostream& operator<<(ostream& os, const C& m)
+{
+	for (typename C::iterator it = m.v.begin(); it != m.v.end(); ++it)
+	{
+		typename C::value_type x = *it;
+		os << x << " ";
+	}
+	return os;
+}
+
 
 
 void main() 
 {
-	matrix<int> m(20, 30);
-	m(8, 10) = m(3, 4);
+	matrix<int> m1(20, 30);
+	matrix<double> m2(m1);
 
-	matrix<int> m2(40, 50);
-	m = m2;
-	m.operator=(m2);
-
-	m = m2 = m; //	m.operator=(m2.operator=(m));
-
-	matrix<int> m3;
-	m3 = m;
-	matrix<int> m4(m3);
+	cout << 7;
 
 }
 
