@@ -27,6 +27,30 @@ public:
 	
 	explicit matrix(size_t dim) : matrix(dim, dim) {}
 
+	typedef T value_type;
+	typedef vector<T>::iterator iterator;
+	typedef vector<T>::const_iterator const_iterator;
+
+	iterator begin()
+	{
+		return v.begin();
+	}
+
+	iterator end()
+	{
+		return v.end();
+	}
+
+	const_iterator begin() const
+	{
+		return v.begin();
+	}
+
+	const_iterator end() const;
+	{
+		return v.end();
+	}
+
 	operator const vector<T>&() const
 	{
 		return v;
@@ -38,7 +62,6 @@ public:
 		v = m.v;
 		return *this;
 	}
-
 
 	const T& operator()(size_t i, size_t j) const
 	{
@@ -69,9 +92,13 @@ ostream& operator<<(ostream& os, const C& m)
 void main() 
 {
 	matrix<int> m1(20, 30);
-	matrix<double> m2(m1);
+	
+	for (matrix<int>::iterator it = m1.begin(); it != m1.end(); ++it)
+	{
+		matrix<int>::value_type x = *it;
+		cout << x;
+	}
 
-	cout << 7;
 
 }
 
