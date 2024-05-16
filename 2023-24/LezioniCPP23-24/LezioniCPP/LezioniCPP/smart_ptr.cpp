@@ -41,7 +41,7 @@ public:
 		return *this;
 	}
 
-	smart_ptr<T> operator++()
+	smart_ptr<T> operator++(int)
 	{
 		smart_ptr<T> r(*this);
 		++pt;
