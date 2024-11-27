@@ -1,4 +1,4 @@
-package misc.po2.unive.it;
+package misc;
 
 public class Zoo {
 
