@@ -127,8 +127,6 @@ public class ArrayList<T> implements List<T> {
     }
 
 
-
-
     public static <T> void printAll(Iterable<T> c) {
         Iterator<T> it = c.iterator();
         while(it.hasNext()) {
