@@ -1,7 +1,5 @@
 package tinyjdk;
 
-import java.util.Collections;
-
 public class LinkedList<T> implements List<T> {
 
     protected class Node {
@@ -54,27 +52,44 @@ public class LinkedList<T> implements List<T> {
 
     @Override
     public boolean contains(T e) {
+        // TODO da fare per casa
         return false;
     }
 
     @Override
     public int size() {
+        // TODO
         return 0;
     }
 
     @Override
     public void remove(T e) {
-
+        // TODO
     }
 
     @Override
     public void clear() {
-
+        head = null;
     }
+
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new Iterator<T>() {
+            private Node current = head;
+
+            @Override
+            public boolean hasNext() {
+                return current != null;
+            }
+
+            @Override
+            public T next() {
+                T data = current.data;
+                current = current.next;
+                return data;
+            }
+        };
     }
 
 }
