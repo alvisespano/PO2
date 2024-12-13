@@ -10,7 +10,7 @@ public class Functional {
     public interface Function<A, B> {
         B apply(A x);
     }
-    
+
     public interface Consumer<T> {
         void apply(T x);
     }
@@ -107,7 +107,7 @@ public class Functional {
                     return x > 0;
                 }
             });
-            Collection<Boolean> r = map(l, (x) -> x > 0);
+            Collection<Boolean> r2 = map(l, (x) -> x > 0);
         }
 
         {
