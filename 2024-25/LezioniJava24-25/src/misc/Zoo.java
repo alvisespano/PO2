@@ -2,7 +2,7 @@ package misc;
 
 public class Zoo {
 
-    public static class Animal {
+    public static class Animal implements Comparable<Animal> {
 
         protected int weight;
 
@@ -13,6 +13,11 @@ public class Zoo {
         public void eat(Animal a) {
             this.weight += a.weight;
         }
+
+        @Override
+        public int compareTo(Animal o) {
+            return this.weight - o.weight;
+        }
     }
 
     public static class Dog extends Animal {
@@ -21,6 +26,15 @@ public class Zoo {
         public Dog(int weight, String owner) {
             super(weight);
             this.owner = owner;
+        }
+
+        @Override
+        public int compareTo(Animal o) {
+            if (o instanceof Dog) {
+                Dog d = (Dog) o;
+                ...
+            }
+            else return super.compareTo(o);
         }
 
         public void bark() {

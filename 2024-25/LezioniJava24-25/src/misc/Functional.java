@@ -7,6 +7,8 @@ import java.util.function.BiFunction;
 
 public class Functional {
 
+
+
     public interface Function<A, B> {
         B apply(A x);
     }
@@ -102,12 +104,13 @@ public class Functional {
 
         {
             List<Integer> l = List.of(-56, 345, 11, 0, -456, 23);
+            final int k = 0;
             Collection<Boolean> r = map(l, new Function<Integer, Boolean>() {
                 public Boolean apply(Integer x) {
-                    return x > 0;
+                    return x > k;
                 }
             });
-            Collection<Boolean> r2 = map(l, (x) -> x > 0);
+            Collection<Boolean> r2 = map(l, (x) -> x > k);
         }
 
         {
