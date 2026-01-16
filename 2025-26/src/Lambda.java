@@ -23,6 +23,14 @@ public class Lambda {
         void run();
     }
 
+    public static void delay(int ms, Runnable r) {
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        r.run();
+    }
 
     public static <T> void iter(Collection<T> c, Consumer<T> p) {
         for (T e : c) {
@@ -62,6 +70,35 @@ public class Lambda {
     }
 
     public static void main(String[] args) {
+        {
+            Runnable pippo = () -> System.out.println("ciao");
+
+            pippo.run();
+
+
+            int x = 8 * 34 / 67;
+
+            boolean y = x < 0;
+
+            if (y) {
+                x = 8;
+            }
+            else {
+                System.out.println(x);
+            }
+
+        }
+
+
+
+        {
+            delay(1000, new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println("ciao!");
+                }
+            });
+        }
         {
             List<String> u = generate(20, () -> "ciao");
 
